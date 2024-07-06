@@ -1,0 +1,47 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LLM Internal States Reveal Hallucination Risk Faced With a Query</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+            h1 { color: #333; }
+            .authors { font-style: italic; color: #666; margin-bottom: 20px; }
+            .summary, .reasoning { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            .paper-link { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+            .paper-link:hover { background-color: #45a049; }
+            .ai-notice { font-size: 0.8em; text-align: right; margin-top: 20px; color: #999; }
+        </style>
+    </head>
+    <body>
+        <h1>LLM Internal States Reveal Hallucination Risk Faced With a Query</h1>
+        <p><strong>Date:</strong> 2024-07-03</p>
+        <p class="authors"><strong>Authors:</strong> ['Ziwei Ji', 'Delong Chen', 'Etsuko Ishii', 'Samuel Cahyawijaya', 'Yejin Bang', 'Bryan Wilie', 'Pascale Fung']</p>
+        <div class="summary">
+            <h2>Abstract</h2>
+            <p>The hallucination problem of Large Language Models (LLMs) significantly
+limits their reliability and trustworthiness. Humans have a self-awareness
+process that allows us to recognize what we don't know when faced with queries.
+Inspired by this, our paper investigates whether LLMs can estimate their own
+hallucination risk before response generation. We analyze the internal
+mechanisms of LLMs broadly both in terms of training data sources and across 15
+diverse Natural Language Generation (NLG) tasks, spanning over 700 datasets.
+Our empirical analysis reveals two key insights: (1) LLM internal states
+indicate whether they have seen the query in training data or not; and (2) LLM
+internal states show they are likely to hallucinate or not regarding the query.
+Our study explores particular neurons, activation layers, and tokens that play
+a crucial role in the LLM perception of uncertainty and hallucination risk. By
+a probing estimator, we leverage LLM self-assessment, achieving an average
+hallucination estimation accuracy of 84.32\% at run time.</p>
+        </div>
+        <div class="reasoning">
+            <h2>AI-Generated Summary</h2>
+            <p>The paper explores the internal states of Large Language Models (LLMs) to estimate hallucination risk before response generation, which is highly relevant to prompt engineering.</p>
+        </div>
+        <a href="http://arxiv.org/pdf/2407.03282v1" class="paper-link" target="_blank">Read the full paper</a>
+        <p class="ai-notice">The summary is AI-generated and may not perfectly reflect the paper's content.</p>
+    </body>
+    </html>
+    
