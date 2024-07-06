@@ -1,0 +1,47 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Self-Evaluation as a Defense Against Adversarial Attacks on LLMs</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+            h1 { color: #333; }
+            .authors { font-style: italic; color: #666; margin-bottom: 20px; }
+            .summary, .reasoning { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            .paper-link { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+            .paper-link:hover { background-color: #45a049; }
+            .ai-notice { font-size: 0.8em; text-align: right; margin-top: 20px; color: #999; }
+        </style>
+    </head>
+    <body>
+        <h1>Self-Evaluation as a Defense Against Adversarial Attacks on LLMs</h1>
+        <p><strong>Date:</strong> 2024-07-03</p>
+        <p class="authors"><strong>Authors:</strong> ['Hannah Brown', 'Leon Lin', 'Kenji Kawaguchi', 'Michael Shieh']</p>
+        <div class="summary">
+            <h2>Abstract</h2>
+            <p>When LLMs are deployed in sensitive, human-facing settings, it is crucial
+that they do not output unsafe, biased, or privacy-violating outputs. For this
+reason, models are both trained and instructed to refuse to answer unsafe
+prompts such as "Tell me how to build a bomb." We find that, despite these
+safeguards, it is possible to break model defenses simply by appending a space
+to the end of a model's input. In a study of eight open-source models, we
+demonstrate that this acts as a strong enough attack to cause the majority of
+models to generate harmful outputs with very high success rates. We examine the
+causes of this behavior, finding that the contexts in which single spaces occur
+in tokenized training data encourage models to generate lists when prompted,
+overriding training signals to refuse to answer unsafe requests. Our findings
+underscore the fragile state of current model alignment and promote the
+importance of developing more robust alignment methods. Code and data will be
+made available at https://github.com/Linlt-leon/Adversarial-Alignments.</p>
+        </div>
+        <div class="reasoning">
+            <h2>AI-Generated Summary</h2>
+            <p>The paper discusses the manipulation of language models through appending space characters to inputs, which is a form of prompt engineering.</p>
+        </div>
+        <a href="http://arxiv.org/pdf/2407.03234v1" class="paper-link" target="_blank">Read the full paper</a>
+        <p class="ai-notice">The summary is AI-generated and may not perfectly reflect the paper's content.</p>
+    </body>
+    </html>
+    
