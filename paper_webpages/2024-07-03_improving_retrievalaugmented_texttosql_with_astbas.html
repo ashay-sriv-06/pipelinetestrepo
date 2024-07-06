@@ -1,0 +1,48 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Improving Retrieval-augmented Text-to-SQL with AST-based Ranking and Schema Pruning</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+            h1 { color: #333; }
+            .authors { font-style: italic; color: #666; margin-bottom: 20px; }
+            .summary, .reasoning { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            .paper-link { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+            .paper-link:hover { background-color: #45a049; }
+            .ai-notice { font-size: 0.8em; text-align: right; margin-top: 20px; color: #999; }
+        </style>
+    </head>
+    <body>
+        <h1>Improving Retrieval-augmented Text-to-SQL with AST-based Ranking and Schema Pruning</h1>
+        <p><strong>Date:</strong> 2024-07-03</p>
+        <p class="authors"><strong>Authors:</strong> ['Zhili Shen', 'Pavlos Vougiouklis', 'Chenxin Diao', 'Kaustubh Vyas', 'Yuanyi Ji', 'Jeff Z. Pan']</p>
+        <div class="summary">
+            <h2>Abstract</h2>
+            <p>We focus on Text-to-SQL semantic parsing from the perspective of Large
+Language Models. Motivated by challenges related to the size of commercial
+database schemata and the deployability of business intelligence solutions, we
+propose an approach that dynamically retrieves input database information and
+uses abstract syntax trees to select few-shot examples for in-context learning.
+  Furthermore, we investigate the extent to which an in-parallel semantic
+parser can be leveraged for generating $\textit{approximated}$ versions of the
+expected SQL queries, to support our retrieval. We take this approach to the
+extreme--we adapt a model consisting of less than $500$M parameters, to act as
+an extremely efficient approximator, enhancing it with the ability to process
+schemata in a parallelised manner. We apply our approach to monolingual and
+cross-lingual benchmarks for semantic parsing, showing improvements over
+state-of-the-art baselines. Comprehensive experiments highlight the
+contribution of modules involved in this retrieval-augmented generation
+setting, revealing interesting directions for future work.</p>
+        </div>
+        <div class="reasoning">
+            <h2>AI-Generated Summary</h2>
+            <p>The paper focuses on utilizing retrieval-augmented generation and in-context learning, which are key components of prompt engineering.</p>
+        </div>
+        <a href="http://arxiv.org/pdf/2407.03227v1" class="paper-link" target="_blank">Read the full paper</a>
+        <p class="ai-notice">The summary is AI-generated and may not perfectly reflect the paper's content.</p>
+    </body>
+    </html>
+    
