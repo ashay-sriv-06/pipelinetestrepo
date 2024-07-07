@@ -1,0 +1,54 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TheoremLlama: Transforming General-Purpose LLMs into Lean4 Experts</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+            h1 { color: #333; }
+            .authors { font-style: italic; color: #666; margin-bottom: 20px; }
+            .summary, .reasoning { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            .paper-link { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+            .paper-link:hover { background-color: #45a049; }
+            .ai-notice { font-size: 0.8em; text-align: right; margin-top: 20px; color: #999; }
+        </style>
+    </head>
+    <body>
+        <h1>TheoremLlama: Transforming General-Purpose LLMs into Lean4 Experts</h1>
+        <p><strong>Date:</strong> 2024-07-03</p>
+        <p class="authors"><strong>Authors:</strong> ['Ruida Wang', 'Jipeng Zhang', 'Yizhen Jia', 'Rui Pan', 'Shizhe Diao', 'Renjie Pi', 'Tong Zhang']</p>
+        <div class="summary">
+            <h2>Abstract</h2>
+            <p>Proving mathematical theorems using computer-verifiable formal languages like
+Lean significantly impacts mathematical reasoning. One approach to formal
+theorem proving involves generating complete proofs using Large Language Models
+(LLMs) based on Natural Language (NL) proofs. Similar methods have shown
+promising results in code generation. However, most modern LLMs exhibit
+suboptimal performance due to the scarcity of aligned NL and Formal Language
+(FL) theorem-proving data. This scarcity results in a paucity of methodologies
+for training LLMs and techniques to fully utilize their capabilities in
+composing formal proofs. To address the challenges, this paper proposes
+**TheoremLlama**, an end-to-end framework to train a general-purpose LLM to
+become a Lean4 expert. This framework encompasses NL-FL aligned dataset
+generation methods, training approaches for the LLM formal theorem prover, and
+techniques for LLM Lean4 proof writing. Using the dataset generation method, we
+provide *Open Bootstrapped Theorems* (OBT), an NL-FL aligned and bootstrapped
+dataset. A key innovation in this framework is the NL-FL bootstrapping method,
+where NL proofs are integrated into Lean4 code for training datasets,
+leveraging the NL reasoning ability of LLMs for formal reasoning. The
+**TheoremLlama** framework achieves cumulative accuracies of 36.48% and 33.61%
+on MiniF2F-Valid and Test datasets respectively, surpassing the GPT-4 baseline
+of 22.95% and 25.41%. We have also open-sourced our model checkpoints and
+generated dataset, and will soon make all the code publicly available.</p>
+        </div>
+        <div class="reasoning">
+            <h2>AI-Generated Summary</h2>
+            <p>The paper proposes a framework for training a general-purpose LLM to become a Lean4 expert, which involves generating NL-FL aligned dataset and utilizing NL reasoning ability of LLMs for formal reasoning, which is relevant to the topic of prompt engineering.</p>
+        </div>
+        <a href="http://arxiv.org/pdf/2407.03203v1" class="paper-link" target="_blank">Read the full paper</a>
+        <p class="ai-notice">The summary is AI-generated and may not perfectly reflect the paper's content.</p>
+    </body>
+    </html>
+    
