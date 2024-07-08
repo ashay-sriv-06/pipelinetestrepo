@@ -1,0 +1,47 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strengthening Structural Inductive Biases by Pre-training to Perform Syntactic Transformations</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+            h1 { color: #333; }
+            .authors { font-style: italic; color: #666; margin-bottom: 20px; }
+            .summary, .reasoning { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            .paper-link { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+            .paper-link:hover { background-color: #45a049; }
+            .ai-notice { font-size: 0.8em; text-align: right; margin-top: 20px; color: #999; }
+        </style>
+    </head>
+    <body>
+        <h1>Strengthening Structural Inductive Biases by Pre-training to Perform Syntactic Transformations</h1>
+        <p><strong>Date:</strong> 2024-07-05</p>
+        <p class="authors"><strong>Authors:</strong> ['Matthias Lindemann', 'Alexander Koller', 'Ivan Titov']</p>
+        <div class="summary">
+            <h2>Abstract</h2>
+            <p>Models need appropriate inductive biases to effectively learn from small
+amounts of data and generalize systematically outside of the training
+distribution. While Transformers are highly versatile and powerful, they can
+still benefit from enhanced structural inductive biases for seq2seq tasks,
+especially those involving syntactic transformations, such as converting active
+to passive voice or semantic parsing. In this paper, we propose to strengthen
+the structural inductive bias of a Transformer by intermediate pre-training to
+perform synthetically generated syntactic transformations of dependency trees
+given a description of the transformation. Our experiments confirm that this
+helps with few-shot learning of syntactic tasks such as chunking, and also
+improves structural generalization for semantic parsing. Our analysis shows
+that the intermediate pre-training leads to attention heads that keep track of
+which syntactic transformation needs to be applied to which token, and that the
+model can leverage these attention heads on downstream tasks.</p>
+        </div>
+        <div class="reasoning">
+            <h2>AI-Generated Summary</h2>
+            <p>The paper focuses on pre-training a Transformer to perform syntactic transformations, which is a key aspect of prompt engineering.</p>
+        </div>
+        <a href="http://arxiv.org/pdf/2407.04543v1" class="paper-link" target="_blank">Read the full paper</a>
+        <p class="ai-notice">The summary is AI-generated and may not perfectly reflect the paper's content.</p>
+    </body>
+    </html>
+    
