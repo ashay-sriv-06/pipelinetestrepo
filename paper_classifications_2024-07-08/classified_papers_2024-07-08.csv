@@ -1,0 +1,500 @@
+title,authors,abstract,pdf_url,published,Title,Model,Rating,Reasoning
+Rethinking Visual Prompting for Multimodal Large Language Models with External Knowledge,"['Yuanze Lin', 'Yunsheng Li', 'Dongdong Chen', 'Weijian Xu', 'Ronald Clark', 'Philip Torr', 'Lu Yuan']","In recent years, multimodal large language models (MLLMs) have made
+significant strides by training on vast high-quality image-text datasets,
+enabling them to generally understand images well. However, the inherent
+difficulty in explicitly conveying fine-grained or spatially dense information
+in text, such as masks, poses a challenge for MLLMs, limiting their ability to
+answer questions requiring an understanding of detailed or localized visual
+elements. Drawing inspiration from the Retrieval-Augmented Generation (RAG)
+concept, this paper proposes a new visual prompt approach to integrate
+fine-grained external knowledge, gleaned from specialized vision models (e.g.,
+instance segmentation/OCR models), into MLLMs. This is a promising yet
+underexplored direction for enhancing MLLMs' performance. Our approach diverges
+from concurrent works, which transform external knowledge into additional text
+prompts, necessitating the model to indirectly learn the correspondence between
+visual content and text coordinates. Instead, we propose embedding fine-grained
+knowledge information directly into a spatial embedding map as a visual prompt.
+This design can be effortlessly incorporated into various MLLMs, such as LLaVA
+and Mipha, considerably improving their visual understanding performance.
+Through rigorous experiments, we demonstrate that our method can enhance MLLM
+performance across nine benchmarks, amplifying their fine-grained context-aware
+capabilities.",http://arxiv.org/pdf/2407.04681v1,2024-07-05,Rethinking Visual Prompting for Multimodal Large Language Models with External Knowledge,gpt-3.5-turbo,highly relevant,"The paper introduces a new visual prompt approach to enhance the performance of multimodal large language models by directly embedding fine-grained knowledge information into a spatial embedding map as a visual prompt, which aligns with the concept of prompt engineering."
+Speculative Speech Recognition by Audio-Prefixed Low-Rank Adaptation of Language Models,"['Bolaji Yusuf', 'Murali Karthick Baskar', 'Andrew Rosenberg', 'Bhuvana Ramabhadran']","This paper explores speculative speech recognition (SSR), where we empower
+conventional automatic speech recognition (ASR) with speculation capabilities,
+allowing the recognizer to run ahead of audio. We introduce a metric for
+measuring SSR performance and we propose a model which does SSR by combining a
+RNN-Transducer-based ASR system with an audio-prefixed language model (LM). The
+ASR system transcribes ongoing audio and feeds the resulting transcripts, along
+with an audio-dependent prefix, to the LM, which speculates likely completions
+for the transcriptions. We experiment with a variety of ASR datasets on which
+show the efficacy our method and the feasibility of SSR as a method of reducing
+ASR latency.",http://arxiv.org/pdf/2407.04641v1,2024-07-05,Speculative Speech Recognition by Audio-Prefixed Low-Rank Adaptation of Language Models,gpt-3.5-turbo,highly relevant,"The paper discusses the use of an audio-prefixed language model for speculative speech recognition, which involves the use of prefixes to predict likely completions, demonstrating relevance to the concept of prompt engineering."
+ARM: Efficient Guided Decoding with Autoregressive Reward Models,"['Sergey Troshin', 'Vlad Niculae', 'Antske Fokkens']","Language models trained on large amounts of data require careful tuning to be
+safely deployed in real world. We revisit the guided decoding paradigm, where
+the goal is to augment the logits of the base language model using the scores
+from a task-specific reward model. We propose a simple but efficient
+parameterization of the autoregressive reward model enabling fast and effective
+guided decoding. On detoxification and sentiment control tasks, we show that
+our efficient parameterization performs on par with RAD, a strong but less
+efficient guided decoding approach.",http://arxiv.org/pdf/2407.04615v1,2024-07-05,ARM: Efficient Guided Decoding with Autoregressive Reward Models,gpt-3.5-turbo,highly relevant,"The paper discusses augmenting language models with task-specific reward models for guided decoding, a technique closely related to prompt engineering."
+Written Term Detection Improves Spoken Term Detection,"['Bolaji Yusuf', 'Murat Saraçlar']","End-to-end (E2E) approaches to keyword search (KWS) are considerably simpler
+in terms of training and indexing complexity when compared to approaches which
+use the output of automatic speech recognition (ASR) systems. This
+simplification however has drawbacks due to the loss of modularity. In
+particular, where ASR-based KWS systems can benefit from external unpaired text
+via a language model, current formulations of E2E KWS systems have no such
+mechanism. Therefore, in this paper, we propose a multitask training objective
+which allows unpaired text to be integrated into E2E KWS without complicating
+indexing and search. In addition to training an E2E KWS model to retrieve text
+queries from spoken documents, we jointly train it to retrieve text queries
+from masked written documents. We show empirically that this approach can
+effectively leverage unpaired text for KWS, with significant improvements in
+search performance across a wide variety of languages. We conduct analysis
+which indicates that these improvements are achieved because the proposed
+method improves document representations for words in the unpaired text.
+Finally, we show that the proposed method can be used for domain adaptation in
+settings where in-domain paired data is scarce or nonexistent.",http://arxiv.org/pdf/2407.04601v1,2024-07-05,Written Term Detection Improves Spoken Term Detection,gpt-3.5-turbo,highly relevant,"The paper focuses on proposing a multitask training objective to integrate unpaired text into E2E keyword search systems using both spoken and written text, which aligns with the concept of prompt engineering."
+Strengthening Structural Inductive Biases by Pre-training to Perform Syntactic Transformations,"['Matthias Lindemann', 'Alexander Koller', 'Ivan Titov']","Models need appropriate inductive biases to effectively learn from small
+amounts of data and generalize systematically outside of the training
+distribution. While Transformers are highly versatile and powerful, they can
+still benefit from enhanced structural inductive biases for seq2seq tasks,
+especially those involving syntactic transformations, such as converting active
+to passive voice or semantic parsing. In this paper, we propose to strengthen
+the structural inductive bias of a Transformer by intermediate pre-training to
+perform synthetically generated syntactic transformations of dependency trees
+given a description of the transformation. Our experiments confirm that this
+helps with few-shot learning of syntactic tasks such as chunking, and also
+improves structural generalization for semantic parsing. Our analysis shows
+that the intermediate pre-training leads to attention heads that keep track of
+which syntactic transformation needs to be applied to which token, and that the
+model can leverage these attention heads on downstream tasks.",http://arxiv.org/pdf/2407.04543v1,2024-07-05,Strengthening Structural Inductive Biases by Pre-training to Perform Syntactic Transformations,gpt-3.5-turbo,highly relevant,"The paper focuses on pre-training a Transformer to perform syntactic transformations, which is a key aspect of prompt engineering."
+GPT vs RETRO: Exploring the Intersection of Retrieval and Parameter-Efficient Fine-Tuning,"['Aleksander Ficek', 'Jiaqi Zeng', 'Oleksii Kuchaiev']","Parameter-Efficient Fine-Tuning (PEFT) and Retrieval-Augmented Generation
+(RAG) have become popular methods for adapting large language models while
+minimizing compute requirements. In this paper, we apply PEFT methods
+(P-tuning, Adapters, and LoRA) to a modified Retrieval-Enhanced Transformer
+(RETRO) and a baseline GPT model across several sizes, ranging from 823 million
+to 48 billion parameters. We show that RETRO models outperform GPT models in
+zero-shot settings due to their unique pre-training process but GPT models have
+higher performance potential with PEFT. Additionally, our study indicates that
+8B parameter models strike an optimal balance between cost and performance and
+P-tuning lags behind other PEFT techniques. We further provide a comparative
+analysis of between applying PEFT to an Instruction-tuned RETRO model and base
+RETRO model. This work presents the first comprehensive comparison of various
+PEFT methods integrated with RAG, applied to both GPT and RETRO models,
+highlighting their relative performance.",http://arxiv.org/pdf/2407.04528v1,2024-07-05,GPT vs RETRO: Exploring the Intersection of Retrieval and Parameter-Efficient Fine-Tuning,gpt-3.5-turbo,highly relevant,"The paper discusses the application of Parameter-Efficient Fine-Tuning (PEFT) methods to language models, which is a key element of prompt engineering."
+LayerShuffle: Enhancing Robustness in Vision Transformers by Randomizing Layer Execution Order,"['Matthias Freiberger', 'Peter Kun', 'Anders Sundnes Løvlie', 'Sebastian Risi']","Due to their architecture and how they are trained, artificial neural
+networks are typically not robust toward pruning, replacing, or shuffling
+layers at test time. However, such properties would be desirable for different
+applications, such as distributed neural network architectures where the order
+of execution cannot be guaranteed or parts of the network can fail during
+inference. In this work, we address these issues through a number of proposed
+training approaches for vision transformers whose most important component is
+randomizing the execution order of attention modules at training time. We show
+that with our proposed approaches, vision transformers are indeed capable to
+adapt to arbitrary layer execution orders at test time assuming one tolerates a
+reduction (about 20\%) in accuracy at the same model size. We also find that
+our trained models can be randomly merged with each other resulting in
+functional (""Frankenstein"") models without loss of performance compared to the
+source models. Finally, we layer-prune our models at test time and find that
+their performance declines gracefully.",http://arxiv.org/pdf/2407.04513v1,2024-07-05,LayerShuffle: Enhancing Robustness in Vision Transformers by Randomizing Layer Execution Order,gpt-3.5-turbo,highly relevant,"The paper focuses on training approaches for vision transformers, including randomizing the execution order of attention modules, a key aspect of prompt engineering."
+"Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs","['Rudolf Laine', 'Bilal Chughtai', 'Jan Betley', 'Kaivalya Hariharan', 'Jeremy Scheurer', 'Mikita Balesni', 'Marius Hobbhahn', 'Alexander Meinke', 'Owain Evans']","AI assistants such as ChatGPT are trained to respond to users by saying, ""I
+am a large language model"". This raises questions. Do such models know that
+they are LLMs and reliably act on this knowledge? Are they aware of their
+current circumstances, such as being deployed to the public? We refer to a
+model's knowledge of itself and its circumstances as situational awareness. To
+quantify situational awareness in LLMs, we introduce a range of behavioral
+tests, based on question answering and instruction following. These tests form
+the $\textbf{Situational Awareness Dataset (SAD)}$, a benchmark comprising 7
+task categories and over 13,000 questions. The benchmark tests numerous
+abilities, including the capacity of LLMs to (i) recognize their own generated
+text, (ii) predict their own behavior, (iii) determine whether a prompt is from
+internal evaluation or real-world deployment, and (iv) follow instructions that
+depend on self-knowledge.
+  We evaluate 16 LLMs on SAD, including both base (pretrained) and chat models.
+While all models perform better than chance, even the highest-scoring model
+(Claude 3 Opus) is far from a human baseline on certain tasks. We also observe
+that performance on SAD is only partially predicted by metrics of general
+knowledge (e.g. MMLU). Chat models, which are finetuned to serve as AI
+assistants, outperform their corresponding base models on SAD but not on
+general knowledge tasks. The purpose of SAD is to facilitate scientific
+understanding of situational awareness in LLMs by breaking it down into
+quantitative abilities. Situational awareness is important because it enhances
+a model's capacity for autonomous planning and action. While this has potential
+benefits for automation, it also introduces novel risks related to AI safety
+and control. Code and latest results available at
+https://situational-awareness-dataset.org .",http://arxiv.org/pdf/2407.04694v1,2024-07-05,"Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",gpt-3.5-turbo,somewhat relevant,"The paper focuses on evaluating language models (LLMs) based on their situational awareness and the ability to follow instructions, which are key components of prompt engineering."
+Learning to (Learn at Test Time): RNNs with Expressive Hidden States,"['Yu Sun', 'Xinhao Li', 'Karan Dalal', 'Jiarui Xu', 'Arjun Vikram', 'Genghan Zhang', 'Yann Dubois', 'Xinlei Chen', 'Xiaolong Wang', 'Sanmi Koyejo', 'Tatsunori Hashimoto', 'Carlos Guestrin']","Self-attention performs well in long context but has quadratic complexity.
+Existing RNN layers have linear complexity, but their performance in long
+context is limited by the expressive power of their hidden state. We propose a
+new class of sequence modeling layers with linear complexity and an expressive
+hidden state. The key idea is to make the hidden state a machine learning model
+itself, and the update rule a step of self-supervised learning. Since the
+hidden state is updated by training even on test sequences, our layers are
+called Test-Time Training (TTT) layers. We consider two instantiations:
+TTT-Linear and TTT-MLP, whose hidden state is a linear model and a two-layer
+MLP respectively. We evaluate our instantiations at the scale of 125M to 1.3B
+parameters, comparing with a strong Transformer and Mamba, a modern RNN. Both
+TTT-Linear and TTT-MLP match or exceed the baselines. Similar to Transformer,
+they can keep reducing perplexity by conditioning on more tokens, while Mamba
+cannot after 16k context. With preliminary systems optimization, TTT-Linear is
+already faster than Transformer at 8k context and matches Mamba in wall-clock
+time. TTT-MLP still faces challenges in memory I/O, but shows larger potential
+in long context, pointing to a promising direction for future research.",http://arxiv.org/pdf/2407.04620v1,2024-07-05,Learning to (Learn at Test Time): RNNs with Expressive Hidden States,gpt-3.5-turbo,somewhat relevant,"The paper focuses on developing a new class of sequence modeling layers with an expressive hidden state that is continuously updated even on test sequences, aligning with the concept of prompt engineering."
+Testing learning hypotheses using neural networks by manipulating learning data,"['Cara Su-Yi Leong', 'Tal Linzen']","Although passivization is productive in English, it is not completely general
+-- some exceptions exist (e.g. *One hour was lasted by the meeting). How do
+English speakers learn these exceptions to an otherwise general pattern? Using
+neural network language models as theories of acquisition, we explore the
+sources of indirect evidence that a learner can leverage to learn whether a
+verb can passivize. We first characterize English speakers' judgments of
+exceptions to the passive, confirming that speakers find some verbs more
+passivizable than others. We then show that a neural network language model can
+learn restrictions to the passive that are similar to those displayed by
+humans, suggesting that evidence for these exceptions is available in the
+linguistic input. We test the causal role of two hypotheses for how the
+language model learns these restrictions by training models on modified
+training corpora, which we create by altering the existing training corpora to
+remove features of the input implicated by each hypothesis. We find that while
+the frequency with which a verb appears in the passive significantly affects
+its passivizability, the semantics of the verb does not. This study highlight
+the utility of altering a language model's training data for answering
+questions where complete control over a learner's input is vital.",http://arxiv.org/pdf/2407.04593v1,2024-07-05,Testing learning hypotheses using neural networks by manipulating learning data,gpt-3.5-turbo,somewhat relevant,"The paper focuses on using neural network language models to investigate learning patterns in language acquisition, which is relevant to prompt engineering by exploring how models learn from input data."
+Spontaneous Reward Hacking in Iterative Self-Refinement,"['Jane Pan', 'He He', 'Samuel R. Bowman', 'Shi Feng']","Language models are capable of iteratively improving their outputs based on
+natural language feedback, thus enabling in-context optimization of user
+preference. In place of human users, a second language model can be used as an
+evaluator, providing feedback along with numerical ratings which the generator
+attempts to optimize. However, because the evaluator is an imperfect proxy of
+user preference, this optimization can lead to reward hacking, where the
+evaluator's ratings improve while the generation quality remains stagnant or
+even decreases as judged by actual user preference. The concern of reward
+hacking is heightened in iterative self-refinement where the generator and the
+evaluator use the same underlying language model, in which case the
+optimization pressure can drive them to exploit shared vulnerabilities. Using
+an essay editing task, we show that iterative self-refinement leads to
+deviation between the language model evaluator and human judgment,
+demonstrating that reward hacking can occur spontaneously in-context with the
+use of iterative self-refinement. In addition, we study conditions under which
+reward hacking occurs and observe two factors that affect reward hacking
+severity: model size and context sharing between the generator and the
+evaluator.",http://arxiv.org/pdf/2407.04549v1,2024-07-05,Spontaneous Reward Hacking in Iterative Self-Refinement,gpt-3.5-turbo,somewhat relevant,"The paper discusses the interaction between language models in an iterative self-refinement setting, which is relevant to prompt engineering by exploring the use of a second language model as an evaluator to provide feedback for optimization."
+LaRa: Efficient Large-Baseline Radiance Fields,"['Anpei Chen', 'Haofei Xu', 'Stefano Esposito', 'Siyu Tang', 'Andreas Geiger']","Radiance field methods have achieved photorealistic novel view synthesis and
+geometry reconstruction. But they are mostly applied in per-scene optimization
+or small-baseline settings. While several recent works investigate feed-forward
+reconstruction with large baselines by utilizing transformers, they all operate
+with a standard global attention mechanism and hence ignore the local nature of
+3D reconstruction. We propose a method that unifies local and global reasoning
+in transformer layers, resulting in improved quality and faster convergence.
+Our model represents scenes as Gaussian Volumes and combines this with an image
+encoder and Group Attention Layers for efficient feed-forward reconstruction.
+Experimental results demonstrate that our model, trained for two days on four
+GPUs, demonstrates high fidelity in reconstructing 360&deg radiance fields, and
+robustness to zero-shot and out-of-domain testing.",http://arxiv.org/pdf/2407.04699v1,2024-07-05,LaRa: Efficient Large-Baseline Radiance Fields,gpt-3.5-turbo,somewhat irrelevant,The paper focuses on improving transformer methods for feed-forward reconstruction but does not mention any aspects related to prompt engineering.
+Pretraining End-to-End Keyword Search with Automatically Discovered Acoustic Units,"['Bolaji Yusuf', 'Jan ""Honza"" Černocký', 'Murat Saraçlar']","End-to-end (E2E) keyword search (KWS) has emerged as an alternative and
+complimentary approach to conventional keyword search which depends on the
+output of automatic speech recognition (ASR) systems. While E2E methods greatly
+simplify the KWS pipeline, they generally have worse performance than their
+ASR-based counterparts, which can benefit from pretraining with untranscribed
+data. In this work, we propose a method for pretraining E2E KWS systems with
+untranscribed data, which involves using acoustic unit discovery (AUD) to
+obtain discrete units for untranscribed data and then learning to locate
+sequences of such units in the speech. We conduct experiments across languages
+and AUD systems: we show that finetuning such a model significantly outperforms
+a model trained from scratch, and the performance improvements are generally
+correlated with the quality of the AUD system used for pretraining.",http://arxiv.org/pdf/2407.04652v1,2024-07-05,Pretraining End-to-End Keyword Search with Automatically Discovered Acoustic Units,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on pretraining methods for end-to-end keyword search systems with untranscribed data using acoustic unit discovery, which is not directly related to hard prefix prompting or prompt engineering."
+Efficient Materials Informatics between Rockets and Electrons,['Adam M. Krajewski'],"The true power of computational research typically can lay in either what it
+accomplishes or what it enables others to accomplish. In this work, both
+avenues are simultaneously embraced across several distinct efforts existing at
+three general scales of abstractions of what a material is - atomistic,
+physical, and design. At each, an efficient materials informatics
+infrastructure is being built from the ground up based on (1) the fundamental
+understanding of the underlying prior knowledge, including the data, (2)
+deployment routes that take advantage of it, and (3) pathways to extend it in
+an autonomous or semi-autonomous fashion, while heavily relying on artificial
+intelligence (AI) to guide well-established DFT-based ab initio and
+CALPHAD-based thermodynamic methods.
+  The resulting multi-level discovery infrastructure is highly generalizable as
+it focuses on encoding problems to solve them easily rather than looking for an
+existing solution. To showcase it, this dissertation discusses the design of
+multi-alloy functionally graded materials (FGMs) incorporating ultra-high
+temperature refractory high entropy alloys (RHEAs) towards gas turbine and jet
+engine efficiency increase reducing CO2 emissions, as well as hypersonic
+vehicles. It leverages a new graph representation of underlying mathematical
+space using a newly developed algorithm based on combinatorics, not subject to
+many problems troubling the community. Underneath, property models and phase
+relations are learned from optimized samplings of the largest and highest
+quality dataset of HEA in the world, called ULTERA. At the atomistic level, a
+data ecosystem optimized for machine learning (ML) from over 4.5 million
+relaxed structures, called MPDD, is used to inform experimental observations
+and improve thermodynamic models by providing stability data enabled by a new
+efficient featurization framework.",http://arxiv.org/pdf/2407.04648v1,2024-07-05,Efficient Materials Informatics between Rockets and Electrons,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on building an efficient materials informatics infrastructure based on AI-guided methods, which is not directly related to prompt engineering."
+Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework,"['Reza Averly', 'Xia Ning']","Clinical named entity recognition (NER) aims to retrieve important entities
+within clinical narratives. Recent works have demonstrated that large language
+models (LLMs) can achieve strong performance in this task. While previous works
+focus on proprietary LLMs, we investigate how open NER LLMs, trained
+specifically for entity recognition, perform in clinical NER. In this paper, we
+aim to improve them through a novel framework, entity decomposition with
+filtering, or EDF. Our key idea is to decompose the entity recognition task
+into several retrievals of sub-entity types. We also introduce a filtering
+mechanism to remove incorrect entities. Our experimental results demonstrate
+the efficacy of our framework across all metrics, models, datasets, and entity
+types. Our analysis reveals that entity decomposition can recognize previously
+missed entities with substantial improvement. We further provide a
+comprehensive evaluation of our framework and an in-depth error analysis to
+pave future works.",http://arxiv.org/pdf/2407.04629v1,2024-07-05,Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on improving the performance of language models for entity recognition tasks through a novel framework, which is not directly related to prompt engineering."
+Feature Attenuation of Defective Representation Can Resolve Incomplete Masking on Anomaly Detection,"['YeongHyeon Park', 'Sungho Kang', 'Myung Jin Kim', 'Hyeong Seok Kim', 'Juneho Yi']","In unsupervised anomaly detection (UAD) research, while state-of-the-art
+models have reached a saturation point with extensive studies on public
+benchmark datasets, they adopt large-scale tailor-made neural networks (NN) for
+detection performance or pursued unified models for various tasks. Towards edge
+computing, it is necessary to develop a computationally efficient and scalable
+solution that avoids large-scale complex NNs. Motivated by this, we aim to
+optimize the UAD performance with minimal changes to NN settings. Thus, we
+revisit the reconstruction-by-inpainting approach and rethink to improve it by
+analyzing strengths and weaknesses. The strength of the SOTA methods is a
+single deterministic masking approach that addresses the challenges of random
+multiple masking that is inference latency and output inconsistency.
+Nevertheless, the issue of failure to provide a mask to completely cover
+anomalous regions is a remaining weakness. To mitigate this issue, we propose
+Feature Attenuation of Defective Representation (FADeR) that only employs two
+MLP layers which attenuates feature information of anomaly reconstruction
+during decoding. By leveraging FADeR, features of unseen anomaly patterns are
+reconstructed into seen normal patterns, reducing false alarms. Experimental
+results demonstrate that FADeR achieves enhanced performance compared to
+similar-scale NNs. Furthermore, our approach exhibits scalability in
+performance enhancement when integrated with other single deterministic masking
+methods in a plug-and-play manner.",http://arxiv.org/pdf/2407.04597v1,2024-07-05,Feature Attenuation of Defective Representation Can Resolve Incomplete Masking on Anomaly Detection,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on optimizing anomaly detection performance by proposing a new approach called Feature Attenuation of Defective Representation (FADeR), which involves leveraging MLP layers to attenuate feature information during decoding, demonstrating improved performance compared to previous methods. This does not directly relate to hard prefix prompts or prompt engineering."
+"Not (yet) the whole story: Evaluating Visual Storytelling Requires More than Measuring Coherence, Grounding, and Repetition","['Aditya K Surikuchi', 'Raquel Fernández', 'Sandro Pezzelle']","Visual storytelling consists in generating a natural language story given a
+temporally ordered sequence of images. This task is not only challenging for
+models, but also very difficult to evaluate with automatic metrics since there
+is no consensus about what makes a story 'good'. In this paper, we introduce a
+novel method that measures story quality in terms of human likeness regarding
+three key aspects highlighted in previous work: visual grounding, coherence,
+and repetitiveness. We then use this method to evaluate the stories generated
+by several models, showing that the foundation model LLaVA obtains the best
+result, but only slightly so compared to TAPM, a 50-times smaller visual
+storytelling model. Upgrading the visual and language components of TAPM
+results in a model that yields competitive performance with a relatively low
+number of parameters. Finally, we carry out a human evaluation study, whose
+results suggest that a 'good' story may require more than a human-like level of
+visual grounding, coherence, and repetition.",http://arxiv.org/pdf/2407.04559v1,2024-07-05,"Not (yet) the whole story: Evaluating Visual Storytelling Requires More than Measuring Coherence, Grounding, and Repetition",gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on evaluating generated stories based on human likeness and key aspects like visual grounding, coherence, and repetitiveness, without mentioning any training or post-training prompt engineering techniques."
+An AI Architecture with the Capability to Classify and Explain Hardware Trojans,"['Paul Whitten', 'Francis Wolff', 'Chris Papachristou']","Hardware trojan detection methods, based on machine learning (ML) techniques,
+mainly identify suspected circuits but lack the ability to explain how the
+decision was arrived at. An explainable methodology and architecture is
+introduced based on the existing hardware trojan detection features. Results
+are provided for explaining digital hardware trojans within a netlist using
+trust-hub trojan benchmarks.",http://arxiv.org/pdf/2407.04551v1,2024-07-05,An AI Architecture with the Capability to Classify and Explain Hardware Trojans,gpt-3.5-turbo,somewhat irrelevant,The paper focuses on hardware trojan detection using machine learning techniques and introduces an explainable methodology and architecture which is not directly related to prompt engineering.
+PoPreRo: A New Dataset for Popularity Prediction of Romanian Reddit Posts,"['Ana-Cristina Rogoz', 'Maria Ilinca Nechita', 'Radu Tudor Ionescu']","We introduce PoPreRo, the first dataset for Popularity Prediction of Romanian
+posts collected from Reddit. The PoPreRo dataset includes a varied compilation
+of post samples from five distinct subreddits of Romania, totaling 28,107 data
+samples. Along with our novel dataset, we introduce a set of competitive models
+to be used as baselines for future research. Interestingly, the top-scoring
+model achieves an accuracy of 61.35% and a macro F1 score of 60.60% on the test
+set, indicating that the popularity prediction task on PoPreRo is very
+challenging. Further investigations based on few-shot prompting the Falcon-7B
+Large Language Model also point in the same direction. We thus believe that
+PoPreRo is a valuable resource that can be used to evaluate models on
+predicting the popularity of social media posts in Romanian. We release our
+dataset at https://github.com/ana-rogoz/PoPreRo.",http://arxiv.org/pdf/2407.04541v1,2024-07-05,PoPreRo: A New Dataset for Popularity Prediction of Romanian Reddit Posts,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on popularity prediction of social media posts and introduces a novel dataset and competitive models, without mentioning training models with prompt engineering techniques."
+Performance Analysis of Speech Encoders for Low-Resource SLU and ASR in Tunisian Dialect,"['Salima Mdhaffar', 'Haroun Elleuch', 'Fethi Bougares', 'Yannick Estève']","Speech encoders pretrained through self-supervised learning (SSL) have
+demonstrated remarkable performance in various downstream tasks, including
+Spoken Language Understanding (SLU) and Automatic Speech Recognition (ASR). For
+instance, fine-tuning SSL models for such tasks has shown significant
+potential, leading to improvements in the SOTA performance across challenging
+datasets. In contrast to existing research, this paper contributes by comparing
+the effectiveness of SSL approaches in the context of (i) the low-resource
+spoken Tunisian Arabic dialect and (ii) its combination with a low-resource SLU
+and ASR scenario, where only a few semantic annotations are available for
+fine-tuning. We conduct experiments using many SSL speech encoders on the
+TARIC-SLU dataset. We use speech encoders that were pre-trained on either
+monolingual or multilingual speech data. Some of them have also been refined
+without in-domain nor Tunisian data through multimodal supervised
+teacher-student paradigm. This study yields numerous significant findings that
+we are discussing in this paper.",http://arxiv.org/pdf/2407.04533v1,2024-07-05,Performance Analysis of Speech Encoders for Low-Resource SLU and ASR in Tunisian Dialect,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on the performance of pretrained speech encoders for downstream tasks, which is not directly related to prompt engineering."
+Enhancing learning in artificial neural networks through cellular heterogeneity and neuromodulatory signaling,"['Alejandro Rodriguez-Garcia', 'Jie Mei', 'Srikanth Ramaswamy']","Recent progress in artificial intelligence (AI) has been driven by insights
+from neuroscience, particularly with the development of artificial neural
+networks (ANNs). This has significantly enhanced the replication of complex
+cognitive tasks such as vision and natural language processing. Despite these
+advances, ANNs struggle with continual learning, adaptable knowledge transfer,
+robustness, and resource efficiency - capabilities that biological systems
+handle seamlessly. Specifically, ANNs often overlook the functional and
+morphological diversity of the brain, hindering their computational
+capabilities. Furthermore, incorporating cell-type specific neuromodulatory
+effects into ANNs with neuronal heterogeneity could enable learning at two
+spatial scales: spiking behavior at the neuronal level, and synaptic plasticity
+at the circuit level, thereby potentially enhancing their learning abilities.
+In this article, we summarize recent bio-inspired models, learning rules and
+architectures and propose a biologically-informed framework for enhancing ANNs.
+Our proposed dual-framework approach highlights the potential of spiking neural
+networks (SNNs) for emulating diverse spiking behaviors and dendritic
+compartments to simulate morphological and functional diversity of neuronal
+computations. Finally, we outline how the proposed approach integrates
+brain-inspired compartmental models and task-driven SNNs, balances
+bioinspiration and complexity, and provides scalable solutions for pressing AI
+challenges, such as continual learning, adaptability, robustness, and
+resource-efficiency.",http://arxiv.org/pdf/2407.04525v1,2024-07-05,Enhancing learning in artificial neural networks through cellular heterogeneity and neuromodulatory signaling,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on enhancing artificial neural networks through bio-inspired models, learning rules, and architectures, rather than on prompt engineering specifically."
+ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models,"['Yuzhe Gu', 'Ziwei Ji', 'Wenwei Zhang', 'Chengqi Lyu', 'Dahua Lin', 'Kai Chen']","Large language models (LLMs) exhibit hallucinations in long-form
+question-answering tasks across various domains and wide applications. Current
+hallucination detection and mitigation datasets are limited in domains and
+sizes, which struggle to scale due to prohibitive labor costs and insufficient
+reliability of existing hallucination annotators. To facilitate the scalable
+oversight of LLM hallucinations, this paper introduces an iterative
+self-training framework that simultaneously and progressively scales up the
+hallucination annotation dataset and improves the accuracy of the hallucination
+annotator. Based on the Expectation Maximization (EM) algorithm, in each
+iteration, the framework first applies a hallucination annotation pipeline to
+annotate a scaled dataset and then trains a more accurate hallucination
+annotator on the dataset. This new hallucination annotator is adopted in the
+hallucination annotation pipeline used for the next iteration. Extensive
+experimental results demonstrate that the finally obtained hallucination
+annotator with only 7B parameters surpasses the performance of GPT-4 and
+obtains new state-of-the-art hallucination detection results on HaluEval and
+HalluQA by zero-shot inference. Such an annotator can not only evaluate the
+hallucination levels of various LLMs on the large-scale dataset but also help
+to mitigate the hallucination of LLMs generations, with the Natural Language
+Inference (NLI) metric increasing from 25% to 37% on HaluEval.",http://arxiv.org/pdf/2407.04693v1,2024-07-05,ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models,gpt-3.5-turbo,highly irrelevant,"The paper focuses on developing a framework to detect and mitigate hallucinations in large language models, which is not directly related to prompt engineering."
+Missed Causes and Ambiguous Effects: Counterfactuals Pose Challenges for Interpreting Neural Networks,['Aaron Mueller'],"Interpretability research takes counterfactual theories of causality for
+granted. Most causal methods rely on counterfactual interventions to inputs or
+the activations of particular model components, followed by observations of the
+change in models' output logits or behaviors. While this yields more faithful
+evidence than correlational methods, counterfactuals nonetheless have key
+problems that bias our findings in specific and predictable ways. Specifically,
+(i) counterfactual theories do not effectively capture multiple independently
+sufficient causes of the same effect, which leads us to miss certain causes
+entirely; and (ii) counterfactual dependencies in neural networks are generally
+not transitive, which complicates methods for extracting and interpreting
+causal graphs from neural networks. We discuss the implications of these
+challenges for interpretability researchers and propose concrete suggestions
+for future work.",http://arxiv.org/pdf/2407.04690v1,2024-07-05,Missed Causes and Ambiguous Effects: Counterfactuals Pose Challenges for Interpreting Neural Networks,gpt-3.5-turbo,highly irrelevant,"The paper focuses on interpretability of neural networks and causal methods, not on prompt engineering or hard prefix prompting."
+Lost in Translation: The Algorithmic Gap Between LMs and the Brain,"['Tommaso Tosato', 'Pascal Jr Tikeng Notsawo', 'Saskia Helbling', 'Irina Rish', 'Guillaume Dumas']","Language Models (LMs) have achieved impressive performance on various
+linguistic tasks, but their relationship to human language processing in the
+brain remains unclear. This paper examines the gaps and overlaps between LMs
+and the brain at different levels of analysis, emphasizing the importance of
+looking beyond input-output behavior to examine and compare the internal
+processes of these systems. We discuss how insights from neuroscience, such as
+sparsity, modularity, internal states, and interactive learning, can inform the
+development of more biologically plausible language models. Furthermore, we
+explore the role of scaling laws in bridging the gap between LMs and human
+cognition, highlighting the need for efficiency constraints analogous to those
+in biological systems. By developing LMs that more closely mimic brain
+function, we aim to advance both artificial intelligence and our understanding
+of human cognition.",http://arxiv.org/pdf/2407.04680v1,2024-07-05,Lost in Translation: The Algorithmic Gap Between LMs and the Brain,gpt-3.5-turbo,highly irrelevant,"The paper focuses on the development of language models that mimic brain functions and aim to advance artificial intelligence and human cognition, which is not directly related to prompt engineering."
+XQSV: A Structurally Variable Network to Imitate Human Play in Xiangqi,['Chenliang Zhou'],"In this paper, we introduce an innovative deep learning architecture, termed
+Xiangqi Structurally Variable (XQSV), designed to emulate the behavioral
+patterns of human players in Xiangqi, or Chinese Chess. The unique attribute of
+XQSV is its capacity to alter its structural configuration dynamically,
+optimizing performance for the task based on the particular subset of data on
+which it is trained. We have incorporated several design improvements to
+significantly enhance the network's predictive accuracy, including a local
+illegal move filter, an Elo range partitioning, a sequential one-dimensional
+input, and a simulation of imperfect memory capacity. Empirical evaluations
+reveal that XQSV attains a predictive accuracy of approximately 40%, with its
+performance peaking within the trained Elo range. This indicates the model's
+success in mimicking the play behavior of individuals within that specific
+range. A three-terminal Turing Test was employed to demonstrate that the XQSV
+model imitates human behavior more accurately than conventional Xiangqi
+engines, rendering it indistinguishable from actual human opponents. Given the
+inherent nondeterminism in human gameplay, we propose two supplementary relaxed
+evaluation metrics. To our knowledge, XQSV represents the first model to mimic
+Xiangqi players.",http://arxiv.org/pdf/2407.04678v1,2024-07-05,XQSV: A Structurally Variable Network to Imitate Human Play in Xiangqi,gpt-3.5-turbo,highly irrelevant,"The paper focuses on a novel deep learning architecture designed for a specific task in Xiangqi, without mentioning any relevance to prompt engineering or prefix prompts."
+Is plantar thermography a valid digital biomarker for characterising diabetic foot ulceration risk?,"['Akshay Jagadeesh', 'Chanchanok Aramrat', 'Aqsha Nur', 'Poppy Mallinson', 'Sanjay Kinra']","Background: In the absence of prospective data on diabetic foot ulcers (DFU),
+cross-sectional associations with causal risk factors (peripheral neuropathy,
+and peripheral arterial disease (PAD)) could be used to establish the validity
+of plantar thermography for DFU risk stratification.
+  Methods: First, we investigated the associations between the intrinsic
+clusters of plantar thermographic images with several DFU risk factors using an
+unsupervised deep-learning framework. We then studied associations between
+obtained thermography clusters and DFU risk factors. Second, to identify those
+associations with predictive power, we used supervised learning to train
+Convolutional Neural Network (CNN) regression/classification models that
+predicted the risk factor based on the thermograph (and visual) input.
+  Findings: Our dataset comprised 282 thermographs from type 2 diabetes
+mellitus patients (aged 56.31 +- 9.18 years, 51.42 % males). On clustering, we
+found two overlapping clusters (silhouette score = 0.10, indicating weak
+separation). There was strong evidence for associations between assigned
+clusters and several factors related to diabetic foot ulceration such as
+peripheral neuropathy, PAD, number of diabetes complications, and composite DFU
+risk prediction scores such as Martins-Mendes, PODUS-2020, and SIGN. However,
+models predicting said risk factors had poor performances.
+  Interpretation: The strong associations between intrinsic thermography
+clusters and several DFU risk factors support the validity of using
+thermography for characterising DFU risk. However, obtained associations did
+not prove to be predictive, likely due to, spectrum bias, or because
+thermography and classical risk factors characterise incompletely overlapping
+portions of the DFU risk construct. Our findings highlight the challenges in
+standardising ground truths when defining novel digital biomarkers.",http://arxiv.org/pdf/2407.04676v1,2024-07-05,Is plantar thermography a valid digital biomarker for characterising diabetic foot ulceration risk?,gpt-3.5-turbo,highly irrelevant,"The paper focuses on using deep learning frameworks, including Convolutional Neural Networks, to analyze thermographic images for diabetic foot ulcer risk assessment, which is not directly related to prompt engineering."
+Isomorphic Pruning for Vision Models,"['Gongfan Fang', 'Xinyin Ma', 'Michael Bi Mi', 'Xinchao Wang']","Structured pruning reduces the computational overhead of deep neural networks
+by removing redundant sub-structures. However, assessing the relative
+importance of different sub-structures remains a significant challenge,
+particularly in advanced vision models featuring novel mechanisms and
+architectures like self-attention, depth-wise convolutions, or residual
+connections. These heterogeneous substructures usually exhibit diverged
+parameter scales, weight distributions, and computational topology, introducing
+considerable difficulty to importance comparison. To overcome this, we present
+Isomorphic Pruning, a simple approach that demonstrates effectiveness across a
+range of network architectures such as Vision Transformers and CNNs, and
+delivers competitive performance across different model sizes. Isomorphic
+Pruning originates from an observation that, when evaluated under a pre-defined
+importance criterion, heterogeneous sub-structures demonstrate significant
+divergence in their importance distribution, as opposed to isomorphic
+structures that present similar importance patterns. This inspires us to
+perform isolated ranking and comparison on different types of sub-structures
+for more reliable pruning. Our empirical results on ImageNet-1K demonstrate
+that Isomorphic Pruning surpasses several pruning baselines dedicatedly
+designed for Transformers or CNNs. For instance, we improve the accuracy of
+DeiT-Tiny from 74.52% to 77.50% by pruning an off-the-shelf DeiT-Base model.
+And for ConvNext-Tiny, we enhanced performance from 82.06% to 82.18%, while
+reducing the number of parameters and memory usage. Code is available at
+\url{https://github.com/VainF/Isomorphic-Pruning}.",http://arxiv.org/pdf/2407.04616v1,2024-07-05,Isomorphic Pruning for Vision Models,gpt-3.5-turbo,highly irrelevant,"The paper focuses on structured pruning for vision models and improving network architectures like Vision Transformers, which are related to model optimization techniques rather than prompt engineering."
+VRSD: Rethinking Similarity and Diversity for Retrieval in Large Language Models,"['Hang Gao', 'Yongfeng Zhang']","Vector retrieval algorithms are vital for semantic queries in the evolving
+landscape of Large Language Models (LLMs). Retrieving vectors that
+simultaneously meet criteria for both similarity and diversity significantly
+enhances the capabilities of LLM-based agents. Despite the widespread use of
+the Maximal Marginal Relevance (MMR) in retrieval scenarios with relevance and
+diversity requirements, fluctuations caused by variations in the parameter $
+\lambda $ within the MMR complicate the determination of the optimization
+trajectory in vector spaces, thus obscuring the direction of enhancement.
+Moreover, there is a lack of a robust theoretical analysis for the constraints
+of similarity and diversity in retrieval processes. This paper introduces a
+novel approach to characterizing both constraints through the relationship
+between the sum vector and the query vector. The proximity of these vectors
+addresses the similarity constraint, while necessitating that individual
+vectors within the sum vector divergently align with the query vector to
+satisfy the diversity constraint. We also formulate a new combinatorial
+optimization challenge, taking a selection of $k$ vectors from a set of
+candidates such that their sum vector maximally aligns with the query vector, a
+problem we demonstrate to be NP-complete. This establishes the profound
+difficulty of pursuing similarity and diversity simultaneously in vector
+retrieval and lays a theoretical groundwork for further research. Additionally,
+we present the heuristic algorithm Vectors Retrieval with Similarity and
+Diversity (VRSD) which not only has a definitive optimization goal and eschews
+the need for preset parameters but also offers a modest reduction in time
+complexity compared to MMR. Empirical validation further confirm that VRSD
+significantly surpasses MMR across various datasets.",http://arxiv.org/pdf/2407.04573v1,2024-07-05,VRSD: Rethinking Similarity and Diversity for Retrieval in Large Language Models,gpt-3.5-turbo,highly irrelevant,"The paper focuses on retrieval algorithms and optimization challenges in large language models, which is not directly related to prompt engineering."
+Real-time Timbre Remapping with Differentiable DSP,"['Jordie Shier', 'Charalampos Saitis', 'Andrew Robertson', 'Andrew McPherson']","Timbre is a primary mode of expression in diverse musical contexts. However,
+prevalent audio-driven synthesis methods predominantly rely on pitch and
+loudness envelopes, effectively flattening timbral expression from the input.
+Our approach draws on the concept of timbre analogies and investigates how
+timbral expression from an input signal can be mapped onto controls for a
+synthesizer. Leveraging differentiable digital signal processing, our method
+facilitates direct optimization of synthesizer parameters through a novel
+feature difference loss. This loss function, designed to learn relative timbral
+differences between musical events, prioritizes the subtleties of graded timbre
+modulations within phrases, allowing for meaningful translations in a timbre
+space. Using snare drum performances as a case study, where timbral expression
+is central, we demonstrate real-time timbre remapping from acoustic snare drums
+to a differentiable synthesizer modeled after the Roland TR-808.",http://arxiv.org/pdf/2407.04547v1,2024-07-05,Real-time Timbre Remapping with Differentiable DSP,gpt-3.5-turbo,highly irrelevant,"The paper focuses on real-time timbre remapping using differentiable digital signal processing for musical synthesis, which is not directly related to hard prefix prompt engineering in NLP."
+PDiscoFormer: Relaxing Part Discovery Constraints with Vision Transformers,"['Ananthu Aniraj', 'Cassio F. Dantas', 'Dino Ienco', 'Diego Marcos']","Computer vision methods that explicitly detect object parts and reason on
+them are a step towards inherently interpretable models. Existing approaches
+that perform part discovery driven by a fine-grained classification task make
+very restrictive assumptions on the geometric properties of the discovered
+parts; they should be small and compact. Although this prior is useful in some
+cases, in this paper we show that pre-trained transformer-based vision models,
+such as self-supervised DINOv2 ViT, enable the relaxation of these constraints.
+In particular, we find that a total variation (TV) prior, which allows for
+multiple connected components of any size, substantially outperforms previous
+work. We test our approach on three fine-grained classification benchmarks:
+CUB, PartImageNet and Oxford Flowers, and compare our results to previously
+published methods as well as a re-implementation of the state-of-the-art method
+PDiscoNet with a transformer-based backbone. We consistently obtain substantial
+improvements across the board, both on part discovery metrics and the
+downstream classification task, showing that the strong inductive biases in
+self-supervised ViT models require to rethink the geometric priors that can be
+used for unsupervised part discovery.",http://arxiv.org/pdf/2407.04538v1,2024-07-05,PDiscoFormer: Relaxing Part Discovery Constraints with Vision Transformers,gpt-3.5-turbo,highly irrelevant,"The paper focuses on modifying existing transformer-based models to relax constraints in part discovery in computer vision, which is not directly related to prompt engineering."
