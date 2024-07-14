@@ -1,0 +1,546 @@
+title,authors,abstract,pdf_url,published,arxiv_id,Title,Model,Rating,Reasoning,image
+Real-Time Anomaly Detection and Reactive Planning with Large Language Models,"['Rohan Sinha', 'Amine Elhafsi', 'Christopher Agia', 'Matthew Foutter', 'Edward Schmerling', 'Marco Pavone']","Foundation models, e.g., large language models (LLMs), trained on
+internet-scale data possess zero-shot generalization capabilities that make
+them a promising technology towards detecting and mitigating
+out-of-distribution failure modes of robotic systems. Fully realizing this
+promise, however, poses two challenges: (i) mitigating the considerable
+computational expense of these models such that they may be applied online, and
+(ii) incorporating their judgement regarding potential anomalies into a safe
+control framework. In this work, we present a two-stage reasoning framework:
+First is a fast binary anomaly classifier that analyzes observations in an LLM
+embedding space, which may then trigger a slower fallback selection stage that
+utilizes the reasoning capabilities of generative LLMs. These stages correspond
+to branch points in a model predictive control strategy that maintains the
+joint feasibility of continuing along various fallback plans to account for the
+slow reasoner's latency as soon as an anomaly is detected, thus ensuring
+safety. We show that our fast anomaly classifier outperforms autoregressive
+reasoning with state-of-the-art GPT models, even when instantiated with
+relatively small language models. This enables our runtime monitor to improve
+the trustworthiness of dynamic robotic systems, such as quadrotors or
+autonomous vehicles, under resource and time constraints. Videos illustrating
+our approach in both simulation and real-world experiments are available on
+this project page: https://sites.google.com/view/aesop-llm.",http://arxiv.org/pdf/2407.08735v1,2024-07-11,2407.08735v1,Real-Time Anomaly Detection and Reactive Planning with Large Language Models,gpt-3.5-turbo,highly relevant,"The paper discusses utilizing large language models for anomaly detection and reactive planning, involving the analysis of observations in an LLM embedding space and triggering fallback selection stages based on reasoning capabilities of generative LLMs.",
+GTA: A Benchmark for General Tool Agents,"['Jize Wang', 'Zerun Ma', 'Yining Li', 'Songyang Zhang', 'Cailian Chen', 'Kai Chen', 'Xinyi Le']","Significant focus has been placed on integrating large language models (LLMs)
+with various tools in developing general-purpose agents. This poses a challenge
+to LLMs' tool-use capabilities. However, there are evident gaps between
+existing tool-use evaluations and real-world scenarios. Current evaluations
+often use AI-generated queries, single-step tasks, dummy tools, and text-only
+interactions, failing to reveal the agents' real-world problem-solving
+abilities effectively. To address this, we propose GTA, a benchmark for General
+Tool Agents, featuring three main aspects: (i) Real user queries: human-written
+queries with simple real-world objectives but implicit tool-use, requiring the
+LLM to reason the suitable tools and plan the solution steps. (ii) Real
+deployed tools: an evaluation platform equipped with tools across perception,
+operation, logic, and creativity categories to evaluate the agents' actual task
+execution performance. (iii) Real multimodal inputs: authentic image files,
+such as spatial scenes, web page screenshots, tables, code snippets, and
+printed/handwritten materials, used as the query contexts to align with
+real-world scenarios closely. We design 229 real-world tasks and executable
+tool chains to evaluate mainstream LLMs. Our findings show that real-world user
+queries are challenging for existing LLMs, with GPT-4 completing less than 50%
+of the tasks and most LLMs achieving below 25%. This evaluation reveals the
+bottlenecks in the tool-use capabilities of current LLMs in real-world
+scenarios, which provides future direction for advancing general-purpose tool
+agents. The code and dataset are available at
+https://github.com/open-compass/GTA.",http://arxiv.org/pdf/2407.08713v1,2024-07-11,2407.08713v1,GTA: A Benchmark for General Tool Agents,gpt-3.5-turbo,highly relevant,"The paper focuses on evaluating the tool-use capabilities of large language models (LLMs) in real-world scenarios, which aligns with the concept of prompt engineering by examining how models can effectively interact with tools through human-written queries.",
+eyeballvul: a future-proof benchmark for vulnerability detection in the wild,['Timothee Chauvin'],"Long contexts of recent LLMs have enabled a new use case: asking models to
+find security vulnerabilities in entire codebases. To evaluate model
+performance on this task, we introduce eyeballvul: a benchmark designed to test
+the vulnerability detection capabilities of language models at scale, that is
+sourced and updated weekly from the stream of published vulnerabilities in
+open-source repositories. The benchmark consists of a list of revisions in
+different repositories, each associated with the list of known vulnerabilities
+present at that revision. An LLM-based scorer is used to compare the list of
+possible vulnerabilities returned by a model to the list of known
+vulnerabilities for each revision. As of July 2024, eyeballvul contains 24,000+
+vulnerabilities across 6,000+ revisions and 5,000+ repositories, and is around
+55GB in size.",http://arxiv.org/pdf/2407.08708v1,2024-07-11,2407.08708v1,eyeballvul: a future-proof benchmark for vulnerability detection in the wild,gpt-3.5-turbo,highly relevant,"The paper focuses on evaluating model performance in detecting security vulnerabilities using language models, which involves prompting the model with code snippets to find vulnerabilities, making it highly relevant to prompt engineering.",
+Cloud Atlas: Efficient Fault Localization for Cloud Systems using Language Models and Causal Insight,"['Zhiqiang Xie', 'Yujia Zheng', 'Lizi Ottens', 'Kun Zhang', 'Christos Kozyrakis', 'Jonathan Mace']","Runtime failure and performance degradation is commonplace in modern cloud
+systems. For cloud providers, automatically determining the root cause of
+incidents is paramount to ensuring high reliability and availability as prompt
+fault localization can enable faster diagnosis and triage for timely
+resolution. A compelling solution explored in recent work is causal reasoning
+using causal graphs to capture relationships between varied cloud system
+performance metrics. To be effective, however, systems developers must
+correctly define the causal graph of their system, which is a time-consuming,
+brittle, and challenging task that increases in difficulty for large and
+dynamic systems and requires domain expertise. Alternatively, automated
+data-driven approaches have limited efficacy for cloud systems due to the
+inherent rarity of incidents. In this work, we present Atlas, a novel approach
+to automatically synthesizing causal graphs for cloud systems. Atlas leverages
+large language models (LLMs) to generate causal graphs using system
+documentation, telemetry, and deployment feedback. Atlas is complementary to
+data-driven causal discovery techniques, and we further enhance Atlas with a
+data-driven validation step. We evaluate Atlas across a range of fault
+localization scenarios and demonstrate that Atlas is capable of generating
+causal graphs in a scalable and generalizable manner, with performance that far
+surpasses that of data-driven algorithms and is commensurate to the
+ground-truth baseline.",http://arxiv.org/pdf/2407.08694v1,2024-07-11,2407.08694v1,Cloud Atlas: Efficient Fault Localization for Cloud Systems using Language Models and Causal Insight,gpt-3.5-turbo,highly relevant,"The paper focuses on using large language models to automatically generate causal graphs for fault localization in cloud systems, which involves the use of language models in a systematic manner related to prompt engineering.",
+CAD-Prompted Generative Models: A Pathway to Feasible and Novel Engineering Designs,"['Leah Chong', 'Jude Rayan', 'Steven Dow', 'Ioanna Lykourentzou', 'Faez Ahmed']","Text-to-image generative models have increasingly been used to assist
+designers during concept generation in various creative domains, such as
+graphic design, user interface design, and fashion design. However, their
+applications in engineering design remain limited due to the models' challenges
+in generating images of feasible designs concepts. To address this issue, this
+paper introduces a method that improves the design feasibility by prompting the
+generation with feasible CAD images. In this work, the usefulness of this
+method is investigated through a case study with a bike design task using an
+off-the-shelf text-to-image model, Stable Diffusion 2.1. A diverse set of bike
+designs are produced in seven different generation settings with varying CAD
+image prompting weights, and these designs are evaluated on their perceived
+feasibility and novelty. Results demonstrate that the CAD image prompting
+successfully helps text-to-image models like Stable Diffusion 2.1 create
+visibly more feasible design images. While a general tradeoff is observed
+between feasibility and novelty, when the prompting weight is kept low around
+0.35, the design feasibility is significantly improved while its novelty
+remains on par with those generated by text prompts alone. The insights from
+this case study offer some guidelines for selecting the appropriate CAD image
+prompting weight for different stages of the engineering design process. When
+utilized effectively, our CAD image prompting method opens doors to a wider
+range of applications of text-to-image models in engineering design.",http://arxiv.org/pdf/2407.08675v1,2024-07-11,2407.08675v1,CAD-Prompted Generative Models: A Pathway to Feasible and Novel Engineering Designs,gpt-3.5-turbo,highly relevant,"The paper introduces a method that improves design feasibility by prompting the generation with feasible CAD images, showcasing the use of prompting techniques in engineering design.",
+Uncertainty Estimation of Large Language Models in Medical Question Answering,"['Jiaxin Wu', 'Yizhou Yu', 'Hong-Yu Zhou']","Large Language Models (LLMs) show promise for natural language generation in
+healthcare, but risk hallucinating factually incorrect information. Deploying
+LLMs for medical question answering necessitates reliable uncertainty
+estimation (UE) methods to detect hallucinations. In this work, we benchmark
+popular UE methods with different model sizes on medical question-answering
+datasets. Our results show that current approaches generally perform poorly in
+this domain, highlighting the challenge of UE for medical applications. We also
+observe that larger models tend to yield better results, suggesting a
+correlation between model size and the reliability of UE. To address these
+challenges, we propose Two-phase Verification, a probability-free Uncertainty
+Estimation approach. First, an LLM generates a step-by-step explanation
+alongside its initial answer, followed by formulating verification questions to
+check the factual claims in the explanation. The model then answers these
+questions twice: first independently, and then referencing the explanation.
+Inconsistencies between the two sets of answers measure the uncertainty in the
+original response. We evaluate our approach on three biomedical
+question-answering datasets using Llama 2 Chat models and compare it against
+the benchmarked baseline methods. The results show that our Two-phase
+Verification method achieves the best overall accuracy and stability across
+various datasets and model sizes, and its performance scales as the model size
+increases.",http://arxiv.org/pdf/2407.08662v1,2024-07-11,2407.08662v1,Uncertainty Estimation of Large Language Models in Medical Question Answering,gpt-3.5-turbo,highly relevant,"The paper focuses on proposing a novel approach, Two-phase Verification, which involves generating step-by-step explanations alongside initial answers and formulating verification questions, aligning with the concept of prompt engineering.",
+$β$-DPO: Direct Preference Optimization with Dynamic $β$,"['Junkang Wu', 'Yuexiang Xie', 'Zhengyi Yang', 'Jiancan Wu', 'Jinyang Gao', 'Bolin Ding', 'Xiang Wang', 'Xiangnan He']","Direct Preference Optimization (DPO) has emerged as a compelling approach for
+training Large Language Models (LLMs) to adhere to human preferences. However,
+the performance of DPO is sensitive to the fine-tuning of its trade-off
+parameter $\beta$, as well as to the quality of the preference data. We analyze
+the impact of $\beta$ and data quality on DPO, uncovering that optimal $\beta$
+values vary with the informativeness of pairwise data. Addressing the
+limitations of static $\beta$ values, we introduce a novel framework that
+dynamically calibrates $\beta$ at the batch level, informed by data quality
+considerations. Additionally, our method incorporates $\beta$-guided data
+filtering to safeguard against the influence of outliers. Through empirical
+evaluation, we demonstrate that our dynamic $\beta$ adjustment technique
+significantly improves DPO's performance across a range of models and datasets,
+offering a more robust and adaptable training paradigm for aligning LLMs with
+human feedback. The code is available at
+\url{https://github.com/junkangwu/beta-DPO}.",http://arxiv.org/pdf/2407.08639v1,2024-07-11,2407.08639v1,$β$-DPO: Direct Preference Optimization with Dynamic $β$,gpt-3.5-turbo,highly relevant,"The paper focuses on optimizing training for Large Language Models (LLMs) with a novel framework for dynamic calibration of a trade-off parameter, which is relevant to the topic of prompt engineering.",
+On the Universal Truthfulness Hyperplane Inside LLMs,"['Junteng Liu', 'Shiqi Chen', 'Yu Cheng', 'Junxian He']","While large language models (LLMs) have demonstrated remarkable abilities
+across various fields, hallucination remains a significant challenge. Recent
+studies have explored hallucinations through the lens of internal
+representations, proposing mechanisms to decipher LLMs' adherence to facts.
+However, these approaches often fail to generalize to out-of-distribution data,
+leading to concerns about whether internal representation patterns reflect
+fundamental factual awareness, or only overfit spurious correlations on the
+specific datasets. In this work, we investigate whether a universal
+truthfulness hyperplane that distinguishes the model's factually correct and
+incorrect outputs exists within the model. To this end, we scale up the number
+of training datasets and conduct an extensive evaluation -- we train the
+truthfulness hyperplane on a diverse collection of over 40 datasets and examine
+its cross-task, cross-domain, and in-domain generalization. Our results
+indicate that increasing the diversity of the training datasets significantly
+enhances the performance in all scenarios, while the volume of data samples
+plays a less critical role. This finding supports the optimistic hypothesis
+that a universal truthfulness hyperplane may indeed exist within the model,
+offering promising directions for future research.",http://arxiv.org/pdf/2407.08582v1,2024-07-11,2407.08582v1,On the Universal Truthfulness Hyperplane Inside LLMs,gpt-3.5-turbo,highly relevant,"The paper focuses on investigating internal representations of a large language model (LLM) to decipher adherence to facts, which is a fundamental aspect of prompt engineering.",
+ElasticAST: An Audio Spectrogram Transformer for All Length and Resolutions,"['Jiu Feng', 'Mehmet Hamza Erol', 'Joon Son Chung', 'Arda Senocak']","Transformers have rapidly overtaken CNN-based architectures as the new
+standard in audio classification. Transformer-based models, such as the Audio
+Spectrogram Transformers (AST), also inherit the fixed-size input paradigm from
+CNNs. However, this leads to performance degradation for ASTs in the inference
+when input lengths vary from the training. This paper introduces an approach
+that enables the use of variable-length audio inputs with AST models during
+both training and inference. By employing sequence packing, our method
+ElasticAST, accommodates any audio length during training, thereby offering
+flexibility across all lengths and resolutions at the inference. This
+flexibility allows ElasticAST to maintain evaluation capabilities at various
+lengths or resolutions and achieve similar performance to standard ASTs trained
+at specific lengths or resolutions. Moreover, experiments demonstrate
+ElasticAST's better performance when trained and evaluated on native-length
+audio datasets.",http://arxiv.org/pdf/2407.08691v1,2024-07-11,2407.08691v1,ElasticAST: An Audio Spectrogram Transformer for All Length and Resolutions,gpt-3.5-turbo,somewhat relevant,"The paper focuses on developing a method to enable the use of variable-length inputs in Transformer models, which is a key aspect of prompt engineering.",
+Turn-Level Empathy Prediction Using Psychological Indicators,"['Shaz Furniturewala', 'Kokil Jaidka']","For the WASSA 2024 Empathy and Personality Prediction Shared Task, we propose
+a novel turn-level empathy detection method that decomposes empathy into six
+psychological indicators: Emotional Language, Perspective-Taking, Sympathy and
+Compassion, Extroversion, Openness, and Agreeableness. A pipeline of text
+enrichment using a Large Language Model (LLM) followed by DeBERTA fine-tuning
+demonstrates a significant improvement in the Pearson Correlation Coefficient
+and F1 scores for empathy detection, highlighting the effectiveness of our
+approach. Our system officially ranked 7th at the CONV-turn track.",http://arxiv.org/pdf/2407.08607v1,2024-07-11,2407.08607v1,Turn-Level Empathy Prediction Using Psychological Indicators,gpt-3.5-turbo,somewhat relevant,"The paper focuses on a novel method for empathy detection using a Large Language Model (LLM) and DeBERTA fine-tuning, which demonstrates effectiveness in improving empathy detection scores, aligning with prompt engineering techniques.",
+Tamil Language Computing: the Present and the Future,['Kengatharaiyer Sarveswaran'],"This paper delves into the text processing aspects of Language Computing,
+which enables computers to understand, interpret, and generate human language.
+Focusing on tasks such as speech recognition, machine translation, sentiment
+analysis, text summarization, and language modelling, language computing
+integrates disciplines including linguistics, computer science, and cognitive
+psychology to create meaningful human-computer interactions. Recent
+advancements in deep learning have made computers more accessible and capable
+of independent learning and adaptation. In examining the landscape of language
+computing, the paper emphasises foundational work like encoding, where Tamil
+transitioned from ASCII to Unicode, enhancing digital communication. It
+discusses the development of computational resources, including raw data,
+dictionaries, glossaries, annotated data, and computational grammars, necessary
+for effective language processing. The challenges of linguistic annotation, the
+creation of treebanks, and the training of large language models are also
+covered, emphasising the need for high-quality, annotated data and advanced
+language models. The paper underscores the importance of building practical
+applications for languages like Tamil to address everyday communication needs,
+highlighting gaps in current technology. It calls for increased research
+collaboration, digitization of historical texts, and fostering digital usage to
+ensure the comprehensive development of Tamil language processing, ultimately
+enhancing global communication and access to digital services.",http://arxiv.org/pdf/2407.08618v1,2024-07-11,2407.08618v1,Tamil Language Computing: the Present and the Future,gpt-3.5-turbo,neutrally relevant,"The paper focuses on the text processing aspects of language computing and deep learning advancements in language modelling, which are related to prompt engineering.",
+Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist,"['Zihao Zhou', 'Shudong Liu', 'Maizhen Ning', 'Wei Liu', 'Jindong Wang', 'Derek F. Wong', 'Xiaowei Huang', 'Qiufeng Wang', 'Kaizhu Huang']","Exceptional mathematical reasoning ability is one of the key features that
+demonstrate the power of large language models (LLMs). How to comprehensively
+define and evaluate the mathematical abilities of LLMs, and even reflect the
+user experience in real-world scenarios, has emerged as a critical issue.
+Current benchmarks predominantly concentrate on problem-solving capabilities,
+which presents a substantial risk of model overfitting and fails to accurately
+represent genuine mathematical reasoning abilities. In this paper, we argue
+that if a model really understands a problem, it should be robustly and readily
+applied across a diverse array of tasks. Motivated by this, we introduce
+MATHCHECK, a well-designed checklist for testing task generalization and
+reasoning robustness, as well as an automatic tool to generate checklists
+efficiently. MATHCHECK includes multiple mathematical reasoning tasks and
+robustness test types to facilitate a comprehensive evaluation of both
+mathematical reasoning ability and behavior testing. Utilizing MATHCHECK, we
+develop MATHCHECK-GSM and MATHCHECK-GEO to assess mathematical textual
+reasoning and multi-modal reasoning capabilities, respectively, serving as
+upgraded versions of benchmarks including GSM8k, GeoQA, UniGeo, and Geometry3K.
+We adopt MATHCHECK-GSM and MATHCHECK-GEO to evaluate over 20 LLMs and 11 MLLMs,
+assessing their comprehensive mathematical reasoning abilities. Our results
+demonstrate that while frontier LLMs like GPT-4o continue to excel in various
+abilities on the checklist, many other model families exhibit a significant
+decline. Further experiments indicate that, compared to traditional math
+benchmarks, MATHCHECK better reflects true mathematical abilities and
+represents mathematical intelligence more linearly, thereby supporting our
+design. On our MATHCHECK, we can easily conduct detailed behavior analysis to
+deeply investigate models.",http://arxiv.org/pdf/2407.08733v1,2024-07-11,2407.08733v1,Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on evaluating the mathematical reasoning abilities of large language models using a checklist, which does not directly relate to prompt engineering.",
+A Taxonomy for Data Contamination in Large Language Models,"['Medha Palavalli', 'Amanda Bertsch', 'Matthew R. Gormley']","Large language models pretrained on extensive web corpora demonstrate
+remarkable performance across a wide range of downstream tasks. However, a
+growing concern is data contamination, where evaluation datasets may be
+contained in the pretraining corpus, inflating model performance.
+Decontamination, the process of detecting and removing such data, is a
+potential solution; yet these contaminants may originate from altered versions
+of the test set, evading detection during decontamination. How different types
+of contamination impact the performance of language models on downstream tasks
+is not fully understood. We present a taxonomy that categorizes the various
+types of contamination encountered by LLMs during the pretraining phase and
+identify which types pose the highest risk. We analyze the impact of
+contamination on two key NLP tasks -- summarization and question answering --
+revealing how different types of contamination influence task performance
+during evaluation.",http://arxiv.org/pdf/2407.08716v1,2024-07-11,2407.08716v1,A Taxonomy for Data Contamination in Large Language Models,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on analyzing the impact of various types of contamination on language models during pretraining, which is not directly related to prompt engineering.",
+"Operationalizing the Blueprint for an AI Bill of Rights: Recommendations for Practitioners, Researchers, and Policy Makers","['Alex Oesterling', 'Usha Bhalla', 'Suresh Venkatasubramanian', 'Himabindu Lakkaraju']","As Artificial Intelligence (AI) tools are increasingly employed in diverse
+real-world applications, there has been significant interest in regulating
+these tools. To this end, several regulatory frameworks have been introduced by
+different countries worldwide. For example, the European Union recently passed
+the AI Act, the White House issued an Executive Order on safe, secure, and
+trustworthy AI, and the White House Office of Science and Technology Policy
+issued the Blueprint for an AI Bill of Rights (AI BoR). Many of these
+frameworks emphasize the need for auditing and improving the trustworthiness of
+AI tools, underscoring the importance of safety, privacy, explainability,
+fairness, and human fallback options. Although these regulatory frameworks
+highlight the necessity of enforcement, practitioners often lack detailed
+guidance on implementing them. Furthermore, the extensive research on
+operationalizing each of these aspects is frequently buried in technical papers
+that are difficult for practitioners to parse. In this write-up, we address
+this shortcoming by providing an accessible overview of existing literature
+related to operationalizing regulatory principles. We provide
+easy-to-understand summaries of state-of-the-art literature and highlight
+various gaps that exist between regulatory guidelines and existing AI research,
+including the trade-offs that emerge during operationalization. We hope that
+this work not only serves as a starting point for practitioners interested in
+learning more about operationalizing the regulatory guidelines outlined in the
+Blueprint for an AI BoR but also provides researchers with a list of critical
+open problems and gaps between regulations and state-of-the-art AI research.
+Finally, we note that this is a working paper and we invite feedback in line
+with the purpose of this document as described in the introduction.",http://arxiv.org/pdf/2407.08689v1,2024-07-11,2407.08689v1,"Operationalizing the Blueprint for an AI Bill of Rights: Recommendations for Practitioners, Researchers, and Policy Makers",gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on the operationalization of regulatory principles in AI, providing guidance on implementing regulatory frameworks, which is not directly related to the use of hard prefix prompts in language models.",
+SPOCKMIP: Segmentation of Vessels in MRAs with Enhanced Continuity using Maximum Intensity Projection as Loss,"['Chethan Radhakrishna', 'Karthikesh Varma Chintalapati', 'Sri Chandana Hudukula Ram Kumar', 'Raviteja Sutrave', 'Hendrik Mattern', 'Oliver Speck', 'Andreas Nürnberger', 'Soumick Chatterjee']","Identification of vessel structures of different sizes in biomedical images
+is crucial in the diagnosis of many neurodegenerative diseases. However, the
+sparsity of good-quality annotations of such images makes the task of vessel
+segmentation challenging. Deep learning offers an efficient way to segment
+vessels of different sizes by learning their high-level feature representations
+and the spatial continuity of such features across dimensions. Semi-supervised
+patch-based approaches have been effective in identifying small vessels of one
+to two voxels in diameter. This study focuses on improving the segmentation
+quality by considering the spatial correlation of the features using the
+Maximum Intensity Projection~(MIP) as an additional loss criterion. Two methods
+are proposed with the incorporation of MIPs of label segmentation on the
+single~(z-axis) and multiple perceivable axes of the 3D volume. The proposed
+MIP-based methods produce segmentations with improved vessel continuity, which
+is evident in visual examinations of ROIs. Patch-based training is improved by
+introducing an additional loss term, MIP loss, to penalise the predicted
+discontinuity of vessels. A training set of 14 volumes is selected from the
+StudyForrest dataset comprising of 18 7-Tesla 3D Time-of-Flight~(ToF) Magnetic
+Resonance Angiography (MRA) images. The generalisation performance of the
+method is evaluated using the other unseen volumes in the dataset. It is
+observed that the proposed method with multi-axes MIP loss produces better
+quality segmentations with a median Dice of $80.245 \pm 0.129$. Also, the
+method with single-axis MIP loss produces segmentations with a median Dice of
+$79.749 \pm 0.109$. Furthermore, a visual comparison of the ROIs in the
+predicted segmentation reveals a significant improvement in the continuity of
+the vessels when MIP loss is incorporated into training.",http://arxiv.org/pdf/2407.08655v1,2024-07-11,2407.08655v1,SPOCKMIP: Segmentation of Vessels in MRAs with Enhanced Continuity using Maximum Intensity Projection as Loss,gpt-3.5-turbo,somewhat irrelevant,"This paper focuses on enhancing the segmentation of vessels in biomedical images using deep learning techniques, specifically by incorporating Maximum Intensity Projection as an additional loss criterion. While it does involve deep learning and improving segmentation quality, it does not specifically mention prompt engineering.",
+FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision,"['Jay Shah', 'Ganesh Bikshandi', 'Ying Zhang', 'Vijay Thakkar', 'Pradeep Ramani', 'Tri Dao']","Attention, as a core layer of the ubiquitous Transformer architecture, is the
+bottleneck for large language models and long-context applications.
+FlashAttention elaborated an approach to speed up attention on GPUs through
+minimizing memory reads/writes. However, it has yet to take advantage of new
+capabilities present in recent hardware, with FlashAttention-2 achieving only
+35% utilization on the H100 GPU. We develop three main techniques to speed up
+attention on Hopper GPUs: exploiting asynchrony of the Tensor Cores and TMA to
+(1) overlap overall computation and data movement via warp-specialization and
+(2) interleave block-wise matmul and softmax operations, and (3) block
+quantization and incoherent processing that leverages hardware support for FP8
+low-precision. We demonstrate that our method, FlashAttention-3, achieves
+speedup on H100 GPUs by 1.5-2.0$\times$ with FP16 reaching up to 740 TFLOPs/s
+(75% utilization), and with FP8 reaching close to 1.2 PFLOPs/s. We validate
+that FP8 FlashAttention-3 achieves 2.6$\times$ lower numerical error than a
+baseline FP8 attention.",http://arxiv.org/pdf/2407.08608v1,2024-07-11,2407.08608v1,FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on optimizing attention mechanisms in Transformer models using new techniques and hardware support, rather than on prompt engineering.",
+The Synergy between Data and Multi-Modal Large Language Models: A Survey from Co-Development Perspective,"['Zhen Qin', 'Daoyuan Chen', 'Wenhao Zhang', 'Liuyi Yao', 'Yilun Huang', 'Bolin Ding', 'Yaliang Li', 'Shuiguang Deng']","The rapid development of large language models (LLMs) has been witnessed in
+recent years. Based on the powerful LLMs, multi-modal LLMs (MLLMs) extend the
+modality from text to a broader spectrum of domains, attracting widespread
+attention due to the broader range of application scenarios. As LLMs and MLLMs
+rely on vast amounts of model parameters and data to achieve emergent
+capabilities, the importance of data is receiving increasingly widespread
+attention and recognition. Tracing and analyzing recent data-oriented works for
+MLLMs, we find that the development of models and data is not two separate
+paths but rather interconnected. On the one hand, vaster and higher-quality
+data contribute to better performance of MLLMs, on the other hand, MLLMs can
+facilitate the development of data. The co-development of multi-modal data and
+MLLMs requires a clear view of 1) at which development stage of MLLMs can
+specific data-centric approaches be employed to enhance which capabilities, and
+2) by utilizing which capabilities and acting as which roles can models
+contribute to multi-modal data. To promote the data-model co-development for
+MLLM community, we systematically review existing works related to MLLMs from
+the data-model co-development perspective. A regularly maintained project
+associated with this survey is accessible at
+https://github.com/modelscope/data-juicer/blob/main/docs/awesome_llm_data.md.",http://arxiv.org/pdf/2407.08583v1,2024-07-11,2407.08583v1,The Synergy between Data and Multi-Modal Large Language Models: A Survey from Co-Development Perspective,gpt-3.5-turbo,somewhat irrelevant,"The paper focuses on the development and enhancement of large language models (LLMs) and multi-modal LLMs through the synergy between data and models, without mentioning any specific information related to prompt engineering or hard prefix prompts.",
+Video Diffusion Alignment via Reward Gradients,"['Mihir Prabhudesai', 'Russell Mendonca', 'Zheyang Qin', 'Katerina Fragkiadaki', 'Deepak Pathak']","We have made significant progress towards building foundational video
+diffusion models. As these models are trained using large-scale unsupervised
+data, it has become crucial to adapt these models to specific downstream tasks.
+Adapting these models via supervised fine-tuning requires collecting target
+datasets of videos, which is challenging and tedious. In this work, we utilize
+pre-trained reward models that are learned via preferences on top of powerful
+vision discriminative models to adapt video diffusion models. These models
+contain dense gradient information with respect to generated RGB pixels, which
+is critical to efficient learning in complex search spaces, such as videos. We
+show that backpropagating gradients from these reward models to a video
+diffusion model can allow for compute and sample efficient alignment of the
+video diffusion model. We show results across a variety of reward models and
+video diffusion models, demonstrating that our approach can learn much more
+efficiently in terms of reward queries and computation than prior gradient-free
+approaches. Our code, model weights,and more visualization are available at
+https://vader-vid.github.io.",http://arxiv.org/pdf/2407.08737v1,2024-07-11,2407.08737v1,Video Diffusion Alignment via Reward Gradients,gpt-3.5-turbo,highly irrelevant,"The paper focuses on adapting video diffusion models using pre-trained reward models and backpropagating gradients, which is not directly related to prompt engineering.",
+Transformer Circuit Faithfulness Metrics are not Robust,"['Joseph Miller', 'Bilal Chughtai', 'William Saunders']","Mechanistic interpretability work attempts to reverse engineer the learned
+algorithms present inside neural networks. One focus of this work has been to
+discover 'circuits' -- subgraphs of the full model that explain behaviour on
+specific tasks. But how do we measure the performance of such circuits? Prior
+work has attempted to measure circuit 'faithfulness' -- the degree to which the
+circuit replicates the performance of the full model. In this work, we survey
+many considerations for designing experiments that measure circuit faithfulness
+by ablating portions of the model's computation. Concerningly, we find existing
+methods are highly sensitive to seemingly insignificant changes in the ablation
+methodology. We conclude that existing circuit faithfulness scores reflect both
+the methodological choices of researchers as well as the actual components of
+the circuit - the task a circuit is required to perform depends on the ablation
+used to test it. The ultimate goal of mechanistic interpretability work is to
+understand neural networks, so we emphasize the need for more clarity in the
+precise claims being made about circuits. We open source a library at
+https://github.com/UFO-101/auto-circuit that includes highly efficient
+implementations of a wide range of ablation methodologies and circuit discovery
+algorithms.",http://arxiv.org/pdf/2407.08734v1,2024-07-11,2407.08734v1,Transformer Circuit Faithfulness Metrics are not Robust,gpt-3.5-turbo,highly irrelevant,"The paper focuses on circuit faithfulness metrics and interpretability of neural networks, rather than prompt engineering.",
+MetaUrban: A Simulation Platform for Embodied AI in Urban Spaces,"['Wayne Wu', 'Honglin He', 'Yiran Wang', 'Chenda Duan', 'Jack He', 'Zhizheng Liu', 'Quanyi Li', 'Bolei Zhou']","Public urban spaces like streetscapes and plazas serve residents and
+accommodate social life in all its vibrant variations. Recent advances in
+Robotics and Embodied AI make public urban spaces no longer exclusive to
+humans. Food delivery bots and electric wheelchairs have started sharing
+sidewalks with pedestrians, while diverse robot dogs and humanoids have
+recently emerged in the street. Ensuring the generalizability and safety of
+these forthcoming mobile machines is crucial when navigating through the
+bustling streets in urban spaces. In this work, we present MetaUrban, a
+compositional simulation platform for Embodied AI research in urban spaces.
+MetaUrban can construct an infinite number of interactive urban scenes from
+compositional elements, covering a vast array of ground plans, object
+placements, pedestrians, vulnerable road users, and other mobile agents'
+appearances and dynamics. We design point navigation and social navigation
+tasks as the pilot study using MetaUrban for embodied AI research and establish
+various baselines of Reinforcement Learning and Imitation Learning. Experiments
+demonstrate that the compositional nature of the simulated environments can
+substantially improve the generalizability and safety of the trained mobile
+agents. MetaUrban will be made publicly available to provide more research
+opportunities and foster safe and trustworthy embodied AI in urban spaces.",http://arxiv.org/pdf/2407.08725v1,2024-07-11,2407.08725v1,MetaUrban: A Simulation Platform for Embodied AI in Urban Spaces,gpt-3.5-turbo,highly irrelevant,"The paper focuses on the development of a simulation platform for Embodied AI research in urban spaces, without mentioning post-training prompting techniques or hard prefix prompting.",
+WhisperNetV2: SlowFast Siamese Network For Lip-Based Biometrics,"['Abdollah Zakeri', 'Hamid Hassanpour', 'Mohammad Hossein Khosravi', 'Amir Masoud Nourollah']","Lip-based biometric authentication (LBBA) has attracted many researchers
+during the last decade. The lip is specifically interesting for biometric
+researchers because it is a twin biometric with the potential to function both
+as a physiological and a behavioral trait. Although much valuable research was
+conducted on LBBA, none of them considered the different emotions of the client
+during the video acquisition step of LBBA, which can potentially affect the
+client's facial expressions and speech tempo. We proposed a novel network
+structure called WhisperNetV2, which extends our previously proposed network
+called WhisperNet. Our proposed network leverages a deep Siamese structure with
+triplet loss having three identical SlowFast networks as embedding networks.
+The SlowFast network is an excellent candidate for our task since the fast
+pathway extracts motion-related features (behavioral lip movements) with a high
+frame rate and low channel capacity. The slow pathway extracts visual features
+(physiological lip appearance) with a low frame rate and high channel capacity.
+Using an open-set protocol, we trained our network using the CREMA-D dataset
+and acquired an Equal Error Rate (EER) of 0.005 on the test set. Considering
+that the acquired EER is less than most similar LBBA methods, our method can be
+considered as a state-of-the-art LBBA method.",http://arxiv.org/pdf/2407.08717v1,2024-07-11,2407.08717v1,WhisperNetV2: SlowFast Siamese Network For Lip-Based Biometrics,gpt-3.5-turbo,highly irrelevant,"The paper focuses on the development of a specialized network for lip-based biometric authentication, and does not mention any form of prompting or prompt engineering.",
+Towards Efficient Deployment of Hybrid SNNs on Neuromorphic and Edge AI Hardware,"['James Seekings', 'Peyton Chandarana', 'Mahsa Ardakani', 'MohammadReza Mohammadi', 'Ramtin Zand']","This paper explores the synergistic potential of neuromorphic and edge
+computing to create a versatile machine learning (ML) system tailored for
+processing data captured by dynamic vision sensors. We construct and train
+hybrid models, blending spiking neural networks (SNNs) and artificial neural
+networks (ANNs) using PyTorch and Lava frameworks. Our hybrid architecture
+integrates an SNN for temporal feature extraction and an ANN for
+classification. We delve into the challenges of deploying such hybrid
+structures on hardware. Specifically, we deploy individual components on
+Intel's Neuromorphic Processor Loihi (for SNN) and Jetson Nano (for ANN). We
+also propose an accumulator circuit to transfer data from the spiking to the
+non-spiking domain. Furthermore, we conduct comprehensive performance analyses
+of hybrid SNN-ANN models on a heterogeneous system of neuromorphic and edge AI
+hardware, evaluating accuracy, latency, power, and energy consumption. Our
+findings demonstrate that the hybrid spiking networks surpass the baseline ANN
+model across all metrics and outperform the baseline SNN model in accuracy and
+latency.",http://arxiv.org/pdf/2407.08704v1,2024-07-11,2407.08704v1,Towards Efficient Deployment of Hybrid SNNs on Neuromorphic and Edge AI Hardware,gpt-3.5-turbo,highly irrelevant,"This paper focuses on the development and deployment of hybrid neural network models on specific hardware platforms, without mentioning prompt engineering or hard prefix prompts.",
+Flex-TPU: A Flexible TPU with Runtime Reconfigurable Dataflow Architecture,"['Mohammed Elbtity', 'Peyton Chandarana', 'Ramtin Zand']","Tensor processing units (TPUs) are one of the most well-known machine
+learning (ML) accelerators utilized at large scale in data centers as well as
+in tiny ML applications. TPUs offer several improvements and advantages over
+conventional ML accelerators, like graphical processing units (GPUs), being
+designed specifically to perform the multiply-accumulate (MAC) operations
+required in the matrix-matrix and matrix-vector multiplies extensively present
+throughout the execution of deep neural networks (DNNs). Such improvements
+include maximizing data reuse and minimizing data transfer by leveraging the
+temporal dataflow paradigms provided by the systolic array architecture. While
+this design provides a significant performance benefit, the current
+implementations are restricted to a single dataflow consisting of either input,
+output, or weight stationary architectures. This can limit the achievable
+performance of DNN inference and reduce the utilization of compute units.
+Therefore, the work herein consists of developing a reconfigurable dataflow
+TPU, called the Flex-TPU, which can dynamically change the dataflow per layer
+during run-time. Our experiments thoroughly test the viability of the Flex-TPU
+comparing it to conventional TPU designs across multiple well-known ML
+workloads. The results show that our Flex-TPU design achieves a significant
+performance increase of up to 2.75x compared to conventional TPU, with only
+minor area and power overheads.",http://arxiv.org/pdf/2407.08700v1,2024-07-11,2407.08700v1,Flex-TPU: A Flexible TPU with Runtime Reconfigurable Dataflow Architecture,gpt-3.5-turbo,highly irrelevant,"The paper focuses on developing a flexible TPU with a reconfigurable dataflow architecture, which is not directly related to prompt engineering.",
+Confidence-based Estimators for Predictive Performance in Model Monitoring,"['Juhani Kivimäki', 'Jakub Białek', 'Jukka K. Nurminen', 'Wojtek Kuberski']","After a machine learning model has been deployed into production, its
+predictive performance needs to be monitored. Ideally, such monitoring can be
+carried out by comparing the model's predictions against ground truth labels.
+For this to be possible, the ground truth labels must be available relatively
+soon after inference. However, there are many use cases where ground truth
+labels are available only after a significant delay, or in the worst case, not
+at all. In such cases, directly monitoring the model's predictive performance
+is impossible.
+  Recently, novel methods for estimating the predictive performance of a model
+when ground truth is unavailable have been developed. Many of these methods
+leverage model confidence or other uncertainty estimates and are experimentally
+compared against a naive baseline method, namely Average Confidence (AC), which
+estimates model accuracy as the average of confidence scores for a given set of
+predictions. However, until now the theoretical properties of the AC method
+have not been properly explored. In this paper, we try to fill this gap by
+reviewing the AC method and show that under certain general assumptions, it is
+an unbiased and consistent estimator of model accuracy with many desirable
+properties. We also compare this baseline estimator against some more complex
+estimators empirically and show that in many cases the AC method is able to
+beat the others, although the comparative quality of the different estimators
+is heavily case-dependent.",http://arxiv.org/pdf/2407.08649v1,2024-07-11,2407.08649v1,Confidence-based Estimators for Predictive Performance in Model Monitoring,gpt-3.5-turbo,highly irrelevant,"This paper focuses on estimating the predictive performance of a model using confidence scores and comparing different estimation methods, which is not directly related to prompt engineering.",
+Towards Building Specialized Generalist AI with System 1 and System 2 Fusion,"['Kaiyan Zhang', 'Biqing Qi', 'Bowen Zhou']","In this perspective paper, we introduce the concept of Specialized Generalist
+Artificial Intelligence (SGAI or simply SGI) as a crucial milestone toward
+Artificial General Intelligence (AGI). Compared to directly scaling general
+abilities, SGI is defined as AI that specializes in at least one task,
+surpassing human experts, while also retaining general abilities. This fusion
+path enables SGI to rapidly achieve high-value areas. We categorize SGI into
+three stages based on the level of mastery over professional skills and
+generality performance. Additionally, we discuss the necessity of SGI in
+addressing issues associated with large language models, such as their
+insufficient generality, specialized capabilities, uncertainty in innovation,
+and practical applications. Furthermore, we propose a conceptual framework for
+developing SGI that integrates the strengths of Systems 1 and 2 cognitive
+processing. This framework comprises three layers and four key components,
+which focus on enhancing individual abilities and facilitating collaborative
+evolution. We conclude by summarizing the potential challenges and suggesting
+future directions. We hope that the proposed SGI will provide insights into
+further research and applications towards achieving AGI.",http://arxiv.org/pdf/2407.08642v1,2024-07-11,2407.08642v1,Towards Building Specialized Generalist AI with System 1 and System 2 Fusion,gpt-3.5-turbo,highly irrelevant,The paper focuses on the development of specialized generalist AI and does not specifically mention hard prefix prompting or prompt engineering.,
+A Novel Framework for Automated Warehouse Layout Generation,"['Atefeh Shahroudnejad', 'Payam Mousavi', 'Oleksii Perepelytsia', 'Sahir', 'David Staszak', 'Matthew E. Taylor', 'Brent Bawel']","Optimizing warehouse layouts is crucial due to its significant impact on
+efficiency and productivity. We present an AI-driven framework for automated
+warehouse layout generation. This framework employs constrained beam search to
+derive optimal layouts within given spatial parameters, adhering to all
+functional requirements. The feasibility of the generated layouts is verified
+based on criteria such as item accessibility, required minimum clearances, and
+aisle connectivity. A scoring function is then used to evaluate the feasible
+layouts considering the number of storage locations, access points, and
+accessibility costs. We demonstrate our method's ability to produce feasible,
+optimal layouts for a variety of warehouse dimensions and shapes, diverse door
+placements, and interconnections. This approach, currently being prepared for
+deployment, will enable human designers to rapidly explore and confirm options,
+facilitating the selection of the most appropriate layout for their use-case.",http://arxiv.org/pdf/2407.08633v1,2024-07-11,2407.08633v1,A Novel Framework for Automated Warehouse Layout Generation,gpt-3.5-turbo,highly irrelevant,The paper focuses on the development of an AI-driven framework for generating warehouse layouts and does not mention any connection to prompt engineering or hard prefix prompting.,
+A Review of Nine Physics Engines for Reinforcement Learning Research,"['Michael Kaup', 'Cornelius Wolff', 'Hyerim Hwang', 'Julius Mayer', 'Elia Bruni']","We present a review of popular simulation engines and frameworks used in
+reinforcement learning (RL) research, aiming to guide researchers in selecting
+tools for creating simulated physical environments for RL and training setups.
+It evaluates nine frameworks (Brax, Chrono, Gazebo, MuJoCo, ODE, PhysX,
+PyBullet, Webots, and Unity) based on their popularity, feature range, quality,
+usability, and RL capabilities. We highlight the challenges in selecting and
+utilizing physics engines for RL research, including the need for detailed
+comparisons and an understanding of each framework's capabilities. Key findings
+indicate MuJoCo as the leading framework due to its performance and
+flexibility, despite usability challenges. Unity is noted for its ease of use
+but lacks scalability and simulation fidelity. The study calls for further
+development to improve simulation engines' usability and performance and
+stresses the importance of transparency and reproducibility in RL research.
+This review contributes to the RL community by offering insights into the
+selection process for simulation engines, facilitating informed
+decision-making.",http://arxiv.org/pdf/2407.08590v1,2024-07-11,2407.08590v1,A Review of Nine Physics Engines for Reinforcement Learning Research,gpt-3.5-turbo,highly irrelevant,The paper focuses on evaluating simulation engines for reinforcement learning research and does not mention prompt engineering or hard prefix prompting.,
+HACMan++: Spatially-Grounded Motion Primitives for Manipulation,"['Bowen Jiang', 'Yilin Wu', 'Wenxuan Zhou', 'Chris Paxton', 'David Held']","Although end-to-end robot learning has shown some success for robot
+manipulation, the learned policies are often not sufficiently robust to
+variations in object pose or geometry. To improve the policy generalization, we
+introduce spatially-grounded parameterized motion primitives in our method
+HACMan++. Specifically, we propose an action representation consisting of three
+components: what primitive type (such as grasp or push) to execute, where the
+primitive will be grounded (e.g. where the gripper will make contact with the
+world), and how the primitive motion is executed, such as parameters specifying
+the push direction or grasp orientation. These three components define a novel
+discrete-continuous action space for reinforcement learning. Our framework
+enables robot agents to learn to chain diverse motion primitives together and
+select appropriate primitive parameters to complete long-horizon manipulation
+tasks. By grounding the primitives on a spatial location in the environment,
+our method is able to effectively generalize across object shape and pose
+variations. Our approach significantly outperforms existing methods,
+particularly in complex scenarios demanding both high-level sequential
+reasoning and object generalization. With zero-shot sim-to-real transfer, our
+policy succeeds in challenging real-world manipulation tasks, with
+generalization to unseen objects. Videos can be found on the project website:
+https://sgmp-rss2024.github.io.",http://arxiv.org/pdf/2407.08585v1,2024-07-11,2407.08585v1,HACMan++: Spatially-Grounded Motion Primitives for Manipulation,gpt-3.5-turbo,highly irrelevant,"The paper focuses on introducing spatially-grounded parameterized motion primitives for robot manipulation, which does not directly relate to hard prefix prompting or prompt engineering.",
+Multi-Group Proportional Representation,"['Alex Oesterling', 'Claudio Mayrink Verdun', 'Carol Xuan Long', 'Alex Glynn', 'Lucas Monteiro Paes', 'Sajani Vithana', 'Martina Cardone', 'Flavio P. Calmon']","Image search and retrieval tasks can perpetuate harmful stereotypes, erase
+cultural identities, and amplify social disparities. Current approaches to
+mitigate these representational harms balance the number of retrieved items
+across population groups defined by a small number of (often binary)
+attributes. However, most existing methods overlook intersectional groups
+determined by combinations of group attributes, such as gender, race, and
+ethnicity. We introduce Multi-Group Proportional Representation (MPR), a novel
+metric that measures representation across intersectional groups. We develop
+practical methods for estimating MPR, provide theoretical guarantees, and
+propose optimization algorithms to ensure MPR in retrieval. We demonstrate that
+existing methods optimizing for equal and proportional representation metrics
+may fail to promote MPR. Crucially, our work shows that optimizing MPR yields
+more proportional representation across multiple intersectional groups
+specified by a rich function class, often with minimal compromise in retrieval
+accuracy.",http://arxiv.org/pdf/2407.08571v1,2024-07-11,2407.08571v1,Multi-Group Proportional Representation,gpt-3.5-turbo,highly irrelevant,"The paper is focused on a metric for representation across intersectional groups in image search and retrieval tasks, and does not mention prompt engineering.",
+The Career Interests of Large Language Models,"['Meng Hua', 'Yuan Cheng', 'Hengshu Zhu']","Recent advancements in Large Language Models (LLMs) have significantly
+extended their capabilities, evolving from basic text generation to complex,
+human-like interactions. In light of the possibilities that LLMs could assume
+significant workplace responsibilities, it becomes imminently necessary to
+explore LLMs' capacities as professional assistants. This study focuses on the
+aspect of career interests by applying the Occupation Network's Interest
+Profiler short form to LLMs as if they were human participants and investigates
+their hypothetical career interests and competence, examining how these vary
+with language changes and model advancements. We analyzed the answers using a
+general linear mixed model approach and found distinct career interest
+inclinations among LLMs, particularly towards the social and artistic domains.
+Interestingly, these preferences did not align with the occupations where LLMs
+exhibited higher competence. This novel approach of using psychometric
+instruments and sophisticated statistical tools on LLMs unveils fresh
+perspectives on their integration into professional environments, highlighting
+human-like tendencies and promoting a reevaluation of LLMs' self-perception and
+competency alignment in the workforce.",http://arxiv.org/pdf/2407.08564v1,2024-07-11,2407.08564v1,The Career Interests of Large Language Models,gpt-3.5-turbo,highly irrelevant,"The paper does not focus on prompt engineering or hard prefix prompting, but rather on the career interests and competencies of Large Language Models.",
