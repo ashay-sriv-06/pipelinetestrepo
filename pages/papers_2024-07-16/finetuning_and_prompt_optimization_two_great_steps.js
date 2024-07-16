@@ -41,7 +41,7 @@ http://dspy.ai</p>
 
       <div className="bg-gray-100 p-4 rounded-lg mb-6">
         <h2 className="text-xl font-semibold mb-2">AI-Generated Summary</h2>
-        <p>The paper discusses the optimization of prompting strategies in multi-stage NLP pipelines, which aligns with the topic of prompt engineering.</p>
+        <p>The paper talks about optimizing prompting strategies along with tuning the underlying LM weights, which strongly suggests it is deeply engaged with the concept of prompt engineering.</p>
       </div>
 
       <a 
