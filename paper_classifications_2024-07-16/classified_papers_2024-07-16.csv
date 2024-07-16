@@ -13,7 +13,7 @@ mathematical reasoning, and feature-based classification, we find that simple
 approaches for optimizing the prompts and weights together outperform directly
 optimizing weights alone and prompts alone by up to 65% and 5%, respectively,
 on average across LMs and tasks. We will release our new optimizers in DSPy at
-http://dspy.ai",http://arxiv.org/pdf/2407.10930v1,2024-07-15,2407.10930v1,Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together,gpt-4,highly relevant,"The paper discusses the optimization of prompting strategies in multi-stage NLP pipelines, which aligns with the topic of prompt engineering.",,
+http://dspy.ai",http://arxiv.org/pdf/2407.10930v1,2024-07-15,2407.10930v1,Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together,gpt-4,highly relevant,"The paper talks about optimizing prompting strategies along with tuning the underlying LM weights, which strongly suggests it is deeply engaged with the concept of prompt engineering.",,
 VGBench: Evaluating Large Language Models on Vector Graphics Understanding and Generation,"['Bocheng Zou', 'Mu Cai', 'Jianrui Zhang', 'Yong Jae Lee']","In the realm of vision models, the primary mode of representation is using
 pixels to rasterize the visual world. Yet this is not always the best or unique
 way to represent visual content, especially for designers and artists who
@@ -30,7 +30,7 @@ question types, (d) wide range of prompting techniques, (e) under multiple
 LLMs. Evaluating on our collected 4279 understanding and 5845 generation
 samples, we find that LLMs show strong capability on both aspects while
 exhibiting less desirable performance on low-level formats (SVG). Both data and
-evaluation pipeline will be open-sourced at https://vgbench.github.io.",http://arxiv.org/pdf/2407.10972v1,2024-07-15,2407.10972v1,VGBench: Evaluating Large Language Models on Vector Graphics Understanding and Generation,gpt-4,somewhat relevant,"The paper touches on the topic of prompt engineering when stating it considers a 'wide range of prompting techniques' in relation to the evaluation of Large Language Models handling vector graphics. However, it does not specifically address hard prefix prompting.",,
+evaluation pipeline will be open-sourced at https://vgbench.github.io.",http://arxiv.org/pdf/2407.10972v1,2024-07-15,2407.10972v1,VGBench: Evaluating Large Language Models on Vector Graphics Understanding and Generation,gpt-4,somewhat relevant,"The paper mentions the use of a wide range of prompting techniques in the context of large language models handling vector graphics, but it does not specify if these are hard or soft prefix prompts.",,
 An Actionable Framework for Assessing Bias and Fairness in Large Language Model Use Cases,['Dylan Bouchard'],"Large language models (LLMs) can exhibit bias in a variety of ways. Such
 biases can create or exacerbate unfair outcomes for certain groups within a
 protected attribute, including, but not limited to sex, race, sexual
@@ -47,7 +47,7 @@ itself, the sensitivity of both prompt-risk and model-risk are taken into
 account by defining evaluations at the level of an LLM use case, characterized
 by a model and a population of prompts. Furthermore, because all of the
 evaluation metrics are calculated solely using the LLM output, the proposed
-framework is highly practical and easily actionable for practitioners.",http://arxiv.org/pdf/2407.10853v1,2024-07-15,2407.10853v1,An Actionable Framework for Assessing Bias and Fairness in Large Language Model Use Cases,gpt-4,somewhat irrelevant,"The paper involves a study about bias and fairness in large language models and the risks that come with them, but does not specifically discuss or focus on hard prefix prompting or prompt engineering.",,
+framework is highly practical and easily actionable for practitioners.",http://arxiv.org/pdf/2407.10853v1,2024-07-15,2407.10853v1,An Actionable Framework for Assessing Bias and Fairness in Large Language Model Use Cases,gpt-4,somewhat relevant,"The paper focuses on assessing bias and fairness in large language models and mentions the sensitivity of prompt-risk, but it does not delve into hard prefix prompting or specific prompt engineering techniques.",,
 Qwen2-Audio Technical Report,"['Yunfei Chu', 'Jin Xu', 'Qian Yang', 'Haojie Wei', 'Xipin Wei', 'Zhifang Guo', 'Yichong Leng', 'Yuanjun Lv', 'Jinzheng He', 'Junyang Lin', 'Chang Zhou', 'Jingren Zhou']","We introduce the latest progress of Qwen-Audio, a large-scale audio-language
 model called Qwen2-Audio, which is capable of accepting various audio signal
 inputs and performing audio analysis or direct textual responses with regard to
@@ -70,53 +70,7 @@ desired behavior. According to the evaluation results from AIR-Bench,
 Qwen2-Audio outperformed previous SOTAs, such as Gemini-1.5-pro, in tests
 focused on audio-centric instruction-following capabilities. Qwen2-Audio is
 open-sourced with the aim of fostering the advancement of the multi-modal
-language community.",http://arxiv.org/pdf/2407.10759v1,2024-07-15,2407.10759v1,Qwen2-Audio Technical Report,gpt-4,somewhat irrelevant,"While the paper appears to involve the use of natural language prompts in some way, it does not clearly discuss the use of hard prefix prompts or delve into prompt engineering strategies. Moreover, the focus is more on the model's audio language capabilities rather than prompt engineering.",,
-Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks,"['Andrew Halterman', 'Katherine A. Keith']","Codebooks -- documents that operationalize constructs and outline annotation
-procedures -- are used almost universally by social scientists when coding
-unstructured political texts. Recently, to reduce manual annotation costs,
-political scientists have looked to generative large language models (LLMs) to
-label and analyze text data. However, previous work using LLMs for
-classification has implicitly relied on the universal label assumption --
-correct classification of documents is possible using only a class label or
-minimal definition and the information that the LLM inductively learns during
-its pre-training. In contrast, we argue that political scientists who care
-about valid measurement should instead make a codebook-construct label
-assumption -- an LLM should follow the definition and exclusion criteria of a
-construct/label provided in a codebook. In this work, we collect and curate
-three political science datasets and their original codebooks and conduct a set
-of experiments to understand whether LLMs comply with codebook instructions,
-whether rewriting codebooks improves performance, and whether
-instruction-tuning LLMs on codebook-document-label tuples improves performance
-over zero-shot classification. Using Mistral 7B Instruct as our LLM, we find
-re-structuring the original codebooks gives modest gains in zero-shot
-performance but the model still struggles to comply with the constraints of the
-codebooks. Optimistically, instruction-tuning Mistral on one of our datasets
-gives significant gains over zero-shot inference (0.76 versus 0.53 micro F1).
-We hope our conceptualization of the codebook-specific task, assumptions, and
-instruction-tuning pipeline as well our semi-structured LLM codebook format
-will help political scientists readily adapt to the LLM era.",http://arxiv.org/pdf/2407.10747v1,2024-07-15,2407.10747v1,Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks,gpt-4,somewhat irrelevant,"The paper focuses on the adaptation of codebooks for use with Large Language Models in the political science field. While it discusses instruction-tuning and does seem to use preprocessing strategies, it does not explicitly mention or focus on hard prefix prompting or prompt engineering.",,
-When Synthetic Traces Hide Real Content: Analysis of Stable Diffusion Image Laundering,"['Sara Mandelli', 'Paolo Bestagini', 'Stefano Tubaro']","In recent years, methods for producing highly realistic synthetic images have
-significantly advanced, allowing the creation of high-quality images from text
-prompts that describe the desired content. Even more impressively, Stable
-Diffusion (SD) models now provide users with the option of creating synthetic
-images in an image-to-image translation fashion, modifying images in the latent
-space of advanced autoencoders. This striking evolution, however, brings an
-alarming consequence: it is possible to pass an image through SD autoencoders
-to reproduce a synthetic copy of the image with high realism and almost no
-visual artifacts. This process, known as SD image laundering, can transform
-real images into lookalike synthetic ones and risks complicating forensic
-analysis for content authenticity verification. Our paper investigates the
-forensic implications of image laundering, revealing a serious potential to
-obscure traces of real content, including sensitive and harmful materials that
-could be mistakenly classified as synthetic, thereby undermining the protection
-of individuals depicted. To address this issue, we propose a two-stage
-detection pipeline that effectively differentiates between pristine, laundered,
-and fully synthetic images (those generated from text prompts), showing
-robustness across various conditions. Finally, we highlight another alarming
-property of image laundering, which appears to mask the unique artifacts
-exploited by forensic detectors to solve the camera model identification task,
-strongly undermining their performance. Our experimental code is available at
-https://github.com/polimi-ispl/synthetic-image-detection.",http://arxiv.org/pdf/2407.10736v1,2024-07-15,2407.10736v1,When Synthetic Traces Hide Real Content: Analysis of Stable Diffusion Image Laundering,gpt-4,somewhat irrelevant,"While this paper mentions the use of text prompts in generating synthetic images, its main focus is on forensic implications of image laundering rather than on developing or improving prompt engineering techniques.",,
+language community.",http://arxiv.org/pdf/2407.10759v1,2024-07-15,2407.10759v1,Qwen2-Audio Technical Report,gpt-4,somewhat relevant,"The paper does mention using natural language prompts in the pre-training process, but it primarily focuses on audio signal inputs and audio analysis as its interaction modes. It doesn't specify hard prefix prompting techniques.",,
 Make-An-Agent: A Generalizable Policy Network Generator with Behavior-Prompted Diffusion,"['Yongyuan Liang', 'Tingqiang Xu', 'Kaizhe Hu', 'Guangqi Jiang', 'Furong Huang', 'Huazhe Xu']","Can we generate a control policy for an agent using just one demonstration of
 desired behaviors as a prompt, as effortlessly as creating an image from a
 textual description? In this paper, we present Make-An-Agent, a novel policy
@@ -131,7 +85,26 @@ policies with only few-shot demonstrations as inputs. We showcase its efficacy
 and efficiency on various domains and tasks, including varying objectives,
 behaviors, and even across different robot manipulators. Beyond simulation, we
 directly deploy policies generated by Make-An-Agent onto real-world robots on
-locomotion tasks.",http://arxiv.org/pdf/2407.10973v1,2024-07-15,2407.10973v1,Make-An-Agent: A Generalizable Policy Network Generator with Behavior-Prompted Diffusion,gpt-4,highly irrelevant,"This paper is about control policy generation for agents and their deployment on real-world robots, not about hard prefix prompting or prompt engineering.",,
+locomotion tasks.",http://arxiv.org/pdf/2407.10973v1,2024-07-15,2407.10973v1,Make-An-Agent: A Generalizable Policy Network Generator with Behavior-Prompted Diffusion,gpt-4,somewhat irrelevant,"While this paper mentions prompts in the context of a 'demonstration of desired behaviors', it is focusing on policy network generation, control policies for agents, and behavior-to-policy generation, which are distinct from the topic of hard prefix prompt engineering.",,
+CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses,"['Jing Yao', 'Xiaoyuan Yi', 'Xing Xie']","The rapid progress in Large Language Models (LLMs) poses potential risks such
+as generating unethical content. Assessing LLMs' values can help expose their
+misalignment, but relies on reference-free evaluators, e.g., fine-tuned LLMs or
+close-source ones like GPT-4, to identify values reflected in generated
+responses. Nevertheless, these evaluators face two challenges in open-ended
+value evaluation: they should align with changing human value definitions with
+minimal annotation, against their own bias (adaptability), and detect varying
+value expressions and scenarios robustly (generalizability). To handle these
+challenges, we introduce CLAVE, a novel framework which integrates two
+complementary LLMs, a large one to extract high-level value concepts from a few
+human labels, leveraging its extensive knowledge and generalizability, and a
+smaller one fine-tuned on such concepts to better align with human value
+understanding. This dual-model approach enables calibration with any value
+systems using <100 human-labeled samples per value type. Then we present
+ValEval, a comprehensive dataset comprising 13k+ (text,value,label) tuples
+across diverse domains, covering three major value systems. We benchmark the
+capabilities of 12+ popular LLM evaluators and analyze their strengths and
+weaknesses. Our findings reveal that combining fine-tuned small models and
+prompt-based large ones serves as a superior balance in value evaluation.",http://arxiv.org/pdf/2407.10725v1,2024-07-15,2407.10725v1,CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses,gpt-4,somewhat irrelevant,"While the paper mentions LLMs and briefly mentions 'prompt-based large ones', it's main focus isn't on the topic of hard prefix prompting or technique focused on prompt engineering but rather on the evaluation of LLM generated responses",,
 Q-Sparse: All Large Language Models can be Fully Sparsely-Activated,"['Hongyu Wang', 'Shuming Ma', 'Ruiping Wang', 'Furu Wei']","We introduce, Q-Sparse, a simple yet effective approach to training
 sparsely-activated large language models (LLMs). Q-Sparse enables full sparsity
 of activations in LLMs which can bring significant efficiency gains in
@@ -145,7 +118,7 @@ continue-training of off-the-shelf LLMs, and finetuning; (4) Q-Sparse works for
 both full-precision and 1-bit LLMs (e.g., BitNet b1.58). Particularly, the
 synergy of BitNet b1.58 and Q-Sparse (can be equipped with MoE) provides the
 cornerstone and a clear path to revolutionize the efficiency, including cost
-and energy consumption, of future LLMs.",http://arxiv.org/pdf/2407.10969v1,2024-07-15,2407.10969v1,Q-Sparse: All Large Language Models can be Fully Sparsely-Activated,gpt-4,highly irrelevant,"The paper is dedicated to methods of improving the efficiency of large language models in general, rather than prompt engineering or hard prefix prompting.",,
+and energy consumption, of future LLMs.",http://arxiv.org/pdf/2407.10969v1,2024-07-15,2407.10969v1,Q-Sparse: All Large Language Models can be Fully Sparsely-Activated,gpt-4,highly irrelevant,"This paper focuses solely on improving the efficiency and activation of large language models, rather than the use or engineering of hard prefix prompts.",,
 Ref-AVS: Refer and Segment Objects in Audio-Visual Scenes,"['Yaoting Wang', 'Peiwen Sun', 'Dongzhan Zhou', 'Guangyao Li', 'Honggang Zhang', 'Di Hu']","Traditional reference segmentation tasks have predominantly focused on silent
 visual scenes, neglecting the integral role of multimodal perception and
 interaction in human experiences. In this work, we introduce a novel task
@@ -162,7 +135,7 @@ test subsets to compare our approach with existing methods from related tasks.
 The results demonstrate the effectiveness of our method, highlighting its
 capability to precisely segment objects using multimodal-cue expressions.
 Dataset is available at
-\href{https://gewu-lab.github.io/Ref-AVS}{https://gewu-lab.github.io/Ref-AVS}.",http://arxiv.org/pdf/2407.10957v1,2024-07-15,2407.10957v1,Ref-AVS: Refer and Segment Objects in Audio-Visual Scenes,gpt-4,highly irrelevant,The paper describes a process for segmenting audio-visual scenes and does not mention any relevance to prompting or prompt engineering.,,
+\href{https://gewu-lab.github.io/Ref-AVS}{https://gewu-lab.github.io/Ref-AVS}.",http://arxiv.org/pdf/2407.10957v1,2024-07-15,2407.10957v1,Ref-AVS: Refer and Segment Objects in Audio-Visual Scenes,gpt-4,highly irrelevant,"This paper discusses a method for segmenting objects within the visual domain based on expressions with multimodal cues, which does not relate to the topic of hard prefix prompt engineering.",,
 Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?,"['Ruisheng Cao', 'Fangyu Lei', 'Haoyuan Wu', 'Jixuan Chen', 'Yeqiao Fu', 'Hongcheng Gao', 'Xinzhuang Xiong', 'Hanchong Zhang', 'Yuchen Mao', 'Wenjing Hu', 'Tianbao Xie', 'Hongshen Xu', 'Danyang Zhang', 'Sida Wang', 'Ruoxi Sun', 'Pengcheng Yin', 'Caiming Xiong', 'Ansong Ni', 'Qian Liu', 'Victor Zhong', 'Lu Chen', 'Kai Yu', 'Tao Yu']","Data science and engineering workflows often span multiple stages, from
 warehousing to orchestration, using tools like BigQuery, dbt, and Airbyte. As
 vision language models (VLMs) advance in multimodal understanding and code
@@ -186,7 +159,7 @@ these agents still underperform in tasks that require fine-grained,
 knowledge-intensive GUI actions (16.2%) and involve remote cloud-hosted
 workspaces (10.6%). We hope that Spider2-V paves the way for autonomous
 multimodal agents to transform the automation of data science and engineering
-workflow. Our code and data are available at https://spider2-v.github.io.",http://arxiv.org/pdf/2407.10956v1,2024-07-15,2407.10956v1,Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?,gpt-4,highly irrelevant,"The paper emphasizes multimodal agent benchmarks and autonomous data workflows, but it doesn't discuss hard prefix prompts or prompt engineering in any context.",,
+workflow. Our code and data are available at https://spider2-v.github.io.",http://arxiv.org/pdf/2407.10956v1,2024-07-15,2407.10956v1,Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?,gpt-4,highly irrelevant,The paper discusses building a multimodal agent for automating data science and engineering workflows and does not mention anything about prompt engineering or hard prefix prompting.,,
 MMM: Multilingual Mutual Reinforcement Effect Mix Datasets & Test with Open-domain Information Extraction Large Language Models,"['Chengguang Gan', 'Qingyu Yin', 'Xinyang He', 'Hanjun Wei', 'Yunhao Liang', 'Younghun Lim', 'Shijian Wang', 'Hexiang Huang', 'Qinghao Zhang', 'Shiwen Ni', 'Tatsunori Mori']","The Mutual Reinforcement Effect (MRE) represents a promising avenue in
 information extraction and multitasking research. Nevertheless, its
 applicability has been constrained due to the exclusive availability of MRE mix
@@ -202,7 +175,7 @@ sentence classification tasks. Utilizing this expanded dataset, we developed a
 unified input-output framework to train an Open-domain Information Extraction
 Large Language Model (OIELLM). The OIELLM model demonstrates the capability to
 effectively process novel MMM datasets, exhibiting significant improvements in
-performance.",http://arxiv.org/pdf/2407.10953v1,2024-07-15,2407.10953v1,MMM: Multilingual Mutual Reinforcement Effect Mix Datasets & Test with Open-domain Information Extraction Large Language Models,gpt-4,highly irrelevant,"While this paper uses Large Language Models (LLMs) and develops an Open-domain Information Extraction Large Language Model (OIELLM), it doesn't specifically address or employ hard prefix prompting or any form of prompt engineering for that matter, but rather focuses on the construction and use of multilingual data sets.",,
+performance.",http://arxiv.org/pdf/2407.10953v1,2024-07-15,2407.10953v1,MMM: Multilingual Mutual Reinforcement Effect Mix Datasets & Test with Open-domain Information Extraction Large Language Models,gpt-4,highly irrelevant,"This paper mainly focuses on dataset translation, information extraction and multitasking research with Large Language Models and does not mention anything about hard prefix prompting or prompt engineering.",,
 Representing Rule-based Chatbots with Transformers,"['Dan Friedman', 'Abhishek Panigrahi', 'Danqi Chen']","Transformer-based chatbots can conduct fluent, natural-sounding
 conversations, but we have limited understanding of the mechanisms underlying
 their behavior. Prior work has taken a bottom-up approach to understanding
@@ -224,7 +197,7 @@ based copying mechanism; and using intermediate generations to simulate
 recurrent data structures, like ELIZA's memory mechanisms. Overall, by drawing
 an explicit connection between neural chatbots and interpretable, symbolic
 mechanisms, our results offer a new setting for mechanistic analysis of
-conversational agents.",http://arxiv.org/pdf/2407.10949v1,2024-07-15,2407.10949v1,Representing Rule-based Chatbots with Transformers,gpt-4,highly irrelevant,"While the paper focuses on transformer models in a chatbot setting, it does not discuss or mention the use or analysis of hard prefix prompting or any approach to prompt engineering.",,
+conversational agents.",http://arxiv.org/pdf/2407.10949v1,2024-07-15,2407.10949v1,Representing Rule-based Chatbots with Transformers,gpt-4,highly irrelevant,"While the paper discusses transformers and the techniques used to understand their behavior, it does not discuss, even implicitly, the concept of hard prefix prompts or prompt engineering.",,
 Learning from Naturally Occurring Feedback,"['Shachar Don-Yehiya', 'Leshem Choshen', 'Omri Abend']","Human feedback data is a critical component in developing language models.
 However, collecting this feedback is costly and ultimately not scalable. We
 propose a scalable method for extracting feedback that users naturally include
@@ -237,7 +210,7 @@ finding that as much as 30% of the chats include explicit feedback. We apply
 our method to over 1M conversations to obtain hundreds of thousands of feedback
 samples. Training with the extracted feedback shows significant performance
 improvements over baseline models, demonstrating the efficacy of our approach
-in enhancing model alignment to human preferences.",http://arxiv.org/pdf/2407.10944v1,2024-07-15,2407.10944v1,Learning from Naturally Occurring Feedback,gpt-4,highly irrelevant,This paper focuses on a method for extracting feedback from users interacting with chat models for model training. There is no specific mention of prompt engineering or hard prefix prompts.,,
+in enhancing model alignment to human preferences.",http://arxiv.org/pdf/2407.10944v1,2024-07-15,2407.10944v1,Learning from Naturally Occurring Feedback,gpt-4,highly irrelevant,"The paper discusses using naturally-occurring feedback for model training, but does not discuss or reference hard prefix prompt engineering techniques.",,
 Benchmarking Vision Language Models for Cultural Understanding,"['Shravan Nayak', 'Kanishk Jain', 'Rabiul Awal', 'Siva Reddy', 'Sjoerd van Steenkiste', 'Lisa Anne Hendricks', 'Karolina Stańczak', 'Aishwarya Agrawal']","Foundation models and vision-language pre-training have notably advanced
 Vision Language Models (VLMs), enabling multimodal processing of visual and
 linguistic data. However, their performance has been typically assessed on
@@ -255,7 +228,7 @@ Africa. We observe disparity in their performance across cultural facets too,
 with clothing, rituals, and traditions seeing higher performances than food and
 drink. These disparities help us identify areas where VLMs lack cultural
 understanding and demonstrate the potential of CulturalVQA as a comprehensive
-evaluation set for gauging VLM progress in understanding diverse cultures.",http://arxiv.org/pdf/2407.10920v1,2024-07-15,2407.10920v1,Benchmarking Vision Language Models for Cultural Understanding,gpt-4,highly irrelevant,The paper focuses on benchmarking Vision Language Models for cultural understanding and does not discuss prefix prompts or prompt engineering techniques.,,
+evaluation set for gauging VLM progress in understanding diverse cultures.",http://arxiv.org/pdf/2407.10920v1,2024-07-15,2407.10920v1,Benchmarking Vision Language Models for Cultural Understanding,gpt-4,highly irrelevant,"The paper primarily focuses on benchmarking Vision Language Models (VLMs) for cultural understanding using a newly developed dataset, and does not offer any specific details regarding hard prefix prompts or any form of prompt engineering.",,
 Leveraging LLM-Respondents for Item Evaluation: a Psychometric Analysis,"['Yunting Liu', 'Shreya Bhandari', 'Zachary A. Pardos']","Effective educational measurement relies heavily on the curation of
 well-designed item pools (i.e., possessing the right psychometric properties).
 However, item calibration is time-consuming and costly, requiring a sufficient
@@ -272,7 +245,7 @@ counterparts, and closely resemble the parameters of the human subset (e.g.
 0.02 Spearman correlation difference). Several augmentation strategies are
 evaluated for their relative performance, with resampling methods proving most
 effective, enhancing the Spearman correlation from 0.89 (human only) to 0.93
-(augmented human).",http://arxiv.org/pdf/2407.10899v1,2024-07-15,2407.10899v1,Leveraging LLM-Respondents for Item Evaluation: a Psychometric Analysis,gpt-4,highly irrelevant,The paper focuses on using large language models for educational measurement and does not mention hard prefix prompts or any prompt engineering techniques.,,
+(augmented human).",http://arxiv.org/pdf/2407.10899v1,2024-07-15,2407.10899v1,Leveraging LLM-Respondents for Item Evaluation: a Psychometric Analysis,gpt-4,highly irrelevant,The paper focuses on using language model results for item evaluation and does not discuss any aspects related to hard prefix prompting or prompt engineering.,,
 Leveraging Multimodal CycleGAN for the Generation of Anatomically Accurate Synthetic CT Scans from MRIs,"['Leonardo Crespi', 'Samuele Camnasio', 'Damiano Dei', 'Nicola Lambri', 'Pietro Mancosu', 'Marta Scorsetti', 'Daniele Loiacono']","In many clinical settings, the use of both Computed Tomography (CT) and
 Magnetic Resonance (MRI) is necessary to pursue a thorough understanding of the
 patient's anatomy and to plan a suitable therapeutical strategy; this is often
@@ -296,7 +269,7 @@ depending on the input modalities, the models can have very different
 performances; however, models with the best quantitative results, according to
 the distribution-based metrics used, can generate very difficult images to
 distinguish from the real ones, even for physicians, demonstrating the
-approach's potential.",http://arxiv.org/pdf/2407.10888v1,2024-07-15,2407.10888v1,Leveraging Multimodal CycleGAN for the Generation of Anatomically Accurate Synthetic CT Scans from MRIs,gpt-4,highly irrelevant,"The paper is focused on the use of Deep Learning and Generative Adversarial Networks specifically for generating synthetic CT scans from MRIs and does not discuss anything related to prompts, hard prefix prompting, or prompt engineering.",,
+approach's potential.",http://arxiv.org/pdf/2407.10888v1,2024-07-15,2407.10888v1,Leveraging Multimodal CycleGAN for the Generation of Anatomically Accurate Synthetic CT Scans from MRIs,gpt-4,highly irrelevant,The paper is focused on the use of Generative Adversarial Networks (GANs) and CycleGAN architecture for synthesizing CT scans from MRIs in medical imaging. It does not mention or imply the usage of hard prefix prompts or any form of prompt engineering.,,
 "Hey, That's My Model! Introducing Chain & Hash, An LLM Fingerprinting Technique","['Mark Russinovich', 'Ahmed Salem']","Amid growing concerns over the ease of theft and misuse of Large Language
 Models (LLMs), the need for fingerprinting models has increased.
 Fingerprinting, in this context, means that the model owner can link a given
@@ -316,7 +289,7 @@ such as fine-tuning on different datasets, and adversarial attempts to erase
 the fingerprint. Finally, our experiments demonstrate the efficiency of
 implementing Chain & Hash and its utility, where fingerprinted models achieve
 almost the same performance as non-fingerprinted ones across different
-benchmarks.",http://arxiv.org/pdf/2407.10887v1,2024-07-15,2407.10887v1,"Hey, That's My Model! Introducing Chain & Hash, An LLM Fingerprinting Technique",gpt-4,highly irrelevant,"The paper introduces a unique fingerprinting approach for Large Language Models (LLMs), but does not mention or discuss prompt engineering or hard prefix prompting.",,
+benchmarks.",http://arxiv.org/pdf/2407.10887v1,2024-07-15,2407.10887v1,"Hey, That's My Model! Introducing Chain & Hash, An LLM Fingerprinting Technique",gpt-4,highly irrelevant,The abstract discusses model fingerprinting techniques and not prompt engineering or hard prefix prompting.,,
 Deep Causal Learning to Explain and Quantify The Geo-Tension's Impact on Natural Gas Market,"['Philipp Kai Peter', 'Yulin Li', 'Ziyue Li', 'Wolfgang Ketter']","Natural gas demand is a crucial factor for predicting natural gas prices and
 thus has a direct influence on the power system. However, existing methods face
 challenges in assessing the impact of shocks, such as the outbreak of the
@@ -325,7 +298,7 @@ Granger causality to identify important drivers of natural gas demand.
 Furthermore, the resulting dependencies are used to construct a counterfactual
 case without the outbreak of the war, providing a quantifiable estimate of the
 overall effect of the shock on various German energy sectors. The code and
-dataset are available at https://github.com/bonaldli/CausalEnergy.",http://arxiv.org/pdf/2407.10878v1,2024-07-15,2407.10878v1,Deep Causal Learning to Explain and Quantify The Geo-Tension's Impact on Natural Gas Market,gpt-4,highly irrelevant,This paper revolves around the application of deep neural network-based Granger causality to analyze natural gas demand and doesn't mention or imply any use of hard prefix prompting or prompt engineering techniques.,,
+dataset are available at https://github.com/bonaldli/CausalEnergy.",http://arxiv.org/pdf/2407.10878v1,2024-07-15,2407.10878v1,Deep Causal Learning to Explain and Quantify The Geo-Tension's Impact on Natural Gas Market,gpt-4,highly irrelevant,"The paper does not discuss any aspects of prompt engineering or hard prefix prompting, but instead focuses on deep causal learning in the context of the natural gas market.",,
 Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models,"['Rui Zhang', 'Fei Liu', 'Xi Lin', 'Zhenkun Wang', 'Zhichao Lu', 'Qingfu Zhang']","Automated heuristic design (AHD) has gained considerable attention for its
 potential to automate the development of effective heuristics. The recent
 advent of large language models (LLMs) has paved a new avenue for AHD, with
@@ -340,7 +313,7 @@ extensive experiments yield meaningful insights, providing empirical grounding
 for the importance of evolutionary search in LLM-based AHD approaches, while
 also contributing to the advancement of future EPS algorithmic development. To
 foster accessibility and reproducibility, we have fully open-sourced our
-benchmark and corresponding results.",http://arxiv.org/pdf/2407.10873v1,2024-07-15,2407.10873v1,Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models,gpt-4,highly irrelevant,"The paper discusses automated heuristic design using large language models, and focuses on the evolutionary program search problem within this domain, not prompt engineering.",,
+benchmark and corresponding results.",http://arxiv.org/pdf/2407.10873v1,2024-07-15,2407.10873v1,Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models,gpt-4,highly irrelevant,"The paper primarily focuses on Automated Heuristic Design and Large Language Models, with no specific mention of hard prefix prompting or prompt engineering.",,
 GPT Sonograpy: Hand Gesture Decoding from Forearm Ultrasound Images via VLM,"['Keshav Bimbraw', 'Ye Wang', 'Jing Liu', 'Toshiaki Koike-Akino']","Large vision-language models (LVLMs), such as the Generative Pre-trained
 Transformer 4-omni (GPT-4o), are emerging multi-modal foundation models which
 have great potential as powerful artificial-intelligence (AI) assistance tools
@@ -350,7 +323,7 @@ general tasks, their capability without fine-tuning is often limited in
 specialized tasks. However, full fine-tuning of large foundation models is
 challenging due to enormous computation/memory/dataset requirements. We show
 that GPT-4o can decode hand gestures from forearm ultrasound data even with no
-fine-tuning, and improves with few-shot, in-context learning.",http://arxiv.org/pdf/2407.10870v1,2024-07-15,2407.10870v1,GPT Sonograpy: Hand Gesture Decoding from Forearm Ultrasound Images via VLM,gpt-4,highly irrelevant,"The paper focuses on using a large vision-language model for decoding hand gestures from ultrasound data, with no mentions of prompts.",,
+fine-tuning, and improves with few-shot, in-context learning.",http://arxiv.org/pdf/2407.10870v1,2024-07-15,2407.10870v1,GPT Sonograpy: Hand Gesture Decoding from Forearm Ultrasound Images via VLM,gpt-4,highly irrelevant,"While the paper does utilize a GPT model, it doesn't mention anything related to prompt engineering or any form of hard prefix prompting",,
 Weighted Grouped Query Attention in Transformers,"['Sai Sena Chinnakonduru', 'Astarag Mohapatra']","The attention mechanism forms the foundational blocks for transformer
 language models. Recent approaches show that scaling the model achieves
 human-level performance. However, with increasing demands for scaling and
@@ -367,7 +340,7 @@ during inference. We evaluated the introduction of these parameters and
 subsequent finetuning informs the model about the grouping mechanism during
 training, thereby enhancing performance. Additionally, we demonstrate the
 scaling laws in our analysis by comparing the results between T5-small and
-T5-base architecture.",http://arxiv.org/pdf/2407.10855v1,2024-07-15,2407.10855v1,Weighted Grouped Query Attention in Transformers,gpt-4,highly irrelevant,The paper discusses an attention mechanism in transformer language models but does not mention the use of hard prefix prompting or prompt engineering.,,
+T5-base architecture.",http://arxiv.org/pdf/2407.10855v1,2024-07-15,2407.10855v1,Weighted Grouped Query Attention in Transformers,gpt-4,highly irrelevant,"While this paper deals with Transformers and introduces a new method for improving performance, it focuses on attention mechanism enhancement and model scaling, rather than directly addressing prompt engineering.",,
 Offline Reinforcement Learning with Imputed Rewards,"['Carlo Romeo', 'Andrew D. Bagdanov']","Offline Reinforcement Learning (ORL) offers a robust solution to training
 agents in applications where interactions with the environment must be strictly
 limited due to cost, safety, or lack of accurate simulation environments.
@@ -384,7 +357,7 @@ demonstrate the potential of our approach on several D4RL continuous locomotion
 tasks. Our results show that, using only 1\% of reward-labeled transitions from
 the original datasets, our learned reward model is able to impute rewards for
 the remaining 99\% of the transitions, from which performant agents can be
-learned using Offline Reinforcement Learning.",http://arxiv.org/pdf/2407.10839v1,2024-07-15,2407.10839v1,Offline Reinforcement Learning with Imputed Rewards,gpt-4,highly irrelevant,The paper focuses on offline reinforcement learning and developing reward models for improving performance of learning agents. There is no mention of prompt engineering or hard prefix prompting.,,
+learned using Offline Reinforcement Learning.",http://arxiv.org/pdf/2407.10839v1,2024-07-15,2407.10839v1,Offline Reinforcement Learning with Imputed Rewards,gpt-4,highly irrelevant,"The paper focuses on offline reinforcement learning and reward modeling, rather than hard prefix prompting or prompt engineering.",,
 MetaLLM: A High-performant and Cost-efficient Dynamic Framework for Wrapping LLMs,"['Quang H. Nguyen', 'Duy C. Hoang', 'Juliette Decugis', 'Saurav Manchanda', 'Nitesh V. Chawla', 'Khoa D. Doan']","The rapid progress in machine learning (ML) has brought forth many large
 language models (LLMs) that excel in various tasks and areas. These LLMs come
 with different abilities and costs in terms of computation or pricing. Since
@@ -401,7 +374,7 @@ MetaLLM balances prediction accuracy and cost efficiency under uncertainty. Our
 experiments, conducted on popular LLM platforms such as OpenAI's GPT models,
 Amazon's Titan, Anthropic's Claude, and Meta's LLaMa, showcase MetaLLM's
 efficacy in real-world scenarios, laying the groundwork for future extensions
-beyond classification tasks.",http://arxiv.org/pdf/2407.10834v1,2024-07-15,2407.10834v1,MetaLLM: A High-performant and Cost-efficient Dynamic Framework for Wrapping LLMs,gpt-4,highly irrelevant,"The paper discusses a framework for optimizing the use of large language models, but does not mention anything about prompt engineering, hard prefix or otherwise.",,
+beyond classification tasks.",http://arxiv.org/pdf/2407.10834v1,2024-07-15,2407.10834v1,MetaLLM: A High-performant and Cost-efficient Dynamic Framework for Wrapping LLMs,gpt-4,highly irrelevant,"The paper talks about a framework for selecting the optimal large language model for various applications, and doesn't mention anything related to hard prefix prompts or prompt engineering methods.",,
 BiasScanner: Automatic Detection and Classification of News Bias to Strengthen Democracy,"['Tim Menzner', 'Jochen L. Leidner']","The increasing consumption of news online in the 21st century coincided with
 increased publication of disinformation, biased reporting, hate speech and
 other unwanted Web content. We describe BiasScanner, an application that aims
@@ -416,7 +389,7 @@ privacy-respecting manner, and in addition to highlighting likely biased
 sentence it also provides explanations for each classification decision as well
 as a summary analysis for each news article. While prior research has addressed
 news bias detection, we are not aware of any work that resulted in a deployed
-browser plug-in (c.f. also biasscanner.org for a Web demo).",http://arxiv.org/pdf/2407.10829v1,2024-07-15,2407.10829v1,BiasScanner: Automatic Detection and Classification of News Bias to Strengthen Democracy,gpt-4,highly irrelevant,"The paper discusses an application for detection and classification of bias in news content using a large language model, but does not focus on or mention hard prefix prompting or prompt engineering techniques.",,
+browser plug-in (c.f. also biasscanner.org for a Web demo).",http://arxiv.org/pdf/2407.10829v1,2024-07-15,2407.10829v1,BiasScanner: Automatic Detection and Classification of News Bias to Strengthen Democracy,gpt-4,highly irrelevant,"The paper is about detecting and classifying news biases through an automated system that leverages a pre-trained language model, but it does not discuss anything about prompt engineering or hard prefix prompting.",,
 Towards Enhanced Classification of Abnormal Lung sound in Multi-breath: A Light Weight Multi-label and Multi-head Attention Classification Method,"['Yi-Wei Chua', 'Yun-Chien Cheng']","This study aims to develop an auxiliary diagnostic system for classifying
 abnormal lung respiratory sounds, enhancing the accuracy of automatic abnormal
 breath sound classification through an innovative multi-label learning approach
@@ -427,7 +400,7 @@ represent multiple respiratory sound characteristics. Our method achieved a
 59.2% ICBHI score in the four-category task on the ICBHI2017 dataset,
 demonstrating its advantages in terms of lightweight and high accuracy. This
 study not only improves the accuracy of automatic diagnosis of lung respiratory
-sound abnormalities but also opens new possibilities for clinical applications.",http://arxiv.org/pdf/2407.10828v1,2024-07-15,2407.10828v1,Towards Enhanced Classification of Abnormal Lung sound in Multi-breath: A Light Weight Multi-label and Multi-head Attention Classification Method,gpt-4,highly irrelevant,The paper is focused on a diagnostic system for classifying abnormal lung sounds with no reference to hard prefix prompts or prompt engineering.,,
+sound abnormalities but also opens new possibilities for clinical applications.",http://arxiv.org/pdf/2407.10828v1,2024-07-15,2407.10828v1,Towards Enhanced Classification of Abnormal Lung sound in Multi-breath: A Light Weight Multi-label and Multi-head Attention Classification Method,gpt-4,highly irrelevant,"This paper is about the classification of lung sounds using machine learning methods and multi-head attention mechanism, and has no discussion about prompt engineering or hard prefix prompting.",,
 LLM Circuit Analyses Are Consistent Across Training and Scale,"['Curt Tigges', 'Michael Hanna', 'Qinan Yu', 'Stella Biderman']","Most currently deployed large language models (LLMs) undergo continuous
 training or additional finetuning. By contrast, most research into LLMs'
 internal mechanisms focuses on models at one snapshot in time (the end of
@@ -444,7 +417,7 @@ overarching algorithm that they implement remains. Surprisingly, both these
 algorithms and the types of components involved therein can replicate across
 model scale. These results suggest that circuit analyses conducted on small
 models at the end of pre-training can provide insights that still apply after
-additional pre-training and over model scale.",http://arxiv.org/pdf/2407.10827v1,2024-07-15,2407.10827v1,LLM Circuit Analyses Are Consistent Across Training and Scale,gpt-4,highly irrelevant,"The paper primarily focuses on tracking model mechanisms across the training phase of Large Language Models (LLMs) and does not seem to discuss about any aspects related to prompting, post-training procedures, or prompt engineering.",,
+additional pre-training and over model scale.",http://arxiv.org/pdf/2407.10827v1,2024-07-15,2407.10827v1,LLM Circuit Analyses Are Consistent Across Training and Scale,gpt-4,highly irrelevant,The paper is focused on the evolution of circuits in large language models during training but does not mention prompts or prompting techniques.,,
 Enabling MCTS Explainability for Sequential Planning Through Computation Tree Logic,"['Ziyan An', 'Hendrik Baier', 'Abhishek Dubey', 'Ayan Mukhopadhyay', 'Meiyi Ma']","Monte Carlo tree search (MCTS) is one of the most capable online search
 algorithms for sequential planning tasks, with significant applications in
 areas such as resource allocation and transit planning. Despite its strong
@@ -464,7 +437,7 @@ of this analysis are then rendered into human-readable descriptive text using a
 second set of language templates. The user satisfaction of our approach was
 assessed through a survey with 82 participants. The results indicated that our
 explanatory approach significantly outperforms other baselines in user
-preference.",http://arxiv.org/pdf/2407.10820v1,2024-07-15,2407.10820v1,Enabling MCTS Explainability for Sequential Planning Through Computation Tree Logic,gpt-4,highly irrelevant,"This paper primarily discusses Monte Carlo tree search (MCTS) and its use in sequential planning tasks, making it unrelated to the topic of prompt engineering or hard prefix prompting.",,
+preference.",http://arxiv.org/pdf/2407.10820v1,2024-07-15,2407.10820v1,Enabling MCTS Explainability for Sequential Planning Through Computation Tree Logic,gpt-4,highly irrelevant,"The paper focuses on Monte Carlo tree search (MCTS) and computation tree logic for transportation routing services, with no mention or implication of hard prefix prompting or prompt engineering.",,
 Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation,"['Tu Vu', 'Kalpesh Krishna', 'Salaheddin Alzubi', 'Chris Tar', 'Manaal Faruqui', 'Yun-Hsuan Sung']","As large language models (LLMs) advance, it becomes more challenging to
 reliably evaluate their output due to the high costs of human evaluation. To
 make progress towards better LLM autoraters, we introduce FLAMe, a family of
@@ -488,7 +461,7 @@ out of 12 autorater evaluation benchmarks, encompassing 53 quality assessment
 tasks, including RewardBench and LLM-AggreFact. Finally, our analysis reveals
 that FLAMe is significantly less biased than these LLM-as-a-Judge models on the
 CoBBLEr autorater bias benchmark, while effectively identifying high-quality
-responses for code generation.",http://arxiv.org/pdf/2407.10817v1,2024-07-15,2407.10817v1,Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation,gpt-4,highly irrelevant,The paper is focused on developing an autoration model for large language models and does not discuss or mention hard-prefix prompts or prompt engineering techniques.,,
+responses for code generation.",http://arxiv.org/pdf/2407.10817v1,2024-07-15,2407.10817v1,Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation,gpt-4,highly irrelevant,"The paper seems to largely concern the evaluation and fine-tuning of large language models, with no explicit mention or indication of focus on hard prefix prompts or prompt engineering in general.",,
 "GuideLight: ""Industrial Solution"" Guidance for More Practical Traffic Signal Control Agents","['Haoyuan Jiang', 'Xuantang Xiong', 'Ziyue Li', 'Hangyu Mao', 'Guanghu Sui', 'Jingqing Ruan', 'Yuheng Cheng', 'Hua Wei', 'Wolfgang Ketter', 'Rui Zhao']","Currently, traffic signal control (TSC) methods based on reinforcement
 learning (RL) have proven superior to traditional methods. However, most RL
 methods face difficulties when applied in the real world due to three factors:
@@ -507,7 +480,7 @@ the power of exploration and exploitation in RL for better performance. We
 theoretically prove that such guidance can largely decrease the sample
 complexity to polynomials in the horizon when searching for an optimal policy.
 Our rigid experiments show that our method has good cycle-flow relation and
-superior performance.",http://arxiv.org/pdf/2407.10811v1,2024-07-15,2407.10811v1,"GuideLight: ""Industrial Solution"" Guidance for More Practical Traffic Signal Control Agents",gpt-4,highly irrelevant,"This paper is about reinforcement learning methods applied to traffic signal control, not hard prefix prompting or prompt engineering.",,
+superior performance.",http://arxiv.org/pdf/2407.10811v1,2024-07-15,2407.10811v1,"GuideLight: ""Industrial Solution"" Guidance for More Practical Traffic Signal Control Agents",gpt-4,highly irrelevant,This paper is about reinforcement learning for traffic signal controllers and does not discuss hard prefix prompting or prompt engineering.,,
 FabGPT: An Efficient Large Multimodal Model for Complex Wafer Defect Knowledge Queries,"['Yuqi Jiang', 'Xudong Lu', 'Qian Jin', 'Qi Sun', 'Hanming Wu', 'Cheng Zhuo']","Intelligence is key to advancing integrated circuit (IC) fabrication. Recent
 breakthroughs in Large Multimodal Models (LMMs) have unlocked unparalleled
 abilities in understanding images and text, fostering intelligent fabrication.
@@ -523,7 +496,7 @@ into the pre-trained model, effectively balancing Q&A queries related to defect
 knowledge and original knowledge and mitigating the modality bias issues.
 Experiments on in-house fab data (SEM-WaD) show that our FabGPT achieves
 significant performance improvement in wafer defect detection and knowledge
-querying.",http://arxiv.org/pdf/2407.10810v1,2024-07-15,2407.10810v1,FabGPT: An Efficient Large Multimodal Model for Complex Wafer Defect Knowledge Queries,gpt-4,highly irrelevant,"The paper focuses on a multimodal model for IC fabrication and wafer defect knowledge query, without any mention of prompt engineering or similar techniques.",,
+querying.",http://arxiv.org/pdf/2407.10810v1,2024-07-15,2407.10810v1,FabGPT: An Efficient Large Multimodal Model for Complex Wafer Defect Knowledge Queries,gpt-4,highly irrelevant,"The paper's focus is on developing a multimodal model for defect detection and knowledge querying, not on post-training prompt engineering or hard prefix prompting techniques.",,
 Employing Sentence Space Embedding for Classification of Data Stream from Fake News Domain,"['Paweł Zyblewski', 'Jakub Klikowski', 'Weronika Borek-Marciniec', 'Paweł Ksieniewicz']","Tabular data is considered the last unconquered castle of deep learning, yet
 the task of data stream classification is stated to be an equally important and
 demanding research area. Due to the temporal constraints, it is assumed that
@@ -537,7 +510,7 @@ digital signal. This allows the use of convolutional deep networks dedicated to
 image classification to solve the task of recognizing fake news based on text
 data. Based on the real-life Fakeddit dataset, the proposed approach was
 compared with state-of-the-art algorithms for data stream classification based
-on generalization ability and time complexity.",http://arxiv.org/pdf/2407.10807v1,2024-07-15,2407.10807v1,Employing Sentence Space Embedding for Classification of Data Stream from Fake News Domain,gpt-4,highly irrelevant,The paper focuses on data stream classification using the sentence space method for recognizing fake news based on text data and does not mention or imply use of hard prefix prompting or any sort of prompt engineering.,,
+on generalization ability and time complexity.",http://arxiv.org/pdf/2407.10807v1,2024-07-15,2407.10807v1,Employing Sentence Space Embedding for Classification of Data Stream from Fake News Domain,gpt-4,highly irrelevant,"Although this paper involves natural language processing and deep learning, there is no reference or context given to prompt engineering or hard prefix prompting.",,
 Think-on-Graph 2.0: Deep and Interpretable Large Language Model Reasoning with Knowledge Graph-guided Retrieval,"['Shengjie Ma', 'Chengjin Xu', 'Xuhui Jiang', 'Muzhi Li', 'Huaren Qu', 'Jian Guo']","Retrieval-augmented generation (RAG) has significantly advanced large
 language models (LLMs) by enabling dynamic information retrieval to mitigate
 knowledge gaps and hallucinations in generated content. However, these systems
@@ -553,7 +526,7 @@ improves the accuracy and reliability of LLMs' responses but also demonstrates
 the potential of hybrid structured knowledge systems to significantly advance
 LLM reasoning, aligning it closer to human-like performance. We conducted
 extensive experiments on four public datasets to demonstrate the advantages of
-our method compared to the baseline.",http://arxiv.org/pdf/2407.10805v1,2024-07-15,2407.10805v1,Think-on-Graph 2.0: Deep and Interpretable Large Language Model Reasoning with Knowledge Graph-guided Retrieval,gpt-4,highly irrelevant,"The paper primarily discusses Retrieval-augmented generation and the use of knowledge-graphs to improve large language model reasoning, with no mention of prompt engineering or hard prefix prompting.",,
+our method compared to the baseline.",http://arxiv.org/pdf/2407.10805v1,2024-07-15,2407.10805v1,Think-on-Graph 2.0: Deep and Interpretable Large Language Model Reasoning with Knowledge Graph-guided Retrieval,gpt-4,highly irrelevant,"The paper focuses on retrieval-augmented generation for language model reasoning and knowledge graph-guided navigation, not on hard prefix prompting or prompt engineering.",,
 Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment,"['Jinhao Jiang', 'Junyi Li', 'Wayne Xin Zhao', 'Yang Song', 'Tao Zhang', 'Ji-Rong Wen']","Adapting general large language models (LLMs) to specialized domains presents
 great challenges due to varied data distributions. This adaptation typically
 requires continual pre-training on massive domain-specific corpora to
@@ -574,7 +547,7 @@ efficiently perform instruction tuning and alignment with a few general
 training samples to achieve format alignment. Extensive experiments demonstrate
 that our proposed Mix-CPT framework can simultaneously improve the task-solving
 capabilities of LLMs on the target and general domains compared to the
-traditional adaptation methods.",http://arxiv.org/pdf/2407.10804v1,2024-07-15,2407.10804v1,Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment,gpt-4,highly irrelevant,"The paper focuses on a domain adaptation framework for large language models, with no specific mention of hard prefix prompting or prompt engineering techniques.",,
+traditional adaptation methods.",http://arxiv.org/pdf/2407.10804v1,2024-07-15,2407.10804v1,Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment,gpt-4,highly irrelevant,The paper focuses on domain adaptation of large language models and does not mention anything about the use of hard prefix prompting or prompt engineering.,,
 Mammographic Breast Positioning Assessment via Deep Learning,"['Toygar Tanyel', 'Nurper Denizoglu', 'Mustafa Ege Seker', 'Deniz Alis', 'Esma Cerekci', 'Ercan Karaarslan', 'Erkin Aribal', 'Ilkay Oksuz']","Breast cancer remains a leading cause of cancer-related deaths among women
 worldwide, with mammography screening as the most effective method for the
 early detection. Ensuring proper positioning in mammography is critical, as
@@ -597,7 +570,7 @@ Our results indicate that models incorporating attention mechanisms and
 CoordConv module increase the accuracy in classifying breast positioning
 quality and detecting anatomical landmarks. Furthermore, we make the labels and
 source codes available to the community to initiate an open research area for
-mammography, accessible at https://github.com/tanyelai/deep-breast-positioning.",http://arxiv.org/pdf/2407.10796v1,2024-07-15,2407.10796v1,Mammographic Breast Positioning Assessment via Deep Learning,gpt-4,highly irrelevant,The paper focuses on a deep learning methodology to assess mammogram positioning quality but does not mention or relate to prompt engineering or hard prefix prompting.,,
+mammography, accessible at https://github.com/tanyelai/deep-breast-positioning.",http://arxiv.org/pdf/2407.10796v1,2024-07-15,2407.10796v1,Mammographic Breast Positioning Assessment via Deep Learning,gpt-4,highly irrelevant,"The paper is focused on breast positioning assessment through deep learning and its application in mammography, with no mention of hard prefix prompting or prompt engineering.",,
 Multilingual Contrastive Decoding via Language-Agnostic Layers Skipping,"['Wenhao Zhu', 'Sizhe Liu', 'Shujian Huang', 'Shuaijie She', 'Chris Wendler', 'Jiajun Chen']","Decoding by contrasting layers (DoLa), is designed to improve the generation
 quality of large language models (LLMs) by contrasting the prediction
 probabilities between an early exit output (amateur logits) and the final
@@ -612,7 +585,7 @@ on our preliminary analysis. Experimental results on multilingual reasoning
 benchmarks demonstrate that our proposed method outperforms previous
 contrastive decoding baselines and substantially improves LLM's
 chain-of-thought reasoning accuracy across 11 languages. The project will be
-available at: https://github.com/NJUNLP/SkipLayerCD.",http://arxiv.org/pdf/2407.10795v1,2024-07-15,2407.10795v1,Multilingual Contrastive Decoding via Language-Agnostic Layers Skipping,gpt-4,highly irrelevant,The paper concentrates on improving the generational quality of large language models through a proposed method of contrastive decoding but does not discuss hard prefix prompting or prompt engineering techniques.,,
+available at: https://github.com/NJUNLP/SkipLayerCD.",http://arxiv.org/pdf/2407.10795v1,2024-07-15,2407.10795v1,Multilingual Contrastive Decoding via Language-Agnostic Layers Skipping,gpt-4,highly irrelevant,"This paper does not appear to deal with prompt engineering or hard prefix prompting, but instead focuses on improving the prediction probabilities in large language models by contrasting decoding layers.",,
 Graphusion: Leveraging Large Language Models for Scientific Knowledge Graph Fusion and Construction in NLP Education,"['Rui Yang', 'Boming Yang', 'Sixun Ouyang', 'Tianwei She', 'Aosong Feng', 'Yuang Jiang', 'Freddy Lecue', 'Jinghui Lu', 'Irene Li']","Knowledge graphs (KGs) are crucial in the field of artificial intelligence
 and are widely applied in downstream tasks, such as enhancing Question
 Answering (QA) systems. The construction of KGs typically requires significant
@@ -629,7 +602,7 @@ reasoning and QA, comprising six tasks and a total of 1,200 QA pairs. Our
 evaluation demonstrates that Graphusion surpasses supervised baselines by up to
 10% in accuracy on link prediction. Additionally, it achieves average scores of
 2.92 and 2.37 out of 3 in human evaluations for concept entity extraction and
-relation recognition, respectively.",http://arxiv.org/pdf/2407.10794v1,2024-07-15,2407.10794v1,Graphusion: Leveraging Large Language Models for Scientific Knowledge Graph Fusion and Construction in NLP Education,gpt-4,highly irrelevant,"The abstract discusses knowledge graph construction and reasoning tasks, rather than prompt engineering or hard prefix prompting.",,
+relation recognition, respectively.",http://arxiv.org/pdf/2407.10794v1,2024-07-15,2407.10794v1,Graphusion: Leveraging Large Language Models for Scientific Knowledge Graph Fusion and Construction in NLP Education,gpt-4,highly irrelevant,The paper focuses on the construction of knowledge graphs from large language models and does not discuss prompting techniques.,,
 GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework,"['Hannah Sansford', 'Nicholas Richardson', 'Hermina Petric Maretic', 'Juba Nait Saada']","Methods to evaluate Large Language Model (LLM) responses and detect
 inconsistencies, also known as hallucinations, with respect to the provided
 knowledge, are becoming increasingly important for LLM applications. Current
@@ -645,7 +618,7 @@ natural language inference (NLI) models leads to an improvement in balanced
 accuracy on various hallucination benchmarks, compared to using the raw NLI
 models. Lastly, we explore the use of GraphEval for hallucination correction by
 leveraging the structure of the KG, a method we name GraphCorrect, and
-demonstrate that the majority of hallucinations can indeed be rectified.",http://arxiv.org/pdf/2407.10793v1,2024-07-15,2407.10793v1,GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework,gpt-4,highly irrelevant,"The paper is focused on evaluating and detecting inconsistencies in LLM responses and hallucinations, there is no reference to hard prefix prompting or prompt engineering techniques.",,
+demonstrate that the majority of hallucinations can indeed be rectified.",http://arxiv.org/pdf/2407.10793v1,2024-07-15,2407.10793v1,GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework,gpt-4,highly irrelevant,"This paper focuses on evaluating model responses and detecting inconsistencies in Large Language Models, not on hard prefix prompting or prompt engineering techniques.",,
 AdapTable: Test-Time Adaptation for Tabular Data via Shift-Aware Uncertainty Calibrator and Label Distribution Handler,"['Changhun Kim', 'Taewon Kim', 'Seungyeon Woo', 'June Yong Yang', 'Eunho Yang']","In real-world applications, tabular data often suffer from distribution
 shifts due to their widespread and abundant nature, leading to erroneous
 predictions of pre-trained machine learning models. However, addressing such
@@ -665,7 +638,7 @@ tabular test-time adaptation method that directly modifies output probabilities
 by estimating target label distributions and adjusting initial probabilities
 based on calibrated uncertainty. Extensive experiments on both natural
 distribution shifts and synthetic corruptions demonstrate the adaptation
-efficacy of the proposed method.",http://arxiv.org/pdf/2407.10784v1,2024-07-15,2407.10784v1,AdapTable: Test-Time Adaptation for Tabular Data via Shift-Aware Uncertainty Calibrator and Label Distribution Handler,gpt-4,highly irrelevant,"The paper focuses on dealing with distribution shifts in tabular data and introduces a new method for test-time adaptation, with no mention or discussion of hard prefix prompting or prompt engineering.",,
+efficacy of the proposed method.",http://arxiv.org/pdf/2407.10784v1,2024-07-15,2407.10784v1,AdapTable: Test-Time Adaptation for Tabular Data via Shift-Aware Uncertainty Calibrator and Label Distribution Handler,gpt-4,highly irrelevant,The paper is centered around test-time adaptation for tabular data and does not mention or imply the use of hard prefix prompting or prompt engineering techniques.,,
 MSegRNN:Enhanced SegRNN Model with Mamba for Long-Term Time Series Forecasting,"['GaoXiang Zhao', 'XiaoQiang Wang']","The field of long-term time series forecasting demands handling extensive
 look-back windows and long-range prediction steps, posing significant
 challenges for RNN-based methodologies. Among these, SegRNN, a robust
@@ -683,7 +656,7 @@ information, resulting in a transformed sequence. The linear-strategy-adapted
 derivative retains the superior memory efficiency of the original SegRNN while
 demonstrating enhanced performance. Empirical evaluations on real-world LTSF
 datasets demonstrate the superior performance of our model, thereby
-contributing to the advancement of LTSF methodologies.",http://arxiv.org/pdf/2407.10768v1,2024-07-15,2407.10768v1,MSegRNN:Enhanced SegRNN Model with Mamba for Long-Term Time Series Forecasting,gpt-4,highly irrelevant,"The paper is centered around long-term time series forecasting, not prompt engineering or hard prefix prompting.",,
+contributing to the advancement of LTSF methodologies.",http://arxiv.org/pdf/2407.10768v1,2024-07-15,2407.10768v1,MSegRNN:Enhanced SegRNN Model with Mamba for Long-Term Time Series Forecasting,gpt-4,highly irrelevant,This paper focuses on long-term time-series forecasting using different methodologies and architectures but doesn't mention prompt engineering or hard prefix prompting.,,
 Continual Deep Learning on the Edge via Stochastic Local Competition among Subnetworks,"['Theodoros Christophides', 'Kyriakos Tolias', 'Sotirios Chatzis']","Continual learning on edge devices poses unique challenges due to stringent
 resource constraints. This paper introduces a novel method that leverages
 stochastic competition principles to promote sparsity, significantly reducing
@@ -699,7 +672,31 @@ probability for each unit in a block. During inference, the network retains
 only the winning unit and zeroes-out all weights pertaining to non-winning
 units for the task at hand. Thus, our approach is specifically tailored for
 deployment on edge devices, providing an efficient and scalable solution for
-continual learning in resource-limited environments.",http://arxiv.org/pdf/2407.10758v1,2024-07-15,2407.10758v1,Continual Deep Learning on the Edge via Stochastic Local Competition among Subnetworks,gpt-4,highly irrelevant,"The abstract of the paper does not mention prompt engineering, hard prefix prompts or related concepts, and is more focused on the system of continual learning in a resource-limited environment.",,
+continual learning in resource-limited environments.",http://arxiv.org/pdf/2407.10758v1,2024-07-15,2407.10758v1,Continual Deep Learning on the Edge via Stochastic Local Competition among Subnetworks,gpt-4,highly irrelevant,"The paper focusses on continual learning, network sparsity, and resource-limited devices, without any mention of hard prefix prompting or prompt engineering.",,
+Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks,"['Andrew Halterman', 'Katherine A. Keith']","Codebooks -- documents that operationalize constructs and outline annotation
+procedures -- are used almost universally by social scientists when coding
+unstructured political texts. Recently, to reduce manual annotation costs,
+political scientists have looked to generative large language models (LLMs) to
+label and analyze text data. However, previous work using LLMs for
+classification has implicitly relied on the universal label assumption --
+correct classification of documents is possible using only a class label or
+minimal definition and the information that the LLM inductively learns during
+its pre-training. In contrast, we argue that political scientists who care
+about valid measurement should instead make a codebook-construct label
+assumption -- an LLM should follow the definition and exclusion criteria of a
+construct/label provided in a codebook. In this work, we collect and curate
+three political science datasets and their original codebooks and conduct a set
+of experiments to understand whether LLMs comply with codebook instructions,
+whether rewriting codebooks improves performance, and whether
+instruction-tuning LLMs on codebook-document-label tuples improves performance
+over zero-shot classification. Using Mistral 7B Instruct as our LLM, we find
+re-structuring the original codebooks gives modest gains in zero-shot
+performance but the model still struggles to comply with the constraints of the
+codebooks. Optimistically, instruction-tuning Mistral on one of our datasets
+gives significant gains over zero-shot inference (0.76 versus 0.53 micro F1).
+We hope our conceptualization of the codebook-specific task, assumptions, and
+instruction-tuning pipeline as well our semi-structured LLM codebook format
+will help political scientists readily adapt to the LLM era.",http://arxiv.org/pdf/2407.10747v1,2024-07-15,2407.10747v1,Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks,gpt-4,highly irrelevant,"The paper focuses on the concept of operationalizing codebooks for text coding and annotation, and improving how language models interpret and adhere to these codebooks. There is no mention or discussion of hard prefix prompting or prompt engineering.",,
 What distinguishes conspiracy from critical narratives? A computational analysis of oppositional discourse,"['Damir Korenčić', 'Berta Chulvi', 'Xavier Bonet Casals', 'Alejandro Toselli', 'Mariona Taulé', 'Paolo Rosso']","The current prevalence of conspiracy theories on the internet is a
 significant issue, tackled by many computational approaches. However, these
 approaches fail to recognize the relevance of distinguishing between texts
@@ -716,7 +713,7 @@ by performing a range of experiments that yield strong baseline solutions.
 Finally, we perform an analysis which demonstrates that the promotion of
 intergroup conflict and the presence of violence and anger are key aspects to
 distinguish between the two types of oppositional narratives, i.e., conspiracy
-vs. critical.",http://arxiv.org/pdf/2407.10745v1,2024-07-15,2407.10745v1,What distinguishes conspiracy from critical narratives? A computational analysis of oppositional discourse,gpt-4,highly irrelevant,"The paper is focused on analyzing and distinguishing between conspiracy and critical narrative texts, with no mention of hard prefix prompting or prompt engineering in any way.",,
+vs. critical.",http://arxiv.org/pdf/2407.10745v1,2024-07-15,2407.10745v1,What distinguishes conspiracy from critical narratives? A computational analysis of oppositional discourse,gpt-4,highly irrelevant,"This paper is focused on analyzing the differences between critical and conspiracy narratives using an NLP-based automatization system, but it does not mention prompt engineering or anything related to hard prefix prompting.",,
 Scaling 3D Reasoning with LMMs to Large Robot Mission Environments Using Datagraphs,"['W. J. Meijer', 'A. C. Kemmeren', 'E. H. J. Riemens', 'J. E. Fransman', 'M. van Bekkum', 'G. J. Burghouts', 'J. D. van Mil']","This paper addresses the challenge of scaling Large Multimodal Models (LMMs)
 to expansive 3D environments. Solving this open problem is especially relevant
 for robot deployment in many first-responder scenarios, such as
@@ -730,7 +727,7 @@ improving the scalability of 3D scene language tasks. We illustrate the
 datagraph using 3D scenes, but these can be easily substituted by other dense
 modalities that represent the environment, such as pointclouds or Gaussian
 splats. We demonstrate the potential to use the datagraph for two 3D scene
-language task use cases, in a search-and-rescue mission example.",http://arxiv.org/pdf/2407.10743v1,2024-07-15,2407.10743v1,Scaling 3D Reasoning with LMMs to Large Robot Mission Environments Using Datagraphs,gpt-4,highly irrelevant,The paper primarily focuses on Large Multimodal Models (LMMs) and their application in expansive 3D environments and does not discuss any aspect of prompt engineering or hard prefix encouraging.,,
+language task use cases, in a search-and-rescue mission example.",http://arxiv.org/pdf/2407.10743v1,2024-07-15,2407.10743v1,Scaling 3D Reasoning with LMMs to Large Robot Mission Environments Using Datagraphs,gpt-4,highly irrelevant,"The paper does not discuss hard prefix prompting or prompting engineering, but rather it discusses the usage of large multimodal models in expansive 3D environments.",,
 Aligning Neuronal Coding of Dynamic Visual Scenes with Foundation Vision Models,"['Rining Wu', 'Feixiang Zhou', 'Ziwei Yin', 'Jian K. Liu']","Our brains represent the ever-changing environment with neurons in a highly
 dynamic fashion. The temporal features of visual pixels in dynamic natural
 scenes are entrapped in the neuronal responses of the retina. It is crucial to
@@ -754,7 +751,7 @@ of neuronal populations on complementary coding. In conclusion, our proposed
 Vi-ST demonstrates a novel modeling framework for neuronal coding of dynamic
 visual scenes in the brain, effectively aligning our brain representation of
 video with neuronal activity. The code is available at
-https://github.com/wurining/Vi-ST.",http://arxiv.org/pdf/2407.10737v1,2024-07-15,2407.10737v1,Aligning Neuronal Coding of Dynamic Visual Scenes with Foundation Vision Models,gpt-4,highly irrelevant,"The paper focuses on modeling neuronal coding of dynamic visual scenes, using a spatiotemporal convolutional neural network. It does not mention prompts, let alone hard prefix prompts or prompt engineering, and does not seem to relate to post-training prompting techniques.",,
+https://github.com/wurining/Vi-ST.",http://arxiv.org/pdf/2407.10737v1,2024-07-15,2407.10737v1,Aligning Neuronal Coding of Dynamic Visual Scenes with Foundation Vision Models,gpt-4,highly irrelevant,"The paper primarily focuses on the modeling of neuronal coding of dynamic visual scenes, not on prompt engineering or related techniques.",,
 Transforming Agency. On the mode of existence of Large Language Models,"['Xabier E. Barandiaran', 'Lola S. Almendros']","This paper investigates the ontological characterization of Large Language
 Models (LLMs) like ChatGPT. Between inflationary and deflationary accounts, we
 pay special attention to their status as agents. This requires explaining in
@@ -777,7 +774,29 @@ embodiment, LLMs textual embodiment (the training corpus) and resource-hungry
 computational embodiment, significantly transform existing forms of human
 agency. Beyond assisted and extended agency, the LLM-human coupling can produce
 midtended forms of agency, closer to the production of intentional agency than
-to the extended instrumentality of any previous technologies.",http://arxiv.org/pdf/2407.10735v1,2024-07-15,2407.10735v1,Transforming Agency. On the mode of existence of Large Language Models,gpt-4,highly irrelevant,"The paper focuses on the ontological characterization of Large Language Models, their status as agents, and their transformation of human agency, but does not discuss prompting or prompt engineering.",,
+to the extended instrumentality of any previous technologies.",http://arxiv.org/pdf/2407.10735v1,2024-07-15,2407.10735v1,Transforming Agency. On the mode of existence of Large Language Models,gpt-4,highly irrelevant,"The paper is focused on an ontological study of Large Language Models, their philosophical meaning, and their status as agents, rather than on the technical methods such as hard prefix prompting or prompt engineering.",,
+When Synthetic Traces Hide Real Content: Analysis of Stable Diffusion Image Laundering,"['Sara Mandelli', 'Paolo Bestagini', 'Stefano Tubaro']","In recent years, methods for producing highly realistic synthetic images have
+significantly advanced, allowing the creation of high-quality images from text
+prompts that describe the desired content. Even more impressively, Stable
+Diffusion (SD) models now provide users with the option of creating synthetic
+images in an image-to-image translation fashion, modifying images in the latent
+space of advanced autoencoders. This striking evolution, however, brings an
+alarming consequence: it is possible to pass an image through SD autoencoders
+to reproduce a synthetic copy of the image with high realism and almost no
+visual artifacts. This process, known as SD image laundering, can transform
+real images into lookalike synthetic ones and risks complicating forensic
+analysis for content authenticity verification. Our paper investigates the
+forensic implications of image laundering, revealing a serious potential to
+obscure traces of real content, including sensitive and harmful materials that
+could be mistakenly classified as synthetic, thereby undermining the protection
+of individuals depicted. To address this issue, we propose a two-stage
+detection pipeline that effectively differentiates between pristine, laundered,
+and fully synthetic images (those generated from text prompts), showing
+robustness across various conditions. Finally, we highlight another alarming
+property of image laundering, which appears to mask the unique artifacts
+exploited by forensic detectors to solve the camera model identification task,
+strongly undermining their performance. Our experimental code is available at
+https://github.com/polimi-ispl/synthetic-image-detection.",http://arxiv.org/pdf/2407.10736v1,2024-07-15,2407.10736v1,When Synthetic Traces Hide Real Content: Analysis of Stable Diffusion Image Laundering,gpt-4,highly irrelevant,"The paper is focused on image content authenticity, synthetic images and related forensic implications, not directly on prompt engineering.",,
 On-Device Training of Fully Quantized Deep Neural Networks on Cortex-M Microcontrollers,"['Mark Deutel', 'Frank Hannig', 'Christopher Mutschler', 'Jürgen Teich']","On-device training of DNNs allows models to adapt and fine-tune to newly
 collected data or changing domains while deployed on microcontroller units
 (MCUs). However, DNN training is a resource-intensive task, making the
@@ -789,26 +808,7 @@ DNNs completely in place on the MCU using fully quantized training (FQT) and
 dynamic partial gradient updates. We demonstrate the feasibility of our
 approach on multiple vision and time-series datasets and provide insights into
 the tradeoff between training accuracy, memory overhead, energy, and latency on
-real hardware.",http://arxiv.org/pdf/2407.10734v1,2024-07-15,2407.10734v1,On-Device Training of Fully Quantized Deep Neural Networks on Cortex-M Microcontrollers,gpt-4,highly irrelevant,"The abstract focuses on on-device training of DNNs using MCUs, which is a training method, not a prompting technique.",,
-CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses,"['Jing Yao', 'Xiaoyuan Yi', 'Xing Xie']","The rapid progress in Large Language Models (LLMs) poses potential risks such
-as generating unethical content. Assessing LLMs' values can help expose their
-misalignment, but relies on reference-free evaluators, e.g., fine-tuned LLMs or
-close-source ones like GPT-4, to identify values reflected in generated
-responses. Nevertheless, these evaluators face two challenges in open-ended
-value evaluation: they should align with changing human value definitions with
-minimal annotation, against their own bias (adaptability), and detect varying
-value expressions and scenarios robustly (generalizability). To handle these
-challenges, we introduce CLAVE, a novel framework which integrates two
-complementary LLMs, a large one to extract high-level value concepts from a few
-human labels, leveraging its extensive knowledge and generalizability, and a
-smaller one fine-tuned on such concepts to better align with human value
-understanding. This dual-model approach enables calibration with any value
-systems using <100 human-labeled samples per value type. Then we present
-ValEval, a comprehensive dataset comprising 13k+ (text,value,label) tuples
-across diverse domains, covering three major value systems. We benchmark the
-capabilities of 12+ popular LLM evaluators and analyze their strengths and
-weaknesses. Our findings reveal that combining fine-tuned small models and
-prompt-based large ones serves as a superior balance in value evaluation.",http://arxiv.org/pdf/2407.10725v1,2024-07-15,2407.10725v1,CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses,gpt-4,highly irrelevant,The paper discusses value assessment of language models via a framework and does not focus on the topic of hard prefix prompting or prompt engineering.,,
+real hardware.",http://arxiv.org/pdf/2407.10734v1,2024-07-15,2407.10734v1,On-Device Training of Fully Quantized Deep Neural Networks on Cortex-M Microcontrollers,gpt-4,highly irrelevant,"The paper focuses on on-device training of DNNs on microcontrollers, which does not discuss anything related to hard prefix prompting or prompt engineering.",,
 Sibyl: Simple yet Effective Agent Framework for Complex Real-world Reasoning,"['Yulong Wang', 'Tianhao Shen', 'Lifeng Liu', 'Jian Xie']","Existing agents based on large language models (LLMs) demonstrate robust
 problem-solving capabilities by integrating LLMs' inherent knowledge, strong
 in-context learning and zero-shot capabilities, and the use of tools combined
@@ -834,7 +834,7 @@ benchmark test set reveal that the Sibyl agent instantiated with GPT-4 achieves
 state-of-the-art performance with an average score of 34.55%, compared to other
 agents based on GPT-4. We hope that Sibyl can inspire more reliable and
 reusable LLM-based agent solutions to address complex real-world reasoning
-tasks.",http://arxiv.org/pdf/2407.10718v1,2024-07-15,2407.10718v1,Sibyl: Simple yet Effective Agent Framework for Complex Real-world Reasoning,gpt-4,highly irrelevant,"The abstract discusses the development of a language model-based agent for complex reasoning tasks, with a focus on knowledge management, conversation history sharing, and answer refinement, but it does not mention prompt engineering or hard prefix prompting.",,
+tasks.",http://arxiv.org/pdf/2407.10718v1,2024-07-15,2407.10718v1,Sibyl: Simple yet Effective Agent Framework for Complex Real-world Reasoning,gpt-4,highly irrelevant,The paper's focus is on an LLM-based agent framework and it does not mention anything about prefix prompting or prompt engineering.,,
 SEMINAR: Search Enhanced Multi-modal Interest Network and Approximate Retrieval for Lifelong Sequential Recommendation,"['Kaiming Shen', 'Xichen Ding', 'Zixiang Zheng', 'Yuqi Gong', 'Qianqian Li', 'Zhongyi Liu', 'Guannan Zhang']","The modeling of users' behaviors is crucial in modern recommendation systems.
 A lot of research focuses on modeling users' lifelong sequences, which can be
 extremely long and sometimes exceed thousands of items. These models use the
@@ -858,7 +858,7 @@ prediction, query-item relevance prediction, etc. After pretraining, the
 downstream model restores the pretrained embedding as initialization and
 finetunes the network. To accelerate the online retrieval speed of multi-modal
 embedding, we propose a multi-modal codebook-based product quantization
-strategy to approximate the exact attention calculati",http://arxiv.org/pdf/2407.10714v1,2024-07-15,2407.10714v1,SEMINAR: Search Enhanced Multi-modal Interest Network and Approximate Retrieval for Lifelong Sequential Recommendation,gpt-4,highly irrelevant,"The paper's abstract does not mention any form of prompting or hard prefix prompting, and it focuses primarily on modeling users' behavior in recommendation systems, not prompt engineering.",,
+strategy to approximate the exact attention calculati",http://arxiv.org/pdf/2407.10714v1,2024-07-15,2407.10714v1,SEMINAR: Search Enhanced Multi-modal Interest Network and Approximate Retrieval for Lifelong Sequential Recommendation,gpt-4,highly irrelevant,The study focuses on user behavior modeling in recommendation systems not on prompt engineering or hard prefix prompting.,,
 DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems,"['Anni Zou', 'Wenhao Yu', 'Hongming Zhang', 'Kaixin Ma', 'Deng Cai', 'Zhuosheng Zhang', 'Hai Zhao', 'Dong Yu']","Recently, there has been a growing interest among large language model (LLM)
 developers in LLM-based document reading systems, which enable users to upload
 their own documents and pose questions related to the document contents, going
@@ -879,7 +879,7 @@ between existing LLM-based document reading systems and human performance,
 underscoring the challenges of developing proficient systems. To summarize,
 DocBench aims to establish a standardized benchmark for evaluating LLM-based
 document reading systems under diverse real-world scenarios, thereby guiding
-future advancements in this research area.",http://arxiv.org/pdf/2407.10701v1,2024-07-15,2407.10701v1,DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems,gpt-4,highly irrelevant,"The paper discusses the evaluation of large language model-based document reading systems using a newly proposed benchmark but does not mention prompting, prompt engineering, or any related concepts.",,
+future advancements in this research area.",http://arxiv.org/pdf/2407.10701v1,2024-07-15,2407.10701v1,DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems,gpt-4,highly irrelevant,"While the paper focuses on large language models and document reading systems, it does not mention or imply the use of hard prefix prompting or prompt engineering techniques in the abstract.",,
 $\texttt{MixGR}$: Enhancing Retriever Generalization for Scientific Domain through Complementary Granularity,"['Fengyu Cai', 'Xinran Zhao', 'Tong Chen', 'Sihao Chen', 'Hongming Zhang', 'Iryna Gurevych', 'Heinz Koeppl']","Recent studies show the growing significance of document retrieval in the
 generation of LLMs, i.e., RAG, within the scientific domain by bridging their
 knowledge gap. However, dense retrievers often struggle with domain-specific
@@ -895,4 +895,4 @@ demonstrate that $\texttt{MixGR}$ outperforms previous document retrieval by
 respectively, averaged on queries containing multiple subqueries from five
 scientific retrieval datasets. Moreover, the efficacy of two downstream
 scientific question-answering tasks highlights the advantage of
-$\texttt{MixGR}$to boost the application of LLMs in the scientific domain.",http://arxiv.org/pdf/2407.10691v1,2024-07-15,2407.10691v1,$\texttt{MixGR}$: Enhancing Retriever Generalization for Scientific Domain through Complementary Granularity,gpt-4,highly irrelevant,"The paper is about document retrieval in the generation of LLMs, specifically enhancing retriever generalization through a metric-fusion approach. It does not discuss prompt engineering or hard prefix prompting techniques.",,
+$\texttt{MixGR}$to boost the application of LLMs in the scientific domain.",http://arxiv.org/pdf/2407.10691v1,2024-07-15,2407.10691v1,$\texttt{MixGR}$: Enhancing Retriever Generalization for Scientific Domain through Complementary Granularity,gpt-4,highly irrelevant,"The paper is focused on document retrieval and enhancing the generalization capabilities of LLMs in the scientific domain, not on prompt engineering or hard prefix prompting.",,
