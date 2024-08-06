@@ -1,0 +1,69 @@
+---
+title: "Perfect Information Monte Carlo with Postponing Reasoning"
+date: "2024-08-05"
+authors: "[, ', J, é, r, ô, m, e,  , A, r, j, o, n, i, l, l, a, ', ,,  , ', A, b, d, a, l, l, a, h,  , S, a, f, f, i, d, i, n, e, ', ,,  , ', T, r, i, s, t, a, n,  , C, a, z, e, n, a, v, e, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">Perfect Information Monte Carlo with Postponing Reasoning</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/Perfect Information Monte Carlo with Postponing Reasoning.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-05</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', J, é, r, ô, m, e,  , A, r, j, o, n, i, l, l, a, ', ,,  , ', A, b, d, a, l, l, a, h,  , S, a, f, f, i, d, i, n, e, ', ,,  , ', T, r, i, s, t, a, n,  , C, a, z, e, n, a, v, e, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>Imperfect information games, such as Bridge and Skat, present challenges due
+to state-space explosion and hidden information, posing formidable obstacles
+for search algorithms. Determinization-based algorithms offer a resolution by
+sampling hidden information and solving the game in a perfect information
+setting, facilitating rapid and effective action estimation. However,
+transitioning to perfect information introduces challenges, notably one called
+strategy fusion.This research introduces `Extended Perfect Information Monte
+Carlo' (EPIMC), an online algorithm inspired by the state-of-the-art
+determinization-based approach Perfect Information Monte Carlo (PIMC). EPIMC
+enhances the capabilities of PIMC by postponing the perfect information
+resolution, reducing alleviating issues related to strategy fusion. However,
+the decision to postpone the leaf evaluator introduces novel considerations,
+such as the interplay between prior levels of reasoning and the newly deferred
+resolution. In our empirical analysis, we investigate the performance of EPIMC
+across a range of games, with a particular focus on those characterized by
+varying degrees of strategy fusion. Our results demonstrate notable performance
+enhancements, particularly in games where strategy fusion significantly impacts
+gameplay. Furthermore, our research contributes to the theoretical foundation
+of determinization-based algorithms addressing challenges associated with
+strategy fusion.%, thereby enhancing our understanding of these algorithms
+within the context of imperfect information game scenarios.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>The paper is about search algorithms in imperfect information games and does not mention hard prefix prompting, prompt engineering or any related concepts.</p>
+  </div>
+
+  
+    href="http://arxiv.org/pdf/2408.02380v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
