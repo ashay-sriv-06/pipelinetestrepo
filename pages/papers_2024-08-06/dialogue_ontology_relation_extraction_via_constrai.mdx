@@ -1,0 +1,64 @@
+---
+title: "Dialogue Ontology Relation Extraction via Constrained Chain-of-Thought Decoding"
+date: "2024-08-05"
+authors: "[, ', R, e, n, a, t, o,  , V, u, k, o, v, i, c, ', ,,  , ', D, a, v, i, d,  , A, r, p, s, ', ,,  , ', C, a, r, e, l,  , v, a, n,  , N, i, e, k, e, r, k, ', ,,  , ', B, e, n, j, a, m, i, n,  , M, a, t, t, h, i, a, s,  , R, u, p, p, i, k, ', ,,  , ', H, s, i, e, n, -, C, h, i, n,  , L, i, n, ', ,,  , ', M, i, c, h, a, e, l,  , H, e, c, k, ', ,,  , ', M, i, l, i, c, a,  , G, a, š, i, ć, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">Dialogue Ontology Relation Extraction via Constrained Chain-of-Thought Decoding</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/Dialogue Ontology Relation Extraction via Constrained Chain-of-Thought Decoding.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-05</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', R, e, n, a, t, o,  , V, u, k, o, v, i, c, ', ,,  , ', D, a, v, i, d,  , A, r, p, s, ', ,,  , ', C, a, r, e, l,  , v, a, n,  , N, i, e, k, e, r, k, ', ,,  , ', B, e, n, j, a, m, i, n,  , M, a, t, t, h, i, a, s,  , R, u, p, p, i, k, ', ,,  , ', H, s, i, e, n, -, C, h, i, n,  , L, i, n, ', ,,  , ', M, i, c, h, a, e, l,  , H, e, c, k, ', ,,  , ', M, i, l, i, c, a,  , G, a, š, i, ć, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>State-of-the-art task-oriented dialogue systems typically rely on
+task-specific ontologies for fulfilling user queries. The majority of
+task-oriented dialogue data, such as customer service recordings, comes without
+ontology and annotation. Such ontologies are normally built manually, limiting
+the application of specialised systems. Dialogue ontology construction is an
+approach for automating that process and typically consists of two steps: term
+extraction and relation extraction. In this work, we focus on relation
+extraction in a transfer learning set-up. To improve the generalisation, we
+propose an extension to the decoding mechanism of large language models. We
+adapt Chain-of-Thought (CoT) decoding, recently developed for reasoning
+problems, to generative relation extraction. Here, we generate multiple
+branches in the decoding space and select the relations based on a confidence
+threshold. By constraining the decoding to ontology terms and relations, we aim
+to decrease the risk of hallucination. We conduct extensive experimentation on
+two widely used datasets and find improvements in performance on target
+ontology for source fine-tuned and one-shot prompted large language models.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>The study discusses the extension of the decoding mechanism of large language models and adaptation of Chain-of-Thought (CoT) decoding for generative relation extraction, but it doesn't make direct reference to hard prefix prompting or prompt engineering.</p>
+  </div>
+
+  
+    href="http://arxiv.org/pdf/2408.02361v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
