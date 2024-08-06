@@ -1,0 +1,64 @@
+---
+title: "Spin glass model of in-context learning"
+date: "2024-08-05"
+authors: "[, ', Y, u, h, a, o,  , L, i, ', ,,  , ', R, u, o, r, a, n,  , B, a, i, ', ,,  , ', H, a, i, p, i, n, g,  , H, u, a, n, g, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">Spin glass model of in-context learning</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/Spin glass model of in-context learning.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-05</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', Y, u, h, a, o,  , L, i, ', ,,  , ', R, u, o, r, a, n,  , B, a, i, ', ,,  , ', H, a, i, p, i, n, g,  , H, u, a, n, g, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>Large language models show a surprising in-context learning ability -- being
+able to use a prompt to form a prediction for a query, yet without additional
+training, in stark contrast to old-fashioned supervised learning. Providing a
+mechanistic interpretation and linking the empirical phenomenon to physics are
+thus challenging and remain unsolved. We study a simple yet expressive
+transformer with linear attention, and map this structure to a spin glass model
+with real-valued spins, where the couplings and fields explain the intrinsic
+disorder in data. The spin glass model explains how the weight parameters
+interact with each other during pre-training, and most importantly why an
+unseen function can be predicted by providing only a prompt yet without
+training. Our theory reveals that for single instance learning, increasing the
+task diversity leads to the emergence of the in-context learning, by allowing
+the Boltzmann distribution to converge to a unique correct solution of weight
+parameters. Therefore the pre-trained transformer displays a prediction power
+in a novel prompt setting. The proposed spin glass model thus establishes a
+foundation to understand the empirical success of large language models.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>While the paper discusses the use of prompts in prediction and learning context, it doesn't specifically address hard prefix prompting or prompt engineering techniques.</p>
+  </div>
+
+  
+    href="http://arxiv.org/pdf/2408.02288v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
