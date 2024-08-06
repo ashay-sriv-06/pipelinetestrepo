@@ -1,0 +1,69 @@
+---
+title: "Why Are My Prompts Leaked? Unraveling Prompt Extraction Threats in Customized Large Language Models"
+date: "2024-08-05"
+authors: "[, ', Z, i,  , L, i, a, n, g, ', ,,  , ', H, a, i, b, o,  , H, u, ', ,,  , ', Q, i, n, g, q, i, n, g,  , Y, e, ', ,,  , ', Y, a, x, i, n,  , X, i, a, o, ', ,,  , ', H, a, o, y, a, n, g,  , L, i, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">Why Are My Prompts Leaked? Unraveling Prompt Extraction Threats in Customized Large Language Models</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/Why Are My Prompts Leaked_ Unraveling Prompt Extraction Threats in Customized Large Language Models.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-05</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', Z, i,  , L, i, a, n, g, ', ,,  , ', H, a, i, b, o,  , H, u, ', ,,  , ', Q, i, n, g, q, i, n, g,  , Y, e, ', ,,  , ', Y, a, x, i, n,  , X, i, a, o, ', ,,  , ', H, a, o, y, a, n, g,  , L, i, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>The drastic increase of large language models' (LLMs) parameters has led to a
+new research direction of fine-tuning-free downstream customization by prompts,
+i.e., task descriptions. While these prompt-based services (e.g. OpenAI's GPTs)
+play an important role in many businesses, there has emerged growing concerns
+about the prompt leakage, which undermines the intellectual properties of these
+services and causes downstream attacks. In this paper, we analyze the
+underlying mechanism of prompt leakage, which we refer to as prompt
+memorization, and develop corresponding defending strategies. By exploring the
+scaling laws in prompt extraction, we analyze key attributes that influence
+prompt extraction, including model sizes, prompt lengths, as well as the types
+of prompts. Then we propose two hypotheses that explain how LLMs expose their
+prompts. The first is attributed to the perplexity, i.e. the familiarity of
+LLMs to texts, whereas the second is based on the straightforward token
+translation path in attention matrices. To defend against such threats, we
+investigate whether alignments can undermine the extraction of prompts. We find
+that current LLMs, even those with safety alignments like GPT-4, are highly
+vulnerable to prompt extraction attacks, even under the most straightforward
+user attacks. Therefore, we put forward several defense strategies with the
+inspiration of our findings, which achieve 83.8\% and 71.0\% drop in the prompt
+extraction rate for Llama2-7B and GPT-3.5, respectively. Source code is
+avaliable at \url{https://github.com/liangzid/PromptExtractionEval}.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>The paper talks about the usage of prompts in large language models, an analysis on the factors influencing prompt extraction and ways to defend against prompt extraction threats; but it does not specifically discuss hard prefix prompts.</p>
+  </div>
+
+  
+    href="http://arxiv.org/pdf/2408.02416v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
