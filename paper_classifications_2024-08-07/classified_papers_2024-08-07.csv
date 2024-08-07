@@ -1,4 +1,4 @@
-title,authors,abstract,pdf_url,published,arxiv_id,Title,Model,Rating,Reasoning,image,image_description
+title,authors,abstract,pdf_url,published,arxiv_id,Title,Model,Rating,Reasoning,image_url,image_description
 Conditioning LLMs with Emotion in Neural Machine Translation,"['Charles Brazier', 'Jean-Luc Rouas']","Large Language Models (LLMs) have shown remarkable performance in Natural
 Language Processing tasks, including Machine Translation (MT). In this work, we
 propose a novel MT pipeline that integrates emotion information extracted from
@@ -8,7 +8,7 @@ select the most performant model. Subsequently, we augment LLM prompts with
 different dimensional emotions and train the selected LLM under these different
 configurations. Our experiments reveal that integrating emotion information,
 especially arousal, into LLM prompts leads to notable improvements in
-translation quality.",http://arxiv.org/pdf/2408.03150v1,2024-08-06,2408.03150v1,Conditioning LLMs with Emotion in Neural Machine Translation,gpt-4,highly relevant,"This paper discusses augmenting LLM prompts with emotion information and their effect on translation quality, thus directly relating to hard prefix prompting techniques.",,
+translation quality.",http://arxiv.org/pdf/2408.03150v1,2024-08-06,2408.03150v1,Conditioning LLMs with Emotion in Neural Machine Translation,gpt-4,highly relevant,The paper is related to prompt engineering as it talks about augmenting LLM prompts with different dimensional emotions and training the model under these different configurations.,,
 500xCompressor: Generalized Prompt Compression for Large Language Models,"['Zongqian Li', 'Yixuan Su', 'Nigel Collier']","Prompt compression is crucial for enhancing inference speed, reducing costs,
 and improving user experience. However, current methods face challenges such as
 low compression ratios and potential data leakage during evaluation. To address
@@ -27,7 +27,7 @@ utilized and that K V values have significant advantages over embeddings in
 preserving information at high compression ratios. The highly compressive
 nature of natural language prompts, even for fine-grained complex information,
 suggests promising potential for future applications and further research into
-developing a new LLM language.",http://arxiv.org/pdf/2408.03094v1,2024-08-06,2408.03094v1,500xCompressor: Generalized Prompt Compression for Large Language Models,gpt-4,highly relevant,"The paper primarily focuses on prompt compression, which is closely related to hard prefix prompt engineering as it directly works with prompts.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=6001x1844 at 0x7B129F2CB310>,"Figure 2: Process of pretraining (left), fine-tuning (middle), and prediction (right) with 500xCompressor.
+developing a new LLM language.",http://arxiv.org/pdf/2408.03094v1,2024-08-06,2408.03094v1,500xCompressor: Generalized Prompt Compression for Large Language Models,gpt-4,highly relevant,"The paper discusses prompt compression, a technique for refining prompting in large language models which is highly related to the concept of prefix prompt engineering. The paper explores ways to compress extensive natural language contexts into a single token, a concept closely related to hard prefix prompting.",https://ashay-sriv-images.s3.amazonaws.com/500xCompressor_ Generalized Prompt Compression for Large Language Models.png,"Figure 2: Process of pretraining (left), fine-tuning (middle), and prediction (right) with 500xCompressor.
 texts or be used for QA. Although trained on the Arxiv Cor-
 In this paper, the architecture and mechanism of
 "
@@ -46,7 +46,7 @@ address the exponential number of persistent errors, we implement a dynamic
 query cache refinement algorithm that identifies and corrects conflicting
 queries by combining the active and passive learning algorithms. The empirical
 results demonstrate the robustness and efficiency of our approach, providing a
-theoretical foundation for automata learning with LLMs in the loop.",http://arxiv.org/pdf/2408.02999v1,2024-08-06,2408.02999v1,LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning,gpt-4,highly relevant,"The paper introduces new prompts such as the 'Discrimination' and 'Verification' prompts and explores their advantages, which is a part of prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2644x1815 at 0x7B129F370640>,"A
+theoretical foundation for automata learning with LLMs in the loop.",http://arxiv.org/pdf/2408.02999v1,2024-08-06,2408.02999v1,LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning,gpt-4,highly relevant,"The paper discusses the use of two different types of prompts, the Discrimination prompt, and the Verification prompt, in terms of improving accuracy in language models and ensuring correct automata learning, which is directly associated with prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning.png,"A
 Appendix / supplemental material
 A.1
 Verification Prompt Example
@@ -73,7 +73,7 @@ For GPT-4o and Claude 3.5, CoT improved the accuracy, and CoT-SC improved both
 accuracy and consistency. RAP was particularly effective for GPT-4o to answer
 Expert level questions. Consequently, choosing the appropriate LLM and
 prompting technique, tailored to the proficiency level and specific domain, can
-mitigate errors and potential risks in diet and nutrition chatbots.",http://arxiv.org/pdf/2408.02964v1,2024-08-06,2408.02964v1,Accuracy and Consistency of LLMs in the Registered Dietitian Exam: The Impact of Prompt Engineering and Knowledge Retrieval,gpt-4,highly relevant,"The paper discusses multiple prompting techniques (e.g., Zero-Shot, Chain of Thought, CoT with Self Consistency, and Retrieval Augmented Prompting), their effect on model accuracy and consistency, as well as the influence of the proficiency level and domain specifics on choosing the appropriate prompting strategy.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=22x455 at 0x7B129F3737F0>,"1.5 Pro, CoT-SC
+mitigate errors and potential risks in diet and nutrition chatbots.",http://arxiv.org/pdf/2408.02964v1,2024-08-06,2408.02964v1,Accuracy and Consistency of LLMs in the Registered Dietitian Exam: The Impact of Prompt Engineering and Knowledge Retrieval,gpt-4,highly relevant,"The paper explicitly discusses several prompting techniques including Zero-Shot, Chain of Thought, Chain of Thought with Self Consistency, and Retrieval Augmented Prompting, predominantly in the context of hard prefix prompts for Large Language Models.",https://ashay-sriv-images.s3.amazonaws.com/Accuracy and Consistency of LLMs in the Registered Dietitian Exam_ The Impact of Prompt Engineering .png,"1.5 Pro, CoT-SC
 ni 1.5 Pro, RAP
 2
 5 0.85
@@ -85,6 +85,23 @@ ni 1.5 Pro, RAP
 0.94
 0.96
 "
+Training LLMs to Recognize Hedges in Spontaneous Narratives,"['Amie J. Paige', 'Adil Soubki', 'John Murzaku', 'Owen Rambow', 'Susan E. Brennan']","Hedges allow speakers to mark utterances as provisional, whether to signal
+non-prototypicality or ""fuzziness"", to indicate a lack of commitment to an
+utterance, to attribute responsibility for a statement to someone else, to
+invite input from a partner, or to soften critical feedback in the service of
+face-management needs. Here we focus on hedges in an experimentally
+parameterized corpus of 63 Roadrunner cartoon narratives spontaneously produced
+from memory by 21 speakers for co-present addressees, transcribed to text
+(Galati and Brennan, 2010). We created a gold standard of hedges annotated by
+human coders (the Roadrunner-Hedge corpus) and compared three LLM-based
+approaches for hedge detection: fine-tuning BERT, and zero and few-shot
+prompting with GPT-4o and LLaMA-3. The best-performing approach was a
+fine-tuned BERT model, followed by few-shot GPT-4o. After an error analysis on
+the top performing approaches, we used an LLM-in-the-Loop approach to improve
+the gold standard coding, as well as to highlight cases in which hedges are
+ambiguous in linguistically interesting ways that will guide future research.
+This is the first step in our research program to train LLMs to interpret and
+generate collateral signals appropriately and meaningfully in conversation.",http://arxiv.org/pdf/2408.03319v1,2024-08-06,2408.03319v1,Training LLMs to Recognize Hedges in Spontaneous Narratives,gpt-4,somewhat relevant,"The paper discusses the use of zero and few-shot prompting with GPT-4o and LLaMA-3, but mostly emphasizes on training models.",,
 Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters,"['Charlie Snell', 'Jaehoon Lee', 'Kelvin Xu', 'Aviral Kumar']","Enabling LLMs to improve their outputs by using more test-time computation is
 a critical step towards building generally self-improving agents that can
 operate on open-ended natural language. In this paper, we study the scaling of
@@ -108,7 +125,7 @@ compute-optimal strategy, we can improve the efficiency of test-time compute
 scaling by more than 4x compared to a best-of-N baseline. Additionally, in a
 FLOPs-matched evaluation, we find that on problems where a smaller base model
 attains somewhat non-trivial success rates, test-time compute can be used to
-outperform a 14x larger model.",http://arxiv.org/pdf/2408.03314v1,2024-08-06,2408.03314v1,Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters,gpt-4,somewhat relevant,"The paper focuses on the scaling of inference-time computation in LLMs and uses prompts for testing performance, which suggests its relevance to prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1175x1946 at 0x7B129F2C8D30>,"gure 23 ∣Revision model example 7. On the first attempt the model evaluates 1
+outperform a 14x larger model.",http://arxiv.org/pdf/2408.03314v1,2024-08-06,2408.03314v1,Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters,gpt-4,somewhat relevant,"The paper focuses on the scalability of inference-time computation in large language models and how it can improve its performance based on prompts, which is a central discussion in prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters.png,"gure 23 ∣Revision model example 7. On the first attempt the model evaluates 1
 3 + 2 incorrectly. On th
 cond attempt it corrects this error.
 "
@@ -127,7 +144,7 @@ indicate that CoT can intensify the recall of factual knowledge by encouraging
 LLMs to engage in orderly and reliable reasoning. Furthermore, we explored how
 contextual conflicts affect the retrieval of facts during the reasoning process
 to gain a comprehensive understanding of the factual recall behaviors of LLMs.
-Code and data will be available soon.",http://arxiv.org/pdf/2408.03247v1,2024-08-06,2408.03247v1,Unveiling Factual Recall Behaviors of Large Language Models through Knowledge Neurons,gpt-4,somewhat relevant,The paper discusses the use of Chain-of-Thought (CoT) prompting as a way of enhancing the recall and retrieval process of Large Language Models during reasoning tasks which is an aspect of prompt engineering.,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=8794x2478 at 0x7B129B2E6380>,"3.
+Code and data will be available soon.",http://arxiv.org/pdf/2408.03247v1,2024-08-06,2408.03247v1,Unveiling Factual Recall Behaviors of Large Language Models through Knowledge Neurons,gpt-4,somewhat relevant,"The paper discusses the use of 'Chain-of-Thought' prompting technique, which falls under hard prefix prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Unveiling Factual Recall Behaviors of Large Language Models through Knowledge Neurons.png,"3.
 (12)
 ))
 (13)
@@ -148,7 +165,7 @@ resilience. Furthermore, we explore methods to augment reasoning capabilities
 via fine-tuning and offer an attribution-annotated dataset and a specialized
 training strategy. Our fine-tuned model achieves competitive performance on
 multi-hop reasoning benchmarks, closely paralleling proprietary LMs such as
-ChatGPT and Claude-instant.",http://arxiv.org/pdf/2408.03246v1,2024-08-06,2408.03246v1,Making Long-Context Language Models Better Multi-Hop Reasoners,gpt-4,somewhat relevant,"While the paper does mention prompting language models and validates it through experiments, the main focus seems to be on fine-tuning models, creating enhanced training strategies, and improving reasoning capabilities rather than specifically on prompt engineering.",<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=1488x1297 at 0x7B129F371ED0>,"Figure 5: Screenshot of our human annotation tool.
+ChatGPT and Claude-instant.",http://arxiv.org/pdf/2408.03246v1,2024-08-06,2408.03246v1,Making Long-Context Language Models Better Multi-Hop Reasoners,gpt-4,somewhat relevant,"The paper introduces a new approach that uses prompts to enhance the reasoning capabilities of language models which is related to prompt engineering, but also focuses quite a bit on the fine-tuning aspect of training models.",https://ashay-sriv-images.s3.amazonaws.com/Making Long-Context Language Models Better Multi-Hop Reasoners.png,"Figure 5: Screenshot of our human annotation tool.
 Citation Precision
 Citation Recall
 "
@@ -161,50 +178,7 @@ version of the model using an augmented version of the training dataset. The
 experimental results show that this approach can produce notable results in
 terms of the macro F1-score, while having limitations in terms of faithfulness
 and consistency. All the developed code is publicly available on a GitHub
-repository",http://arxiv.org/pdf/2408.03127v1,2024-08-06,2408.03127v1,Lisbon Computational Linguists at SemEval-2024 Task 2: Using A Mistral 7B Model and Data Augmentation,gpt-4,somewhat relevant,"The paper mentions developing a prompt for a specific task and fine-tuning the model using it, which indicates usage of a prompting approach.",,
-Training LLMs to Recognize Hedges in Spontaneous Narratives,"['Amie J. Paige', 'Adil Soubki', 'John Murzaku', 'Owen Rambow', 'Susan E. Brennan']","Hedges allow speakers to mark utterances as provisional, whether to signal
-non-prototypicality or ""fuzziness"", to indicate a lack of commitment to an
-utterance, to attribute responsibility for a statement to someone else, to
-invite input from a partner, or to soften critical feedback in the service of
-face-management needs. Here we focus on hedges in an experimentally
-parameterized corpus of 63 Roadrunner cartoon narratives spontaneously produced
-from memory by 21 speakers for co-present addressees, transcribed to text
-(Galati and Brennan, 2010). We created a gold standard of hedges annotated by
-human coders (the Roadrunner-Hedge corpus) and compared three LLM-based
-approaches for hedge detection: fine-tuning BERT, and zero and few-shot
-prompting with GPT-4o and LLaMA-3. The best-performing approach was a
-fine-tuned BERT model, followed by few-shot GPT-4o. After an error analysis on
-the top performing approaches, we used an LLM-in-the-Loop approach to improve
-the gold standard coding, as well as to highlight cases in which hedges are
-ambiguous in linguistically interesting ways that will guide future research.
-This is the first step in our research program to train LLMs to interpret and
-generate collateral signals appropriately and meaningfully in conversation.",http://arxiv.org/pdf/2408.03319v1,2024-08-06,2408.03319v1,Training LLMs to Recognize Hedges in Spontaneous Narratives,gpt-4,somewhat irrelevant,"The paper focuses on fine-tuning already trained models like BERT and GPT-4o for recognizing 'hedges' in narratives, and doesn't explicitly discuss hard prefix prompt engineering.",,
-Synthesizing Text-to-SQL Data from Weak and Strong LLMs,"['Jiaxi Yang', 'Binyuan Hui', 'Min Yang', 'Jian Yang', 'Junyang Lin', 'Chang Zhou']","The capability gap between open-source and closed-source large language
-models (LLMs) remains a challenge in text-to-SQL tasks. In this paper, we
-introduce a synthetic data approach that combines data produced by larger, more
-powerful models (strong models) with error information data generated by
-smaller, not well-aligned models (weak models). The method not only enhances
-the domain generalization of text-to-SQL models but also explores the potential
-of error data supervision through preference learning. Furthermore, we employ
-the synthetic data approach for instruction tuning on open-source LLMs,
-resulting SENSE, a specialized text-to-SQL model. The effectiveness of SENSE is
-demonstrated through state-of-the-art results on the SPIDER and BIRD
-benchmarks, bridging the performance gap between open-source models and methods
-prompted by closed-source models.",http://arxiv.org/pdf/2408.03256v1,2024-08-06,2408.03256v1,Synthesizing Text-to-SQL Data from Weak and Strong LLMs,gpt-4,somewhat irrelevant,"While the paper discusses the use of largescale language models for text-to-SQL tasks, it does not focus specifically on prompt engineering or hard prefix prompting techniques.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=5000x5000 at 0x7B129F2CBEB0>,"y
-thub.com/Yangjiaxi/Sense
-and
-Ms)
-In
-ap-
-ated
-els)
-well-
-ach
-Strong Models
-Claude2
-GPT-4
-Gemini
-"
+repository",http://arxiv.org/pdf/2408.03127v1,2024-08-06,2408.03127v1,Lisbon Computational Linguists at SemEval-2024 Task 2: Using A Mistral 7B Model and Data Augmentation,gpt-4,somewhat relevant,"The paper describes developing a prompt for a Natural Language Inference task and the subsequent fine-tuning of the model, which indicates a focus on prompt engineering.",,
 EC-Guide: A Comprehensive E-Commerce Guide for Instruction Tuning and Quantization,"['Zhaopeng Feng', 'Zijie Meng', 'Zuozhu Liu']","Large language models (LLMs) have attracted considerable attention in various
 fields for their cost-effective solutions to diverse challenges, especially
 with advancements in instruction tuning and quantization. E-commerce, with its
@@ -219,7 +193,7 @@ arithmetic performance. Our approach achieved the 2nd place in Track 2 and 5th
 place in Track 5 at the Amazon KDD Cup'24
 \href{https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms}.
 Additionally, our solution is model-agnostic, enabling effective scalability
-across larger systems.",http://arxiv.org/pdf/2408.02970v1,2024-08-06,2408.02970v1,EC-Guide: A Comprehensive E-Commerce Guide for Instruction Tuning and Quantization,gpt-4,somewhat irrelevant,"The paper involves instruction tuning of Large Language Models (LLMs) with a focus on e-commerce applications, but doesn't specifically mention prompt engineering or hard prefix prompting.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=701x569 at 0x7B129F2CBC70>,"(INT4)
+across larger systems.",http://arxiv.org/pdf/2408.02970v1,2024-08-06,2408.02970v1,EC-Guide: A Comprehensive E-Commerce Guide for Instruction Tuning and Quantization,gpt-4,somewhat irrelevant,"The abstract mentions instruction tuning and quantization of LLMs, but it does not specifically address hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/EC-Guide_ A Comprehensive E-Commerce Guide for Instruction Tuning and Quantization.png,"(INT4)
 uide (74k examples for 24 sub-tasks ac
 ith QLoRA [2] and quantize it with GPT
 "
@@ -232,7 +206,7 @@ computer vision scenarios: single-image, multi-image, and video scenarios.
 Importantly, the design of LLaVA-OneVision allows strong transfer learning
 across different modalities/scenarios, yielding new emerging capabilities. In
 particular, strong video understanding and cross-scenario capabilities are
-demonstrated through task transfer from images to videos.",http://arxiv.org/pdf/2408.03326v1,2024-08-06,2408.03326v1,LLaVA-OneVision: Easy Visual Task Transfer,gpt-4,highly irrelevant,"The paper is completely focused on developing multimodal models for understanding and interpreting visual data, with no mention or implication of any use or study of prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=3570x3570 at 0x7B129F367EB0>,"Single-image 
+demonstrated through task transfer from images to videos.",http://arxiv.org/pdf/2408.03326v1,2024-08-06,2408.03326v1,LLaVA-OneVision: Easy Visual Task Transfer,gpt-4,highly irrelevant,"The paper focuses on multimodal models and visual task transfer, with no mention of prompt engineering or hard prefix prompting.",https://ashay-sriv-images.s3.amazonaws.com/LLaVA-OneVision_ Easy Visual Task Transfer.png,"Single-image 
 3.2M
 Genera
 CLEVR (0
@@ -274,7 +248,7 @@ representations for tables where available, and a consistent schema. We
 manually vet the data for quality to ensure low levels of label noise. Finally,
 we report a variety of competitive baseline results to show CoverBench is
 challenging and has very significant headroom. The data is available at
-https://huggingface.co/datasets/google/coverbench .",http://arxiv.org/pdf/2408.03325v1,2024-08-06,2408.03325v1,CoverBench: A Challenging Benchmark for Complex Claim Verification,gpt-4,highly irrelevant,"The paper does not mention prompt engineering or related techniques in its abstract, focusing instead on evaluating and verifying the outputs of language models.",<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=512x512 at 0x7B129F2C91E0>,"Biomedica
+https://huggingface.co/datasets/google/coverbench .",http://arxiv.org/pdf/2408.03325v1,2024-08-06,2408.03325v1,CoverBench: A Challenging Benchmark for Complex Claim Verification,gpt-4,highly irrelevant,"The paper is focused on verifying the correctness of language models' outputs and introduces a benchmark for complex claim verification, but it does not mention or imply the use of hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/CoverBench_ A Challenging Benchmark for Complex Claim Verification.png,"Biomedica
 Abstracts
 Complex Reasoning Claims
 Information-Rich Contexts
@@ -302,7 +276,7 @@ pure manual labeling reaches peak values of up to 26%, attaining drastically
 better quality quicker. By being tailored to the complex task of segmenting
 intricate lines, specifically distinguishing it from previous methods, our
 approach offers drastic improvements in efficacy, transferable to a broad
-spectrum of applications beyond Etruscan mirrors.",http://arxiv.org/pdf/2408.03304v1,2024-08-06,2408.03304v1,Fusing Forces: Deep-Human-Guided Refinement of Segmentation Masks,gpt-4,highly irrelevant,"The paper is about a methodology for automating the process of tracing illustrations on Etruscan mirrors, involving photometric-stereo scanning in combination with deep neural networks, which is outside the scope of prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2294x2468 at 0x7B129F2F0850>,"Finally, we provide public access to both the
+spectrum of applications beyond Etruscan mirrors.",http://arxiv.org/pdf/2408.03304v1,2024-08-06,2408.03304v1,Fusing Forces: Deep-Human-Guided Refinement of Segmentation Masks,gpt-4,highly irrelevant,The paper is about refinement of segmentation masks in Etruscan mirrors' analysis and documentation. It does not discuss hard prefix prompting or prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Fusing Forces_ Deep-Human-Guided Refinement of Segmentation Masks.png,"Finally, we provide public access to both the
 work (see github.com/RafaelSterzinger/etmira-in
 parency and reproducibility.
 (a) High-Pass Filtered Depth Map
@@ -328,7 +302,7 @@ participants identified only half of the errors, and the proportion of errors
 identified did not significantly differ from their first attempts. Based on
 these insights, we offer implications for designing accessible interfaces
 tailored to the needs of blind and low-vision users in identifying object
-recognition errors.",http://arxiv.org/pdf/2408.03303v1,2024-08-06,2408.03303v1,Understanding How Blind Users Handle Object Recognition Errors: Strategies and Challenges,gpt-4,highly irrelevant,"This paper focuses on object recognition systems and user study for blind and low-vision users, however there is no mention or indication of prompt engineering or any related terms or techniques.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=3336x1276 at 0x7B12D7477E20>,"gies and Challenges
+recognition errors.",http://arxiv.org/pdf/2408.03303v1,2024-08-06,2408.03303v1,Understanding How Blind Users Handle Object Recognition Errors: Strategies and Challenges,gpt-4,highly irrelevant,"The paper focuses on object recognition and usability for blind and low-vision individuals, not on hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Understanding How Blind Users Handle Object Recognition Errors_ Strategies and Challenges.png,"gies and Challenges
 ASSETS ’24, October 27–30, 2024, St. John’s, NL, Canada
 Figure 5: Participants’ responses about frequency of encoun-
 tered errors and verification of the output from the apps.
@@ -353,7 +327,7 @@ proportion of preference data representing different behavior patterns, we
 enhance the adherence capabilities and noise robustness of LLMs in a balanced
 manner. Experimental results show that KaPO outperforms previous methods for
 handling knowledge conflicts by over 37%, while also exhibiting robust
-generalization across various out-of-distribution datasets.",http://arxiv.org/pdf/2408.03297v1,2024-08-06,2408.03297v1,KaPO: Knowledge-aware Preference Optimization for Controllable Knowledge Selection in Retrieval-Augmented Language Models,gpt-4,highly irrelevant,"While the paper does deal with language models and their optimization, there is no mention or discussion of using hard prefix prompting or any form of prompt engineering.",,
+generalization across various out-of-distribution datasets.",http://arxiv.org/pdf/2408.03297v1,2024-08-06,2408.03297v1,KaPO: Knowledge-aware Preference Optimization for Controllable Knowledge Selection in Retrieval-Augmented Language Models,gpt-4,highly irrelevant,"This paper does not discuss hard prefix prompting or prompt engineering, but discusses about knowledge integration and preference optimization for retrieval-augmented language models.",,
 Static IR Drop Prediction with Attention U-Net and Saliency-Based Explainability,"['Lizi Zhang', 'Azadeh Davoodi']","There has been significant recent progress to reduce the computational effort
 of static IR drop analysis using neural networks, and modeling as an
 image-to-image translation task. A crucial issue is the lack of sufficient data
@@ -372,7 +346,7 @@ propose a fast method using saliency maps which can explain a predicted IR drop
 in terms of specific input pixels contributing the most to a drop. In our
 experiments, we show the number of high IR drop pixels can be reduced
 on-average by 18% by mimicking upsize of a tiny portion of PDN's resistive
-edges.",http://arxiv.org/pdf/2408.03292v1,2024-08-06,2408.03292v1,Static IR Drop Prediction with Attention U-Net and Saliency-Based Explainability,gpt-4,highly irrelevant,"The paper doesn't discuss any forms of prompting, instead being focused on static IR drop prediction with neural networks.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=4400x1902 at 0x7B129B2E7640>,"A PREPRINT - AUGUST 7, 202
+edges.",http://arxiv.org/pdf/2408.03292v1,2024-08-06,2408.03292v1,Static IR Drop Prediction with Attention U-Net and Saliency-Based Explainability,gpt-4,highly irrelevant,The paper is focused on static IR drop prediction using neural networks and does not mention or imply the use of hard prefix prompting or prompt engineering in any capacity.,https://ashay-sriv-images.s3.amazonaws.com/Static IR Drop Prediction with Attention U-Net and Saliency-Based Explainability.png,"A PREPRINT - AUGUST 7, 202
 gure 2: Block diagram of AttUNet. Additional embedded components compared to a U-Net structure are highlighte
 esizing and Normalization: Since the chip dimensions may be different next we apply resizing to adjust all imag
 "
@@ -391,7 +365,7 @@ reduces the number of parameters by fine-tuning only multiple parallel sets of
 singular values controlled by a router. Extensive experiments on various
 complex tasks demonstrate the simplicity and parameter efficiency of our
 methods. They can effectively and adaptively find the most suitable rank for
-each layer of each model.",http://arxiv.org/pdf/2408.03290v1,2024-08-06,2408.03290v1,SARA: Singular-Value Based Adaptive Low-Rank Adaption,gpt-4,highly irrelevant,"The paper focuses on a parameter-efficient fine-tuning method for training large pre-trained models, but does not discuss or mention anything about hard prefix prompts or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=4200x4800 at 0x7B12D43582E0>,"raining
+each layer of each model.",http://arxiv.org/pdf/2408.03290v1,2024-08-06,2408.03290v1,SARA: Singular-Value Based Adaptive Low-Rank Adaption,gpt-4,highly irrelevant,"The paper focuses on fine-tuning pre-trained models through a new method named 'Singular-Value Based Adaptive Low-Rank Adaption (SARA)', and though it mentions model adaptation in downstream tasks, it does not discuss prompting techniques in transformers or any aspect of prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/SARA_ Singular-Value Based Adaptive Low-Rank Adaption.png,"raining
 u et al.,
 to the
 iments,
@@ -428,7 +402,7 @@ benchmarks demonstrate that StructEval serves as a reliable tool for resisting
 the risk of data contamination and reducing the interference of potential
 biases, thereby providing more reliable and consistent conclusions regarding
 model capabilities. Our framework also sheds light on the design of future
-principled and trustworthy LLM evaluation protocols.",http://arxiv.org/pdf/2408.03281v1,2024-08-06,2408.03281v1,StructEval: Deepen and Broaden Large Language Model Assessment via Structured Evaluation,gpt-4,highly irrelevant,This paper focuses on the evaluation of large language models rather than on the specific topic of hard prefix prompting or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1394x1354 at 0x7B129F2C9750>,"Figure 5: The annotation guidelines for our human evaluation.
+principled and trustworthy LLM evaluation protocols.",http://arxiv.org/pdf/2408.03281v1,2024-08-06,2408.03281v1,StructEval: Deepen and Broaden Large Language Model Assessment via Structured Evaluation,gpt-4,highly irrelevant,"The paper is focused on evaluating model capabilities and bias, with no mention of prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/StructEval_ Deepen and Broaden Large Language Model Assessment via Structured Evaluation.png,"Figure 5: The annotation guidelines for our human evaluation.
 "
 Compress and Compare: Interactively Evaluating Efficiency and Behavior Across ML Model Compression Experiments,"['Angie Boggust', 'Venkatesh Sivaraman', 'Yannick Assogba', 'Donghao Ren', 'Dominik Moritz', 'Fred Hohman']","To deploy machine learning models on-device, practitioners use compression
 algorithms to shrink and speed up models while maintaining their high-quality
@@ -451,12 +425,38 @@ workflows, help practitioners build intuition about compression, and encourage
 thorough analysis of compression's effect on model behavior. Through these
 evaluations, we identify compression-specific challenges that future visual
 analytics tools should consider and Compress and Compare visualizations that
-may generalize to broader model comparison tasks.",http://arxiv.org/pdf/2408.03274v1,2024-08-06,2408.03274v1,Compress and Compare: Interactively Evaluating Efficiency and Behavior Across ML Model Compression Experiments,gpt-4,highly irrelevant,The paper focuses on machine learning model compression rather than prompting or prompt engineering techniques.,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=4096x3065 at 0x7B12D4359D50>,"e pruning 
+may generalize to broader model comparison tasks.",http://arxiv.org/pdf/2408.03274v1,2024-08-06,2408.03274v1,Compress and Compare: Interactively Evaluating Efficiency and Behavior Across ML Model Compression Experiments,gpt-4,highly irrelevant,The paper primarily discusses compression of machine learning models and does not mention anything about prompt engineering or hard prefix prompts.,https://ashay-sriv-images.s3.amazonaws.com/Compress and Compare_ Interactively Evaluating Efficiency and Behavior Across ML Model Compression E.png,"e pruning 
 abilities.
 Layer-specific pruning excluding normalization 
 layers better preserves model behavior.
 Repaired Sparse Models
 D
+"
+Synthesizing Text-to-SQL Data from Weak and Strong LLMs,"['Jiaxi Yang', 'Binyuan Hui', 'Min Yang', 'Jian Yang', 'Junyang Lin', 'Chang Zhou']","The capability gap between open-source and closed-source large language
+models (LLMs) remains a challenge in text-to-SQL tasks. In this paper, we
+introduce a synthetic data approach that combines data produced by larger, more
+powerful models (strong models) with error information data generated by
+smaller, not well-aligned models (weak models). The method not only enhances
+the domain generalization of text-to-SQL models but also explores the potential
+of error data supervision through preference learning. Furthermore, we employ
+the synthetic data approach for instruction tuning on open-source LLMs,
+resulting SENSE, a specialized text-to-SQL model. The effectiveness of SENSE is
+demonstrated through state-of-the-art results on the SPIDER and BIRD
+benchmarks, bridging the performance gap between open-source models and methods
+prompted by closed-source models.",http://arxiv.org/pdf/2408.03256v1,2024-08-06,2408.03256v1,Synthesizing Text-to-SQL Data from Weak and Strong LLMs,gpt-4,highly irrelevant,"The paper talks about synthetic data and models, but doesn't mention hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Synthesizing Text-to-SQL Data from Weak and Strong LLMs.png,"y
+thub.com/Yangjiaxi/Sense
+and
+Ms)
+In
+ap-
+ated
+els)
+well-
+ach
+Strong Models
+Claude2
+GPT-4
+Gemini
 "
 Personalizing Federated Instrument Segmentation with Visual Trait Priors in Robotic Surgery,"['Jialang Xu', 'Jiacheng Wang', 'Lequan Yu', 'Danail Stoyanov', 'Yueming Jin', 'Evangelos B. Mazomenos']","Personalized federated learning (PFL) for surgical instrument segmentation
 (SIS) is a promising approach. It enables multiple clinical sites to
@@ -478,7 +478,7 @@ cross-style shape consistency on the image level and computes the
 shape-similarity contribution of each site on the prediction level for updating
 the global parameters. PFedSIS outperforms state-of-the-art methods with +1.51%
 Dice, +2.11% IoU, -2.79 ASSD, -15.55 HD95 performance gains. The corresponding
-code and models will be released at https://github.com/wzjialang/PFedSIS.",http://arxiv.org/pdf/2408.03208v1,2024-08-06,2408.03208v1,Personalizing Federated Instrument Segmentation with Visual Trait Priors in Robotic Surgery,gpt-4,highly irrelevant,This paper is focused on personalized federated learning for surgical instrument segmentation but doesn't mention prompt engineering or related techniques.,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=11615x3233 at 0x7B129F377070>,"(a) Site-1: EndoVis 2017
+code and models will be released at https://github.com/wzjialang/PFedSIS.",http://arxiv.org/pdf/2408.03208v1,2024-08-06,2408.03208v1,Personalizing Federated Instrument Segmentation with Visual Trait Priors in Robotic Surgery,gpt-4,highly irrelevant,This paper focuses on personalized federated learning for instrument segmentation in robotic surgery and does not discuss hard prefix or any type of prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Personalizing Federated Instrument Segmentation with Visual Trait Priors in Robotic Surgery.png,"(a) Site-1: EndoVis 2017
 (b) Site-2: EndoVis 2018
 "
 A Debiased Nearest Neighbors Framework for Multi-Label Text Classification,"['Zifeng Cheng', 'Zhiwei Jiang', 'Yafeng Yin', 'Zhaoling Chen', 'Cong Wang', 'Shiping Ge', 'Qiguo Huang', 'Qing Gu']","Multi-Label Text Classification (MLTC) is a practical yet challenging task
@@ -498,7 +498,7 @@ a debiased confidence estimation strategy, improving the adaptive combination
 of predictions from $k$NN and inductive binary classifications. Extensive
 experiments conducted on four public benchmark datasets (i.e., AAPD, RCV1-V2,
 Amazon-531, and EUR-LEX57K) showcase the effectiveness of our proposed method.
-Besides, our method does not introduce any extra parameters.",http://arxiv.org/pdf/2408.03202v1,2024-08-06,2408.03202v1,A Debiased Nearest Neighbors Framework for Multi-Label Text Classification,gpt-4,highly irrelevant,"The paper discusses a framework for multi-label text classification and addresses biases in it, but it does not mention anything about hard prefix prompts or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1403x748 at 0x7B129F2C94E0>,"Text Embedding
+Besides, our method does not introduce any extra parameters.",http://arxiv.org/pdf/2408.03202v1,2024-08-06,2408.03202v1,A Debiased Nearest Neighbors Framework for Multi-Label Text Classification,gpt-4,highly irrelevant,"This paper focuses on Multi-Label Text Classification (MLTC) methodology and a debiased nearest neighbors (DENN) approach, without any mention or implication of hard prefix prompting or prompt engineering techniques.",https://ashay-sriv-images.s3.amazonaws.com/A Debiased Nearest Neighbors Framework for Multi-Label Text Classification.png,"Text Embedding
 𝒉𝒕
 Linear Layers
 & Sigmoid
@@ -542,7 +542,7 @@ with the baseline model, e.g., the collision rate, accelerations, steering, and
 the number of lane changes. Our findings demonstrate that the proposed model
 can generate realistic safety-critical test scenarios covering both naturalness
 and adversariality, which can be a cornerstone for the development of
-autonomous vehicles.",http://arxiv.org/pdf/2408.03200v1,2024-08-06,2408.03200v1,Adversarial Safety-Critical Scenario Generation using Naturalistic Human Driving Priors,gpt-4,highly irrelevant,"This paper is focused on the creation and evaluation of safety-critical testing scenarios for autonomous vehicles using reinforcement learning, and does not mention prompting or prompt engineering at all.",<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=3684x4912 at 0x7B129F2CBDF0>,"–211.
+autonomous vehicles.",http://arxiv.org/pdf/2408.03200v1,2024-08-06,2408.03200v1,Adversarial Safety-Critical Scenario Generation using Naturalistic Human Driving Priors,gpt-4,highly irrelevant,This paper focuses on safety-critical scenario generation for autonomous vehicles using naturalistic human driving priors and reinforcement learning techniques. It does not seem to discuss hard prefix prompting or prompt engineering at all.,https://ashay-sriv-images.s3.amazonaws.com/Adversarial Safety-Critical Scenario Generation using Naturalistic Human Driving Priors.png,"–211.
 G. Chanan,
 ytorch: An
 Advances in
@@ -590,7 +590,7 @@ text classification. We show that these methods are competitive with full
 fine-tuning and can be used without loss in accuracy. This study contributes
 valuable insights into the effectiveness of Marathi BERT models, offering a
 foundation for the continued advancement of NLP capabilities in Marathi and
-similar Indic languages.",http://arxiv.org/pdf/2408.03172v1,2024-08-06,2408.03172v1,Leveraging Parameter Efficient Training Methods for Low Resource Text Classification: A Case Study in Marathi,gpt-4,highly irrelevant,"The paper is focused on Parameter Efficient Fine-Tuning (PEFT) methods, particulary for the application of text classification in the context of low-resource language models. It does not discuss or allude to the topic of prompt engineering or hard prefix prompting.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1280x986 at 0x7B12D4336A70>,"ubset
+similar Indic languages.",http://arxiv.org/pdf/2408.03172v1,2024-08-06,2408.03172v1,Leveraging Parameter Efficient Training Methods for Low Resource Text Classification: A Case Study in Marathi,gpt-4,highly irrelevant,"The paper focuses on Parameter Efficient Fine-Tuning (PEFT) methods for large language models (LLMs) with a specific application in low-resource languages, using BERT models. There is no mention of prompt engineering or hard prefix prompting techniques.",https://ashay-sriv-images.s3.amazonaws.com/Leveraging Parameter Efficient Training Methods for Low Resource Text Classification_ A Case Study i.png,"ubset
 and
 basis
 into
@@ -631,7 +631,7 @@ on-device learning approach by field-testing our closed-loop CPS, showing a
 reduction in horizontal position error of up to 26% vs. a non-fine-tuned
 state-of-the-art baseline. In the most challenging never-seen-before
 environment, our on-device learning procedure makes the difference between
-succeeding or failing the mission.",http://arxiv.org/pdf/2408.03168v1,2024-08-06,2408.03168v1,Training on the Fly: On-device Self-supervised Learning aboard Nano-drones within 20 mW,gpt-4,highly irrelevant,The paper discusses on-device self-supervised learning aboard nano-drones within 20 mW and does not mention or involve hard prefix prompting or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=21767x3191 at 0x7B129F3655A0>,"5
+succeeding or failing the mission.",http://arxiv.org/pdf/2408.03168v1,2024-08-06,2408.03168v1,Training on the Fly: On-device Self-supervised Learning aboard Nano-drones within 20 mW,gpt-4,highly irrelevant,"The paper deals with on-device machine learning via self-supervised methods for small devices like nano-drones, rather than prompt engineering or hard prefix prompting.",https://ashay-sriv-images.s3.amazonaws.com/Training on the Fly_ On-device Self-supervised Learning aboard Nano-drones within 20 mW.png,"5
 Fig. 4. PULP-Frontnet [2], our target CNN architecture with 9 layers and 304 k parameters. Inference requires 14.3 MMAC operations per frame.
 TABLE III
 MEMORY AND COMPUTATIONAL REQUIREMENTS OF FINE-TUNING METHODS
@@ -653,7 +653,7 @@ and ConvFormer models, leading to low interpretability scores. We addressed
 this issue by introducing Threshold-Grad-CAM, a modification built on top of
 Grad-CAM that enhanced interpretability across nearly all models. The code and
 checkpoints to reproduce this study are available at:
-https://github.com/rabihchamas/DCLS-GradCAM-Eval.",http://arxiv.org/pdf/2408.03164v1,2024-08-06,2408.03164v1,Dilated Convolution with Learnable Spacings makes visual models more aligned with humans: a Grad-CAM study,gpt-4,highly irrelevant,"This paper focuses on Dilated Convolution with Learnable Spacing (DCLS) and interpretability in visual models, and does not mention or allude to hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2654x1272 at 0x7B129F3646A0>,"Accepted at The Trustworthy AI Workshop, IJCAI 2024
+https://github.com/rabihchamas/DCLS-GradCAM-Eval.",http://arxiv.org/pdf/2408.03164v1,2024-08-06,2408.03164v1,Dilated Convolution with Learnable Spacings makes visual models more aligned with humans: a Grad-CAM study,gpt-4,highly irrelevant,"The paper is about convolution methods in computer vision models, not prompt engineering or hard prefix prompting.",https://ashay-sriv-images.s3.amazonaws.com/Dilated Convolution with Learnable Spacings makes visual models more aligned with humans_ a Grad-CAM.png,"Accepted at The Trustworthy AI Workshop, IJCAI 2024
 Figure 1: Visualization of Heatmaps on ClickMe dataset Images. First row: original images from the ClickMe dataset. Second row: the
 same images superimposed with heatmaps created by humans from the ClickMe project. Third row: Threshold-GradCAM heatmaps of the
 ConvNeXt base model enhanced with DCLS. Fourth row: Threshold-GradCAM heatmaps of the baseline ConvNeXt base model without
@@ -674,7 +674,7 @@ mechanism then combines visual data for enhanced textual summary generation,
 while image selection is refined through knowledge distillation from a
 pre-trained vision-language model. Extensive experiments on public MSMO dataset
 validate the superiority of the EGMS method, which also prove the necessity to
-incorporate entity information into MSMO problem.",http://arxiv.org/pdf/2408.03149v1,2024-08-06,2408.03149v1,Leveraging Entity Information for Cross-Modality Correlation Learning: The Entity-Guided Multimodal Summarization,gpt-4,highly irrelevant,"This paper primarily discusses a model for multimodal summarization that doesn't mention the use of any sort of prompts, hard prefix or otherwise.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2574x1076 at 0x7B129F374370>,"Mean Pooling
+incorporate entity information into MSMO problem.",http://arxiv.org/pdf/2408.03149v1,2024-08-06,2408.03149v1,Leveraging Entity Information for Cross-Modality Correlation Learning: The Entity-Guided Multimodal Summarization,gpt-4,highly irrelevant,The paper focuses on developing a model for multimodal summarization and does not discuss anything about hard prefix prompting or prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Leveraging Entity Information for Cross-Modality Correlation Learning_ The Entity-Guided Multimodal .png,"Mean Pooling
 +
 MLP
 signal
@@ -690,7 +690,7 @@ quantization, pruning, knowledge distillation, and architectural optimizations.
 The primary objective is to explore each method in-depth and highlight its
 unique challenges and practical applications. The discussed methods are
 categorized into a taxonomy that presents an overview of the optimization
-landscape and helps navigate it to understand the research trajectory better.",http://arxiv.org/pdf/2408.03130v1,2024-08-06,2408.03130v1,"Inference Optimizations for Large Language Models: Effects, Challenges, and Practical Considerations",gpt-4,highly irrelevant,"The paper discusses model optimization and deployment methods, but there is no mention of any specifics related to hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2264x612 at 0x7B129F2CBCA0>,"g
+landscape and helps navigate it to understand the research trajectory better.",http://arxiv.org/pdf/2408.03130v1,2024-08-06,2408.03130v1,"Inference Optimizations for Large Language Models: Effects, Challenges, and Practical Considerations",gpt-4,highly irrelevant,"While the paper discusses large language models and makes mention of 'prompting researchers', it specifically focuses on techniques for training, optimization, and deployment methods, rather than hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Inference Optimizations for Large Language Models_ Effects_ Challenges_ and Practical Considerations.png,"g
 lities [12]
 ng process
 following
@@ -721,7 +721,7 @@ sentence-level language annotation tasks for Hinglish text. We perform robust
 qualitative human-based evaluations to showcase COMMENTATOR led to 5x faster
 annotations than the best baseline. Our code is publicly available at
 \url{https://github.com/lingo-iitgn/commentator}. The demonstration video is
-available at \url{https://bit.ly/commentator_video}.",http://arxiv.org/pdf/2408.03125v1,2024-08-06,2408.03125v1,COMMENTATOR: A Code-mixed Multilingual Text Annotation Framework,gpt-4,highly irrelevant,"The paper introduces a tool for text annotation tasks, especially for multilingual datasets, and does not discuss hard prefix prompting or prompt engineering.",<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=2880x1581 at 0x7B12D4335AB0>,"(a)
+available at \url{https://bit.ly/commentator_video}.",http://arxiv.org/pdf/2408.03125v1,2024-08-06,2408.03125v1,COMMENTATOR: A Code-mixed Multilingual Text Annotation Framework,gpt-4,highly irrelevant,"The paper focuses on a tool for annotating multilingual text, and does not discuss hard prefix prompting or any form of prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/COMMENTATOR_ A Code-mixed Multilingual Text Annotation Framework.png,"(a)
 Figure 3: Token-Level Language Identification (LID): (a) annotat
 (a)
 Figure 4: Token-Level Parts-Of-Speech Tagging (POS): (a) annota
@@ -736,7 +736,7 @@ models, machine translation still faces many challenges. Therefore, in this
 paper, we construct the dataset Euas-20 to evaluate the performance of large
 language models on translation tasks, the translation ability on different
 languages, and the effect of pre-training data on the translation ability of
-LLMs for researchers and developers.",http://arxiv.org/pdf/2408.03119v1,2024-08-06,2408.03119v1,Evaluating the Translation Performance of Large Language Models Based on Euas-20,gpt-4,highly irrelevant,"The paper focuses on the performance of large language models on translation tasks and the effect of pre-training data, it does not discuss hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=904x1077 at 0x7B129F3756C0>,"Evaluating the Translation Performance
+LLMs for researchers and developers.",http://arxiv.org/pdf/2408.03119v1,2024-08-06,2408.03119v1,Evaluating the Translation Performance of Large Language Models Based on Euas-20,gpt-4,highly irrelevant,The paper is primarily focused on machine translation tasks and the evaluation of performance of large language models on different languages. It does not discuss or mention any aspect related to 'hard prefix' prompting or prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Evaluating the Translation Performance of Large Language Models Based on Euas-20.png,"Evaluating the Translation Performance
 Fig. 1. Prompt 1
 is diverse and representative and we are able to more compreh
 "
@@ -757,7 +757,7 @@ effectiveness by deriving a novel state-of-the-art topic modeling method called
 SenClu, which achieves fast inference through an expectation-maximization
 algorithm and hard assignments of sentence groups to a single topic, while
 giving users the possibility to encode prior knowledge on the topic-document
-distribution. Code is at \url{https://github.com/JohnTailor/FT-Topic}",http://arxiv.org/pdf/2408.03099v1,2024-08-06,2408.03099v1,Topic Modeling with Fine-tuning LLMs and Bag of Sentences,gpt-4,highly irrelevant,The paper largely focuses on fine-tuning Large Language Models for topic modeling and does not discuss prompt engineering or hard prefix prompting techniques.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2791x1314 at 0x7B129F2CB2E0>,"Figure 1: Overview of training data generation for fine-tuning assuming a corpus D of two documents and three distinct topics
+distribution. Code is at \url{https://github.com/JohnTailor/FT-Topic}",http://arxiv.org/pdf/2408.03099v1,2024-08-06,2408.03099v1,Topic Modeling with Fine-tuning LLMs and Bag of Sentences,gpt-4,highly irrelevant,The paper's focus is on topic modeling using fine-tuned large language models and does not indicate any information related to hard prefix prompting or prompt engineering,https://ashay-sriv-images.s3.amazonaws.com/Topic Modeling with Fine-tuning LLMs and Bag of Sentences.png,"Figure 1: Overview of training data generation for fine-tuning assuming a corpus D of two documents and three distinct topics
 using single sentences. For the sentence This hockey season... we sample sentences assumed to be in the same and distinct
 topic, wrong samples are removed based on similarity computation using a non-fine-tuned LLM.
 "
@@ -779,7 +779,7 @@ knowledge of its parametric structure can be leveraged to optimize learning and
 to obtain tighter guarantees from less samples. We evaluate our approach on a
 diverse range of established benchmarks, demonstrating that we can generate
 highly performing and robust policies, along with guarantees that tightly
-quantify their performance and the associated risk.",http://arxiv.org/pdf/2408.03093v1,2024-08-06,2408.03093v1,Learning Provably Robust Policies in Uncertain Parametric Environments,gpt-4,highly irrelevant,The paper focuses on learning MDP policies and does not mention anything related to hard prefix prompting or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1181x1181 at 0x7B129F2CBD00>,"1
+quantify their performance and the associated risk.",http://arxiv.org/pdf/2408.03093v1,2024-08-06,2408.03093v1,Learning Provably Robust Policies in Uncertain Parametric Environments,gpt-4,highly irrelevant,"The paper focuses on learning MDP policies that are robust across stochastic environments, and does not discuss prompt engineering or hard prefix prompting techniques",https://ashay-sriv-images.s3.amazonaws.com/Learning Provably Robust Policies in Uncertain Parametric Environments.png,"1
 3
 5
 7
@@ -831,7 +831,7 @@ multilingual abilities of Sailor into Qwen1.5-Chat and make it proficient in
 Southeast Asian languages, achieving enhancements in the fundamental
 capabilities. In light of previous research, we also merge multiple 13B FT LLMs
 and observe that WIDEN achieves a balanced amalgamation of instruction
-following, mathematical reasoning, and code generation skills.",http://arxiv.org/pdf/2408.03092v1,2024-08-06,2408.03092v1,Extend Model Merging from Fine-Tuned to Pre-Trained Large Language Models via Weight Disentanglement,gpt-4,highly irrelevant,"This paper focuses on the merging of large language models and does not directly mention or discuss prompt engineering, hard prefix prompting, or post-training prompting techniques.",<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=4872x1769 at 0x7B129F367B80>,"weights and assigns high importance within the range of 0.6 to 0.8 as well as 0.9 to 1.0 for certain
+following, mathematical reasoning, and code generation skills.",http://arxiv.org/pdf/2408.03092v1,2024-08-06,2408.03092v1,Extend Model Merging from Fine-Tuned to Pre-Trained Large Language Models via Weight Disentanglement,gpt-4,highly irrelevant,"This paper focuses on merging large language models and the weight disentanglement approach to deal with parameter changes, but does not discuss or involve prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Extend Model Merging from Fine-Tuned to Pre-Trained Large Language Models via Weight Disentanglement.png,"weights and assigns high importance within the range of 0.6 to 0.8 as well as 0.9 to 1.0 for certain
 weights, thanks to the design of score calibration. Therefore, WIDEN ensures the retention of es-
 sential weights in both Qwen1.5-7B-Chat and Sailor-7B, resulting in 12.25% and 72.87% average
 enhancements on the two benchmarks.
@@ -855,7 +855,7 @@ process by examining its reward accumulation and the effectiveness of its
 experience replay mechanism. Our empirical results demonstrate the QADQN's
 superior performance, achieving better risk-adjusted returns with Sortino
 ratios of 1.28 and 1.19 for non-overlapping and overlapping test periods
-respectively, indicating effective downside risk management.",http://arxiv.org/pdf/2408.03088v1,2024-08-06,2408.03088v1,QADQN: Quantum Attention Deep Q-Network for Financial Market Prediction,gpt-4,highly irrelevant,The paper focuses on quantum-enhanced reinforcement learning for financial market prediction and doesn't mention anything about prompt engineering or hard prefix prompting.,,
+respectively, indicating effective downside risk management.",http://arxiv.org/pdf/2408.03088v1,2024-08-06,2408.03088v1,QADQN: Quantum Attention Deep Q-Network for Financial Market Prediction,gpt-4,highly irrelevant,The paper is focused on using quantum-classical hybrid algorithms for financial market prediction and does not discuss hard prefix prompts or prompt engineering in any capacity.,,
 Enhancing Complex Causality Extraction via Improved Subtask Interaction and Knowledge Fusion,"['Jinglong Gao', 'Chen Lu', 'Xiao Ding', 'Zhongyang Li', 'Ting Liu', 'Bing Qin']","Event Causality Extraction (ECE) aims at extracting causal event pairs from
 texts. Despite ChatGPT's recent success, fine-tuning small models remains the
 best approach for the ECE task. However, existing fine-tuning based ECE methods
@@ -875,7 +875,7 @@ to facilitate complex causality extraction. Experiments on three benchmark
 datasets demonstrate that our method achieves state-of-the-art performance and
 outperforms ChatGPT with a margin of at least 30% F1-score. More importantly,
 our model can also be used to effectively improve the ECE performance of
-ChatGPT via in-context learning.",http://arxiv.org/pdf/2408.03079v1,2024-08-06,2408.03079v1,Enhancing Complex Causality Extraction via Improved Subtask Interaction and Knowledge Fusion,gpt-4,highly irrelevant,"The paper discusses fine-tuning models and enhancing causality extraction, but there is no mention of prompt engineering or hard prefix prompting techniques.",,
+ChatGPT via in-context learning.",http://arxiv.org/pdf/2408.03079v1,2024-08-06,2408.03079v1,Enhancing Complex Causality Extraction via Improved Subtask Interaction and Knowledge Fusion,gpt-4,highly irrelevant,"This paper mainly talks about fine-tuning language models for Event Causality Extraction, and does not mention anything about hard prefix prompt engineering.",,
 BodySLAM: A Generalized Monocular Visual SLAM Framework for Surgical Applications,"['G. Manni', 'C. Lauretti', 'F. Prata', 'R. Papalia', 'L. Zollo', 'P. Soda']","Endoscopic surgery relies on two-dimensional views, posing challenges for
 surgeons in depth perception and instrument manipulation. While Simultaneous
 Localization and Mapping (SLAM) has emerged as a promising solution to address
@@ -898,7 +898,7 @@ robustness of our approach in laparoscopy, gastroscopy, and colonoscopy, three
 different scenarios in endoscopic surgery. The proposed SLAM approach has the
 potential to improve the accuracy and efficiency of endoscopic procedures by
 providing surgeons with enhanced depth perception and 3D reconstruction
-capabilities.",http://arxiv.org/pdf/2408.03078v1,2024-08-06,2408.03078v1,BodySLAM: A Generalized Monocular Visual SLAM Framework for Surgical Applications,gpt-4,highly irrelevant,The paper is focused on Monocular Visual SLAM Framework for Surgical Applications and not on hard prefix prompting or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=960x540 at 0x7B12D4331AE0>,"es state-
+capabilities.",http://arxiv.org/pdf/2408.03078v1,2024-08-06,2408.03078v1,BodySLAM: A Generalized Monocular Visual SLAM Framework for Surgical Applications,gpt-4,highly irrelevant,"The paper discusses a deep learning-based SLAM approach for surgical applications, which is not related to the concept of hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/BodySLAM_ A Generalized Monocular Visual SLAM Framework for Surgical Applications.png,"es state-
 of three
 MDEM),
 que that
@@ -922,7 +922,7 @@ algorithm developed for Intel's neuromorphic research chip Loihi 2. Preliminary
 results show that our approach can generate feasible solutions in as little as
 1 ms and up to 37x more energy efficient compared to two baseline solvers
 running on a CPU. These advantages could be especially relevant for size-,
-weight-, and power-constrained edge computing applications.",http://arxiv.org/pdf/2408.03076v1,2024-08-06,2408.03076v1,Solving QUBO on the Loihi 2 Neuromorphic Processor,gpt-4,highly irrelevant,This paper is focused on solving Quadratic Unconstrained Binary Optimization problems using Intel's Loihi 2 neuromorphic processor and does not discuss hard prefix prompts or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1484x1260 at 0x7B129B2E7910>,": Diagram for the proposed QUBO neural architecture: the variable neurons are recursively conn
+weight-, and power-constrained edge computing applications.",http://arxiv.org/pdf/2408.03076v1,2024-08-06,2408.03076v1,Solving QUBO on the Loihi 2 Neuromorphic Processor,gpt-4,highly irrelevant,The paper discusses an algorithm for solving optimization problems on a neuromorphic processor and does not mention or imply usage of hard prefix prompts or prompt engineering techniques.,https://ashay-sriv-images.s3.amazonaws.com/Solving QUBO on the Loihi 2 Neuromorphic Processor.png,": Diagram for the proposed QUBO neural architecture: the variable neurons are recursively conn
 f synapses (in blue), which encode the coefficients of the Q matrix, and to the cost integrator by
 t weights (in red).
 "
@@ -934,7 +934,7 @@ non-exhaustive overview of the phenomena of those two subdomains and the
 methods traditionally used to analyze them. We subsequently consider the
 resulting heterogeneous set of phenomena and methods as a starting point for
 our survey of work on discourse pragmatics and interactional pragmatics in the
-context of LLMs.",http://arxiv.org/pdf/2408.03074v1,2024-08-06,2408.03074v1,Towards an Analysis of Discourse and Interactional Pragmatic Reasoning Capabilities of Large Language Models,gpt-4,highly irrelevant,"The abstract does not mention prompting, hard prefix prompts, or anything related to prompt engineering.",,
+context of LLMs.",http://arxiv.org/pdf/2408.03074v1,2024-08-06,2408.03074v1,Towards an Analysis of Discourse and Interactional Pragmatic Reasoning Capabilities of Large Language Models,gpt-4,highly irrelevant,"The abstract does not mention prompt engineering, hard prefix prompting, or any closely related techniques.",,
 Probing structural constraints of negation in Pretrained Language Models,"['David Kletz', 'Marie Candito', 'Pascal Amsili']","Contradictory results about the encoding of the semantic impact of negation
 in pretrained language models (PLMs). have been drawn recently (e.g. Kassner
 and Sch{\""u}tze (2020); Gubelmann and Handschuh (2022)). In this paper we focus
@@ -953,7 +953,7 @@ negation scope, and do encode the impact of negation on NPI licensing. Yet,
 further control experiments reveal that the presence of other lexical items is
 also better captured when using the contextual representation of a token within
 the same syntactic clause than outside from it, suggesting that PLMs simply
-capture the more general notion of syntactic clause.",http://arxiv.org/pdf/2408.03070v1,2024-08-06,2408.03070v1,Probing structural constraints of negation in Pretrained Language Models,gpt-4,highly irrelevant,"The paper's focus is on examining the encoding of negation and its impact in pretrained language models, rather than on hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1261x745 at 0x7B129F2F0880>,"(a) big
+capture the more general notion of syntactic clause.",http://arxiv.org/pdf/2408.03070v1,2024-08-06,2408.03070v1,Probing structural constraints of negation in Pretrained Language Models,gpt-4,highly irrelevant,"This paper discusses the linguistic concept of negation in the context of Pretrained Language Models (PLMs), focusing on how these models encode negation and its formal impact. There is no mention of prefix prompting or any form of prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Probing structural constraints of negation in Pretrained Language Models.png,"(a) big
 (b) house
 ure 6: Accuracy (average on 3 runs) on trace identification tasks. The target tokens are big and ho
 the probed embeddings are from a ROBERTA-large LM. Results are broken down by zone (color
@@ -982,7 +982,7 @@ validate these results using larger language models and compare them with
 neuroimaging data obtained during continuous speech perception. This study
 highlights the potential of recurrent neural language models to mirror
 linguistic processing in the human brain, providing valuable insights into the
-computational and neural mechanisms underlying language understanding.",http://arxiv.org/pdf/2408.03062v1,2024-08-06,2408.03062v1,Analysis of Argument Structure Constructions in a Deep Recurrent Language Model,gpt-4,highly irrelevant,"The paper mainly focuses on language processing and understanding in neural networks, and doesn't mention any use or discussion of prompting techniques or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7B129F376260>,"viation of
+computational and neural mechanisms underlying language understanding.",http://arxiv.org/pdf/2408.03062v1,2024-08-06,2408.03062v1,Analysis of Argument Structure Constructions in a Deep Recurrent Language Model,gpt-4,highly irrelevant,"This paper is focused on understanding and analyzing argument structure constructions and language representations in recurrent neural language models like LSTM using specific visualization and analysis techniques, but has no explicit focus or mention of hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Analysis of Argument Structure Constructions in a Deep Recurrent Language Model.png,"viation of
 sn,D), we
 ass Cl
 (2)
@@ -1020,7 +1020,7 @@ significantly enhance applications like indoor assistance for visually impaired
 individuals, advancing human-computer interaction. Our demonstration video is
 available https://www.youtube.com/watch?v=zaSiT3clWqY, demo is available via
 https://openomni.ai4wa.com, code is available via
-https://github.com/AI4WA/OpenOmniFramework.",http://arxiv.org/pdf/2408.03047v1,2024-08-06,2408.03047v1,OpenOmni: A Collaborative Open Source Tool for Building Future-Ready Multimodal Conversational Agents,gpt-4,highly irrelevant,This paper mainly discusses an open-source tool for building multimodal conversational agents and does not mention any form of prefix prompting or prompt engineering techniques.,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=1024x1024 at 0x7B12D4334970>,"Input Audio
+https://github.com/AI4WA/OpenOmniFramework.",http://arxiv.org/pdf/2408.03047v1,2024-08-06,2408.03047v1,OpenOmni: A Collaborative Open Source Tool for Building Future-Ready Multimodal Conversational Agents,gpt-4,highly irrelevant,"The paper discusses an open-source, end-to-end pipeline benchmarking tool designed for multimodal conversational agents and does not mention or imply the use of hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/OpenOmni_ A Collaborative Open Source Tool for Building Future-Ready Multimodal Conversational Agent.png,"Input Audio
 Video
 Response Audio
 Clien
@@ -1038,7 +1038,7 @@ only accelerated the fine-tuning process on the training data provided by the
 organizers but also enabled us to run the models on low GPU memory. Our
 fine-tuned models achieved third place for the financial classification task
 with an F1-score of 0.7543 and secured sixth place in the financial
-summarization task on the official test datasets.",http://arxiv.org/pdf/2408.03033v1,2024-08-06,2408.03033v1,L3iTC at the FinLLM Challenge Task: Quantization for Financial Text Classification & Summarization,gpt-4,highly irrelevant,The paper focuses on fine-tuning large language models for classification and summarization tasks and mentions nothing about hard prefix prompting or prompt engineering.,,
+summarization task on the official test datasets.",http://arxiv.org/pdf/2408.03033v1,2024-08-06,2408.03033v1,L3iTC at the FinLLM Challenge Task: Quantization for Financial Text Classification & Summarization,gpt-4,highly irrelevant,The paper focuses on fine-tuning models and doesn’t mention anything related to prompt engineering or hard prefix prompting techniques,,
 Highly Efficient Self-Adaptive Reward Shaping for Reinforcement Learning,"['Haozhe Ma', 'Zhengding Luo', 'Thanh Vinh Vo', 'Kuankuan Sima', 'Tze-Yun Leong']","Reward shaping addresses the challenge of sparse rewards in reinforcement
 learning by constructing denser and more informative reward signals. To achieve
 self-adaptive and highly efficient reward shaping, we propose a novel method
@@ -1054,7 +1054,7 @@ computationally efficient implementation in high-dimensional continuous state
 spaces. This method provides a non-parametric and learning-free approach. The
 proposed method is evaluated on a wide range of continuous control tasks with
 sparse and delayed rewards, demonstrating significant improvements in sample
-efficiency and convergence stability compared to several baselines.",http://arxiv.org/pdf/2408.03029v1,2024-08-06,2408.03029v1,Highly Efficient Self-Adaptive Reward Shaping for Reinforcement Learning,gpt-4,highly irrelevant,"The paper's focus is on reinforcement learning and reward shaping, and has no mention or implications of work relating to hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2411x1385 at 0x7B12D4359570>,"sults. Additionally, we maintain
+efficiency and convergence stability compared to several baselines.",http://arxiv.org/pdf/2408.03029v1,2024-08-06,2408.03029v1,Highly Efficient Self-Adaptive Reward Shaping for Reinforcement Learning,gpt-4,highly irrelevant,"The paper focuses on reinforcement learning and reward shaping, and does not mention or suggest any form of hard prefix prompting or prompt engineering.",https://ashay-sriv-images.s3.amazonaws.com/Highly Efficient Self-Adaptive Reward Shaping for Reinforcement Learning.png,"sults. Additionally, we maintain
 ments, as detailed in Appendix
 AntSpeed
 AntFar
@@ -1078,7 +1078,7 @@ preliminary language-directed skill control. Our experiments demonstrate that
 CSI can flexibly integrate a diverse array of motion skills more
 comprehensively and facilitate the transitions between different skills.
 Additionally, CSI exhibits good scalability as the number of motion skills to
-be integrated increases significantly.",http://arxiv.org/pdf/2408.03018v1,2024-08-06,2408.03018v1,Integrating Controllable Motion Skills from Demonstrations,gpt-4,highly irrelevant,The paper is about the application of reinforcement learning on robotic motion skills and does not touch upon the topic of hard prefix prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=2302x1812 at 0x7B129F3643A0>,"the coverage of motion skills. CSI demonstrates excellent
+be integrated increases significantly.",http://arxiv.org/pdf/2408.03018v1,2024-08-06,2408.03018v1,Integrating Controllable Motion Skills from Demonstrations,gpt-4,highly irrelevant,The abstract does not mention or imply the use of hard prefix prompts or any form of prompt engineering in its method.,https://ashay-sriv-images.s3.amazonaws.com/Integrating Controllable Motion Skills from Demonstrations.png,"the coverage of motion skills. CSI demonstrates excellent
 scalability by mastering all motion skills despite a significant
 increase in the number of skills to be integrated and the
 inclusion of a set of similar motion skills.
@@ -1115,7 +1115,7 @@ and effective in-database AI analytics and fast-adaptive learned system
 components. Empirical evaluations demonstrate that NeurDB substantially
 outperforms existing solutions in managing AI analytics tasks, with the
 proposed learned components more effectively handling environmental dynamism
-than state-of-the-art approaches.",http://arxiv.org/pdf/2408.03013v1,2024-08-06,2408.03013v1,NeurDB: On the Design and Implementation of an AI-powered Autonomous Database,gpt-4,highly irrelevant,"The paper discusses AI-powered autonomous databases and AI analytics, but it does not mention anything about hard prefix prompts, prompt engineering, or any form of prompting techniques.",,
+than state-of-the-art approaches.",http://arxiv.org/pdf/2408.03013v1,2024-08-06,2408.03013v1,NeurDB: On the Design and Implementation of an AI-powered Autonomous Database,gpt-4,highly irrelevant,"The paper focuses on AI-powered databases and in-database AI analytics, but doesn't mention anything related to hard prefix prompting or prompt engineering.",,
 Fact Finder -- Enhancing Domain Expertise of Large Language Models by Incorporating Knowledge Graphs,"['Daniel Steinigen', 'Roman Teucher', 'Timm Heine Ruland', 'Max Rudat', 'Nicolas Flores-Herr', 'Peter Fischer', 'Nikola Milosevic', 'Christopher Schymura', 'Angelo Ziletti']","Recent advancements in Large Language Models (LLMs) have showcased their
 proficiency in answering natural language queries. However, their effectiveness
 is hindered by limited domain-specific knowledge, raising concerns about the
@@ -1134,7 +1134,7 @@ critical process in pinpointing biological entities for disease treatment or
 crop enhancement. Moreover, its intuitive search interface and ability to
 provide accurate responses within seconds make it well-suited for
 time-sensitive, precision-focused research contexts. We publish the source code
-together with the dataset and the prompt templates used.",http://arxiv.org/pdf/2408.03010v1,2024-08-06,2408.03010v1,Fact Finder -- Enhancing Domain Expertise of Large Language Models by Incorporating Knowledge Graphs,gpt-4,highly irrelevant,The paper discusses enhancing the domain-specific knowledge of LLMs using a knowledge graph-based retrieval approach but does not focus on hard prefix prompting or prompt engineering.,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=1732x2388 at 0x7B129F365450>,"Figure 8: User interface of Fact Finder for the question Which drugs against epilepsy should not be used by patients
+together with the dataset and the prompt templates used.",http://arxiv.org/pdf/2408.03010v1,2024-08-06,2408.03010v1,Fact Finder -- Enhancing Domain Expertise of Large Language Models by Incorporating Knowledge Graphs,gpt-4,highly irrelevant,The paper focuses on enhancing the knowledge of Large Language Models using knowledge graphs and does not mention anything about hard prefix prompting or prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Fact Finder -- Enhancing Domain Expertise of Large Language Models by Incorporating Knowledge Graphs.png,"Figure 8: User interface of Fact Finder for the question Which drugs against epilepsy should not be used by patients
 with hypertension?.
 "
 Cross-cultural analysis of pedestrian group behaviour influence on crossing decisions in interactions with autonomous vehicles,"['Sergio Martín Serrano', 'Óscar Méndez Blanco', 'Stewart Worrall', 'Miguel Ángel Sotelo', 'David Fernández-Llorca']","Understanding cultural backgrounds is crucial for the seamless integration of
@@ -1154,7 +1154,7 @@ entered the lane.
 together, even though reckless behaviour by the group reduces confidence and
 makes the situation perceived as more complex. Australian participants were
 willing to take fewer risks than Spanish participants, adopting more cautious
-behaviour when it was uncertain whether the AV would yield.",http://arxiv.org/pdf/2408.03003v1,2024-08-06,2408.03003v1,Cross-cultural analysis of pedestrian group behaviour influence on crossing decisions in interactions with autonomous vehicles,gpt-4,highly irrelevant,"This paper is focused on cross-cultural analysis in relation to autonomous vehicles, with no mention of any kind of prompting, hard prefix prompting or prompt engineering.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=791x907 at 0x7B129F364460>,"60% of
+behaviour when it was uncertain whether the AV would yield.",http://arxiv.org/pdf/2408.03003v1,2024-08-06,2408.03003v1,Cross-cultural analysis of pedestrian group behaviour influence on crossing decisions in interactions with autonomous vehicles,gpt-4,highly irrelevant,This paper is about the integration of autonomous driving and does not address or mention anything related to hard prefix prompts or prompt engineering.,https://ashay-sriv-images.s3.amazonaws.com/Cross-cultural analysis of pedestrian group behaviour influence on crossing decisions in interaction.png,"60% of
 d normal
 o motion
 al ethical
@@ -1184,7 +1184,7 @@ together with visual data, is then fed into a multi-branch network to generate
 compact multimodal embeddings. Extensive experiments on a large-scale
 tri-domain dataset verify the effectiveness of AMPere in obtaining a unified
 multimodal product representation that clearly improves cross-domain product
-retrieval.",http://arxiv.org/pdf/2408.02978v1,2024-08-06,2408.02978v1,ASR-enhanced Multimodal Representation Learning for Cross-Domain Product Retrieval,gpt-4,highly irrelevant,"The paper focuses on multimodal representation learning using ASR technology for product retrieval. It makes no mention of hard prefix prompts, prompting techniques or related elements.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=583x403 at 0x7B129F367B50>,"Text Encoder
+retrieval.",http://arxiv.org/pdf/2408.02978v1,2024-08-06,2408.02978v1,ASR-enhanced Multimodal Representation Learning for Cross-Domain Product Retrieval,gpt-4,highly irrelevant,"The paper discusses multimodal product representation learning and extraction of product-specific information using ASR text, with no clear mention or implication of using hard prefix prompts or prompt engineering techniques.",https://ashay-sriv-images.s3.amazonaws.com/ASR-enhanced Multimodal Representation Learning for Cross-Domain Product Retrieval.png,"Text Encoder
 easy to carry, six-month
 e, suitable for Chinese
 s Day gift giving.
@@ -1243,7 +1243,7 @@ algorithm is used to further train the policy to produce empathetic responses.
 Both automatic and manual evaluations demonstrate that the proposed EmpRL
 framework can improve the quality of generated responses, enhance the empathy
 level similarity between generated and target responses, and produce empathetic
-responses covering both affective and cognitive aspects.",http://arxiv.org/pdf/2408.02976v1,2024-08-06,2408.02976v1,Empathy Level Alignment via Reinforcement Learning for Empathetic Response Generation,gpt-4,highly irrelevant,"The paper focuses on optimizing empathy level alignment in response generation using reinforcement learning, not on prompt engineering or hard prefix prompting.",<PIL.PngImagePlugin.PngImageFile image mode=RGB size=169x150 at 0x7B129F2CBE50>,". Previous
+responses covering both affective and cognitive aspects.",http://arxiv.org/pdf/2408.02976v1,2024-08-06,2408.02976v1,Empathy Level Alignment via Reinforcement Learning for Empathetic Response Generation,gpt-4,highly irrelevant,"The paper is about empathetic response generation using reinforcement learning, specifically focusing on optimizing the empathy level alignment between generated responses and target responses. It does not mention hard prefix prompts or prompt engineering techniques.",https://ashay-sriv-images.s3.amazonaws.com/Empathy Level Alignment via Reinforcement Learning for Empathetic Response Generation.png,". Previous
 estimation
 generation
 alignment
@@ -1281,4 +1281,4 @@ restricted Thompson Sampling to the top-K set of the most delayed agents to
 select a seed agent for adaptive LNS neighborhood generation. We evaluate
 ADDRESS in multiple maps from the MAPF benchmark set and demonstrate cost
 improvements by at least 50% in large-scale scenarios with up to a thousand
-agents, compared with the original MAPF-LNS and other state-of-the-art methods.",http://arxiv.org/pdf/2408.02960v1,2024-08-06,2408.02960v1,Anytime Multi-Agent Path Finding with an Adaptive Delay-Based Heuristic,gpt-4,highly irrelevant,The paper focuses on multi-agent path finding and does not discuss prompt engineering or hard prefix prompting at all.,,
+agents, compared with the original MAPF-LNS and other state-of-the-art methods.",http://arxiv.org/pdf/2408.02960v1,2024-08-06,2408.02960v1,Anytime Multi-Agent Path Finding with an Adaptive Delay-Based Heuristic,gpt-4,highly irrelevant,"The paper talks about heuristic path optimization in multi-agent systems, with no mention or relation to hard prefix prompting or prompt engineering.",,
