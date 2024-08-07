@@ -1,0 +1,70 @@
+---
+title: "500xCompressor: Generalized Prompt Compression for Large Language Models"
+date: "2024-08-06"
+authors: "[, ', Z, o, n, g, q, i, a, n,  , L, i, ', ,,  , ', Y, i, x, u, a, n,  , S, u, ', ,,  , ', N, i, g, e, l,  , C, o, l, l, i, e, r, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">500xCompressor: Generalized Prompt Compression for Large Language Models</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/500xCompressor_ Generalized Prompt Compression for Large Language Models.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">Figure 2: Process of pretraining (left), fine-tuning (middle), and prediction (right) with 500xCompressor.
+texts or be used for QA. Although trained on the Arxiv Cor-
+In this paper, the architecture and mechanism of
+</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-06</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', Z, o, n, g, q, i, a, n,  , L, i, ', ,,  , ', Y, i, x, u, a, n,  , S, u, ', ,,  , ', N, i, g, e, l,  , C, o, l, l, i, e, r, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>Prompt compression is crucial for enhancing inference speed, reducing costs,
+and improving user experience. However, current methods face challenges such as
+low compression ratios and potential data leakage during evaluation. To address
+these issues, we propose 500xCompressor, a method that compresses extensive
+natural language contexts into a minimum of one single special token. The
+500xCompressor introduces approximately 0.3% additional parameters and achieves
+compression ratios ranging from 6x to 480x. It is designed to compress any
+text, answer various types of questions, and could be utilized by the original
+large language model (LLM) without requiring fine-tuning. Initially,
+500xCompressor was pretrained on the Arxiv Corpus, followed by fine-tuning on
+the ArxivQA dataset, and subsequently evaluated on strictly unseen and
+classical question answering (QA) datasets. The results demonstrate that the
+LLM retained 62.26-72.89% of its capabilities compared to using non-compressed
+prompts. This study also shows that not all the compressed tokens are equally
+utilized and that K V values have significant advantages over embeddings in
+preserving information at high compression ratios. The highly compressive
+nature of natural language prompts, even for fine-grained complex information,
+suggests promising potential for future applications and further research into
+developing a new LLM language.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>The paper discusses the concept of prompt compression, specifically focusing on a method that enhances the efficacy of large language models through compression of extensive natural language contexts into single special tokens, relates directly to the notion of prompt engineering.</p>
+  </div>
+
+
+    href="http://arxiv.org/pdf/2408.03094v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
