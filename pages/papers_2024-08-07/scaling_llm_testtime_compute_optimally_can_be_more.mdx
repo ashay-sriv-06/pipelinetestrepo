@@ -1,0 +1,72 @@
+---
+title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+date: "2024-08-06"
+authors: "[, ', C, h, a, r, l, i, e,  , S, n, e, l, l, ', ,,  , ', J, a, e, h, o, o, n,  , L, e, e, ', ,,  , ', K, e, l, v, i, n,  , X, u, ', ,,  , ', A, v, i, r, a, l,  , K, u, m, a, r, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-06</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', C, h, a, r, l, i, e,  , S, n, e, l, l, ', ,,  , ', J, a, e, h, o, o, n,  , L, e, e, ', ,,  , ', K, e, l, v, i, n,  , X, u, ', ,,  , ', A, v, i, r, a, l,  , K, u, m, a, r, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>Enabling LLMs to improve their outputs by using more test-time computation is
+a critical step towards building generally self-improving agents that can
+operate on open-ended natural language. In this paper, we study the scaling of
+inference-time computation in LLMs, with a focus on answering the question: if
+an LLM is allowed to use a fixed but non-trivial amount of inference-time
+compute, how much can it improve its performance on a challenging prompt?
+Answering this question has implications not only on the achievable performance
+of LLMs, but also on the future of LLM pretraining and how one should tradeoff
+inference-time and pre-training compute. Despite its importance, little
+research attempted to understand the scaling behaviors of various test-time
+inference methods. Moreover, current work largely provides negative results for
+a number of these strategies. In this work, we analyze two primary mechanisms
+to scale test-time computation: (1) searching against dense, process-based
+verifier reward models; and (2) updating the model's distribution over a
+response adaptively, given the prompt at test time. We find that in both cases,
+the effectiveness of different approaches to scaling test-time compute
+critically varies depending on the difficulty of the prompt. This observation
+motivates applying a "compute-optimal" scaling strategy, which acts to most
+effectively allocate test-time compute adaptively per prompt. Using this
+compute-optimal strategy, we can improve the efficiency of test-time compute
+scaling by more than 4x compared to a best-of-N baseline. Additionally, in a
+FLOPs-matched evaluation, we find that on problems where a smaller base model
+attains somewhat non-trivial success rates, test-time compute can be used to
+outperform a 14x larger model.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>While this paper explores the efficiency of applying test-time compute for Language Learning Models (LLMs) on challenging prompts, it doesn't explicitly discuss hard prefix prompts or prompt engineering.</p>
+  </div>
+
+
+    href="http://arxiv.org/pdf/2408.03314v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
