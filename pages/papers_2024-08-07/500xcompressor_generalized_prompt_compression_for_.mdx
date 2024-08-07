@@ -1,7 +1,7 @@
 ---
 title: "500xCompressor: Generalized Prompt Compression for Large Language Models"
 date: "2024-08-06"
-authors: "[, ', Z, o, n, g, q, i, a, n,  , L, i, ', ,,  , ', Y, i, x, u, a, n,  , S, u, ', ,,  , ', N, i, g, e, l,  , C, o, l, l, i, e, r, ', ]"
+authors: "Zongqian Li, Yixuan Su, Nigel Collier"
 ---
 
 import Image from 'next/image';
@@ -10,13 +10,11 @@ import Image from 'next/image';
   <h1 className="text-4xl font-bold mb-6">500xCompressor: Generalized Prompt Compression for Large Language Models</h1>
 
   <div className="mb-8">
-    <Image
+    {{/* eslint-disable-next-line @next/next/no-img-element */}}
+    <img
       src="/images/papers/500xCompressor_ Generalized Prompt Compression for Large Language Models.png"
       alt="Paper image"
-      width={800}
-      height={600}
-      layout="responsive"
-      className="rounded-lg"
+      className="w-full h-auto rounded-lg"
     />
     <p className="text-sm text-gray-400 mt-2">Figure 2: Process of pretraining (left), fine-tuning (middle), and prediction (right) with 500xCompressor.
 texts or be used for QA. Although trained on the Arxiv Cor-
@@ -25,7 +23,7 @@ In this paper, the architecture and mechanism of
   </div>
 
   <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-06</p>
-  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', Z, o, n, g, q, i, a, n,  , L, i, ', ,,  , ', Y, i, x, u, a, n,  , S, u, ', ,,  , ', N, i, g, e, l,  , C, o, l, l, i, e, r, ', ]</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> Zongqian Li, Yixuan Su, Nigel Collier</p>
 
   <div className="bg-gray-700 p-6 rounded-lg mb-8">
     <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
@@ -55,7 +53,7 @@ developing a new LLM language.</p>
     <p>The paper discusses the concept of prompt compression, specifically focusing on a method that enhances the efficacy of large language models through compression of extensive natural language contexts into single special tokens, relates directly to the notion of prompt engineering.</p>
   </div>
 
-
+  
     href="http://arxiv.org/pdf/2408.03094v1"
     className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
     target="_blank"
