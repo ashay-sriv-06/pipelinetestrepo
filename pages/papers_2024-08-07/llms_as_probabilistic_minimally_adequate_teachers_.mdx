@@ -1,0 +1,64 @@
+---
+title: "LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning"
+date: "2024-08-06"
+authors: "[, ', L, e, k, a, i,  , C, h, e, n, ', ,,  , ', A, s, h, u, t, o, s, h,  , T, r, i, v, e, d, i, ', ,,  , ', A, l, v, a, r, o,  , V, e, l, a, s, q, u, e, z, ', ]"
+---
+
+import Image from 'next/image';
+
+<div className="bg-gray-800 text-white min-h-screen p-8">
+  <h1 className="text-4xl font-bold mb-6">LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning</h1>
+
+  <div className="mb-8">
+    <Image
+      src="/images/papers/LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning.png"
+      alt="Paper image"
+      width={800}
+      height={600}
+      layout="responsive"
+      className="rounded-lg"
+    />
+    <p className="text-sm text-gray-400 mt-2">nan</p>
+  </div>
+
+  <p className="text-gray-300 mb-2"><strong>Date:</strong> 2024-08-06</p>
+  <p className="text-gray-300 italic mb-6"><strong>Authors:</strong> [, ', L, e, k, a, i,  , C, h, e, n, ', ,,  , ', A, s, h, u, t, o, s, h,  , T, r, i, v, e, d, i, ', ,,  , ', A, l, v, a, r, o,  , V, e, l, a, s, q, u, e, z, ', ]</p>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">Abstract</h2>
+    <p>The emergence of intelligence in large language models (LLMs) has inspired
+investigations into their integration into automata learning. This paper
+introduces the probabilistic Minimally Adequate Teacher (pMAT) formulation,
+which leverages a probabilistic oracle that could give persistent errors
+randomly during answering the membership queries for deterministic finite
+automata (DFA) learning. Given the tendency of LLMs to produce hallucinatory
+content, we have developed techniques to improve answer accuracy and ensure the
+correctness of the learned automata. We propose the $\mathtt{Discrimination}$
+prompt as well as the $\mathtt{Verification}$ prompt and explore their
+advantages over common prompts. Additionally, we compare DFA learning
+performance between the TTT algorithm and common active learning algorithms. To
+address the exponential number of persistent errors, we implement a dynamic
+query cache refinement algorithm that identifies and corrects conflicting
+queries by combining the active and passive learning algorithms. The empirical
+results demonstrate the robustness and efficiency of our approach, providing a
+theoretical foundation for automata learning with LLMs in the loop.</p>
+  </div>
+
+  <div className="bg-gray-700 p-6 rounded-lg mb-8">
+    <h2 className="text-2xl font-semibold mb-4">AI-Generated Summary</h2>
+    <p>The paper introduces prompts such as the Discrimination and Verification prompts, and explores their advantages over common prompts, which indicates some level of focus on prompt engineering.</p>
+  </div>
+
+
+    href="http://arxiv.org/pdf/2408.02999v1"
+    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Read the full paper
+  </a>
+
+  <p className="text-sm text-gray-400 mt-8">
+    The summary is AI-generated and may not perfectly reflect the paper's content.
+  </p>
+</div>
